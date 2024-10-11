@@ -1,0 +1,138 @@
+#AboutUsContainer {
+    padding-top: 5rem;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.TopOfContainer h4 {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.TopOfContainer h4::before {
+    content: "";
+    display: inline-block;
+    /* Ensures that the element respects width and height */
+    height: 5px;
+    width: 5px;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    /* Adds some space between the icon and the text */
+    vertical-align: middle;
+    /* Aligns the box with the text */
+    transform: rotate(45deg);
+
+}
+
+#AboutUsContainer .ProductApplicationHeaderContainer hr {
+    margin: unset;
+}
+
+#AboutUsContainer .ProductApplicationHeaderContainer h4 {
+    text-align: start;
+}
+
+.CarousalImages {
+    width: 100%;
+}
+
+.SwiperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+    margin: 5rem 0rem;
+}
+
+.ProductsContainer {
+    padding: 1rem 0rem;
+}
+.ant-collapse-expand-icon {
+    position: absolute;
+    right: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.405);
+    display: flex;
+    justify-content: center;
+    padding-right: 0px !important;
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: transparent;
+}
+.ant-collapse-item-active .ant-collapse-expand-icon {
+    position: absolute;
+    right: 0px;
+    border: 1px solid #2180de;
+    display: flex;
+    justify-content: center;
+    padding-right: 0px !important;
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: #2180de;
+}
+
+.ProductsContainer .ant-collapse {
+    border: none;
+    transition: 3s;
+}
+
+.ProductsContainer .ant-collapse-content {
+    border: none;
+}
+
+.ProductsContainer .ant-collapse-header {
+    padding: 30px 20px !important;
+    display: flex;
+    align-items: center;
+}
+
+.ProductsContainer .ant-collapse-expand-icon .anticon {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.ant-collapse-item-active .ant-collapse-expand-icon span svg {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.ant-collapse-item-active .ant-collapse-expand-icon span svg path {
+    color: white !important;
+}
+
+.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.ant-collapse-expand-icon span svg {
+    background-color: transparent !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.ant-collapse-expand-icon span svg path {
+    color: rgb(0, 0, 0) !important;
+}
+
+.ProductsContainer h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.ant-collapse-item-active {
+    border-color: #2180de !important;
+  
+    /* Change border color to red */
+}
+.ProductsContainer b{
+    font-weight: 500;
+}
+.ProductsContainer ul{
+    padding-left: 20px;
+}
+.ant-motion-collapse {
+    transition: height 1s ease-in-out !important; /* Set animation duration to 1 second */
+}
