@@ -9,6 +9,7 @@ const GlosemNavigation = () => {
         { label: "About", path: "/glosemAbout" },
         { label: "Services", path: "/services" },
         { label: "Contact", path: "/contact" },
+        
     ];
 
     return (
@@ -17,7 +18,7 @@ const GlosemNavigation = () => {
                 <div className="NavigationChild">
                     <div className="FirstIcon"></div>
                     <div className="NavigationLogoContainer">
-                     
+
                     </div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">

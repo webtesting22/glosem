@@ -21,7 +21,7 @@ const GlosemProductApplication = () => {
 
     const ProductApplicationData = [
         {
-
+            imagePath:"/images/IOT.jpeg",
             title: "IOT Sector",
             list: [
                 {
@@ -36,6 +36,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
+            imagePath:"/images/Automotive.jpeg",
             title: "Automotive",
             list: [
                 {
@@ -50,6 +51,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
+            imagePath:"/images/healthcare.jpeg",
             title: "Health Care",
             list: [
                 {
@@ -64,6 +66,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
+            imagePath:"/images/robotics.jpeg",
             title: "Robotics",
             list: [
                 {
@@ -78,6 +81,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
+            imagePath:"/images/consumer.jpeg",
             title: "Consumer",
             list: [
                 {
@@ -92,6 +96,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
+            imagePath:"/images/communication.jpeg",
             title: "Communication",
             list: [
                 {
@@ -132,7 +137,7 @@ const GlosemProductApplication = () => {
                                             data-aos-delay={index * 200}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
-                                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                        <img src={item.imagePath} alt="" />
                                     </div>
                                     <div className="BottomCardContainer">
                                         <h2>{item.title}</h2>
