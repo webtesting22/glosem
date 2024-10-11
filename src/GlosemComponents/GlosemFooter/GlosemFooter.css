@@ -1,6 +1,7 @@
 .GlosemFooterContainer {
     height: 30vh;
     padding-top: 5rem;
+    
 }
 
 .QuickLinksContainer .Links {
@@ -29,7 +30,7 @@
 }
 
 .CopyrightText {
-
+    
     padding: 10px 20px;
     margin: 0px 20px;
     border-top: 1px solid #e0e0e0;

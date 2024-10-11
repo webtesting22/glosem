@@ -18,10 +18,10 @@ const GlosemFooter = () => {
         <>
             <div className="GlosemFooterContainer">
                 <Row>
-                    <Col lg={8} md={24}>
+                    <Col lg={8} md={24} xs={0}>
 
                     </Col>
-                    <Col lg={8} md={24}>
+                    <Col lg={8} md={24} xs={12}>
                         <div className="QuickLinksContainer">
                             <div>
                                 <h2>Quick Links</h2>
@@ -35,7 +35,7 @@ const GlosemFooter = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={8} md={24}>
+                    <Col lg={8} md={24}  xs={12}>
                         <div className="SocialLinksContainer">
                             <div>
                                 <h2>Social Links</h2>
