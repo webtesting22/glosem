@@ -7,7 +7,7 @@ const GlosemNavigation = () => {
     const links = [
         { label: "Home", path: "/" },
         { label: "About", path: "/glosemAbout" },
-        { label: "Services", path: "/services" },
+        { label: "Products", path: "/glosemProducts" },
         { label: "Contact", path: "/contact" },
         
     ];

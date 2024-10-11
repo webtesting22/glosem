@@ -5,15 +5,16 @@ import GlosemNavigation from './GlosemComponents/GlosemNavigation/GlosemNavigati
 import GlosemHome from './GlosemComponents/GlosemHome/GlosemHome';
 import GlosemFooter from './GlosemComponents/GlosemFooter/GlosemFooter';
 import GlosemAbout from './GlosemComponents/GlosemAbout/GlosemAbout';
-
+import GlosemProducts from './GlosemComponents/GlosemProducts/GlosemProducts';
 function App() {
   return (
     <>
       <Router>
         <GlosemNavigation />
         <Routes>
-          <Route path="/" element={<GlosemHome />} /> {/* Home route */}
-          <Route path="/glosemAbout" element={<GlosemAbout />} /> {/* Home route */}
+          <Route path="/" element={<GlosemHome />} />
+          <Route path="/glosemAbout" element={<GlosemAbout />} />
+          <Route path="/glosemProducts" element={<GlosemProducts />} />
         </Routes>
         <GlosemFooter />
       </Router>

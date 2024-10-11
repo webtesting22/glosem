@@ -1,0 +1,111 @@
+#GlosemProductsContainer {
+    padding-top: 5rem;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#GlosemProductsContainer .ProductApplicationHeaderContainer hr {
+    margin: unset;
+}
+
+#GlosemProductsContainer .ProductApplicationHeaderContainer h4 {
+    text-align: start;
+}
+
+.ProductImageContainer {
+    margin-left: -130px;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ProductImageContainerNew {
+    margin-right: -130px;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ProductImageContainer img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ProductImageContainerNew img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ContentColumnContainer {
+    width: 100%;
+    background-color: white;
+    height: 60%;
+    position: sticky;
+    z-index: 55;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+}
+
+.ContentColumnContainer h2 {
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.ProductCardsContainer .ant-row .ant-col {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.ContentColumnContainer .CommonBtn .BookCallBtn {
+    padding: 0.5rem 0.500rem;
+    width: 200px;
+    font-size: 15px;
+}
+
+@media (max-width:769px) {
+    .ProductCardsContainer .ant-row .ant-col {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    .ProductImageContainer {
+        margin-left: 0px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .ProductImageContainerNew {
+        margin-right: 0px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    .ContentColumnContainer {
+        width: 100%;
+        background-color: white;
+        height: 100%;
+        position: sticky;
+        z-index: 55;
+        border-radius: 10px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 20px;
+    }
+    
+}

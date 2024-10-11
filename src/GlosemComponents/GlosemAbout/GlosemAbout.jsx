@@ -73,12 +73,16 @@ const GlosemAbout = () => {
         { img: "https://images.unsplash.com/photo-1721090394437-c7ab4daeebff?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
     ];
 
-    const [currentImage, setCurrentImage] = useState("");
+    const [activeImage, setActiveImage] = useState(items[0].imagesrc);
 
-    const handleAccordionChange = (key) => {
+    // Function to handle collapse change
+    const handleCollapseChange = (key) => {
         const selectedItem = items.find(item => item.key === key);
-        setCurrentImage(selectedItem?.imagesrc); // Update current image based on selected key
+        if (selectedItem) {
+            setActiveImage(selectedItem.imagesrc);
+        }
     };
+
 
     return (
         <>
@@ -119,30 +123,29 @@ const GlosemAbout = () => {
                 </div>
                 <div className="ProductsContainer">
                     <Row>
-                        <Col lg={12} md={24}>
-                            <div>
-                                <h2>Full stack product portfolio with cutting-edge technologies</h2>
-                                <br /><br />
-                                <Collapse
-                                    accordion
-                                    items={items.map(item => ({
-                                        ...item,
-                                        children: (
-                                            <div onClick={() => handleAccordionChange(item.key)}>
-                                                {item.children}
-                                            </div>
-                                        )
-                                    }))}
-                                />
-                            </div>
-                        </Col>
-                        <Col lg={12} md={24}>
-                            {currentImage && <img src={currentImage} alt="Selected" style={{ width: "100%" }} />}
-                        </Col>
+                       
+                            <Col lg={12} md={24}>
+                                <div>
+                                    <h2>Full stack product portfolio with cutting-edge technologies</h2>
+                                    <br /><br />
+                                    <Collapse
+                                        accordion
+                                        onChange={handleCollapseChange} // Listen to the collapse change
+                                        items={items}
+                                    />
+                                </div>
+                            </Col>
+                            <Col lg={12} md={24}>
+                                {/* Display the active image */}
+                                {/* <div className="ActiveImageContainer"> */}
+                                    {/* <img src={asctiveImage} alt="Active Collapse Item" className="ActiveImage" /> */}
+                                {/* </div> */}
+                            </Col>
+                        
                     </Row>
                 </div>
             </div>
-           
+
         </>
     );
 }
