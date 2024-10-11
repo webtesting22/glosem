@@ -62,9 +62,6 @@ const items = [
     }
 ];
 
-// Import Swiper styles
-import 'swiper/css';
-
 const GlosemAbout = () => {
     const CarousalImages = [
         { img: "https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
@@ -77,12 +74,13 @@ const GlosemAbout = () => {
 
     // Function to handle collapse change
     const handleCollapseChange = (key) => {
-        const selectedItem = items.find(item => item.key === key);
+        const selectedItem = items.find(item => item.key === key);  // No array wrapping needed
         if (selectedItem) {
-            setActiveImage(selectedItem.imagesrc);
+            console.log("Selected Item:", selectedItem);  // Log to check if the correct item is selected
+            setActiveImage(selectedItem.imagesrc);  // Set image path based on selected key
         }
     };
-
+    
 
     return (
         <>
@@ -123,25 +121,27 @@ const GlosemAbout = () => {
                 </div>
                 <div className="ProductsContainer">
                     <Row>
-                       
-                            <Col lg={12} md={24}>
-                                <div>
-                                    <h2>Full stack product portfolio with cutting-edge technologies</h2>
-                                    <br /><br />
-                                    <Collapse
-                                        accordion
-                                        onChange={handleCollapseChange} // Listen to the collapse change
-                                        items={items}
-                                    />
-                                </div>
-                            </Col>
-                            <Col lg={12} md={24}>
-                                {/* Display the active image */}
-                                {/* <div className="ActiveImageContainer"> */}
-                                    {/* <img src={asctiveImage} alt="Active Collapse Item" className="ActiveImage" /> */}
-                                {/* </div> */}
-                            </Col>
-                        
+                        <Col lg={12} md={24}>
+                            <div>
+                                <h2>Full stack product portfolio with cutting-edge technologies</h2>
+                                <br /><br />
+                                <Collapse
+                                    accordion
+                                    onChange={(key) => handleCollapseChange([key])} // Wrap key in array
+                                    items={items.map((item) => ({
+                                        key: item.key,
+                                        label: item.label,
+                                        children: item.children
+                                    }))}
+                                />
+                            </div>
+                        </Col>
+                        <Col lg={12} md={24}>
+                            {/* Display the active image */}
+                            <div className="ActiveImageContainer">
+                                <img src={activeImage} alt="Active Collapse Item" className="ActiveImage" style={{ width: "100%" }} />
+                            </div>
+                        </Col>
                     </Row>
                 </div>
             </div>

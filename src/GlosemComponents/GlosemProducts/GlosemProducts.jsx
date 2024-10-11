@@ -302,7 +302,7 @@ const GlosemProducts = () => {
                 <br />
                 <h2 style={{ fontWeight: "400", fontSize: "2rem" }}>Flip Chip Package</h2>
                 <br /><br />
-                <div className="ProductCardsContainer">
+                {/* <div className="ProductCardsContainer">
                     {GlosemProductsData.map((item, index) => (
                         <Row key={index} className="ProductRow" data-aos="fade-up" // Set the AOS animation type
                         data-aos-delay={index * 200}>
@@ -353,8 +353,41 @@ const GlosemProducts = () => {
                             )}
                         </Row>
                     ))}
-                </div>
+                </div> */}
+                <div className="ProductsApplicationCard">
+                    <Row>
+                        {GlosemProductsData.map((item, index) => (
+                            <Col lg={8} data-aos="fade-up" // Set the AOS animation type
+                                data-aos-delay={index * 200}>
+                                <div key={index} className="MainCardContainer">
+                                    <div className="CardImageContainer">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1716436329488-9a95773215e0?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt={item.title}
+                                        />                                    </div>
+                                    <div className="BottomCardContainer">
+                                        <h2>{item.title}</h2>
+                                        <div className="CommonBtn">
+                                        <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
+                                        <div className="LineAnimation">
 
+                                        </div>
+                                    </div>
+                                        {/* <ul>
+                                           {item.description}
+                                        </ul> */}
+                                    </div>
+                                    {/* <div className="CommonBtn">
+                                        <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
+                                        <div className="LineAnimation">
+
+                                        </div>
+                                    </div> */}
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </div>
                 {/* Modal for showing product details */}
                 <Modal
                     title={modalContent.title}
