@@ -1,0 +1,95 @@
+.GlosemNavigationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 55555;
+}
+
+.NavigationChild {
+    width: 90%;
+    /* background-color: red; */
+    height: 10vh;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.428);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.NavigationChild .FirstIcon:first-child {
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: .3rem;
+    height: .3rem;
+    display: flex;
+    transform: rotate(45deg);
+    background-color: rgb(226, 226, 226);
+}
+
+.NavigationChild .LastIcon:last-child {
+    position: absolute;
+    right: 0px;
+    bottom: -2px;
+    width: .3rem;
+    height: .3rem;
+    display: flex;
+    transform: rotate(45deg);
+    background-color: rgb(226, 226, 226);
+}
+
+
+
+.NavigationChild .NavigationLinksContainer .Links {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Align items horizontally */
+}
+
+.NavigationLink{
+    position: relative;
+    /* Needed for the absolute positioning of ::after */
+    margin: 0px 20px;
+    text-decoration: none;
+    /* Remove underline */
+    color: #000;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* Change to your preferred color */
+    padding: 10px;
+    /* Add padding for better click area */
+    display: inline-block;
+    /* Make the anchor tag a block for better area */
+}
+
+.NavigationLink::after {
+    content: "";
+    /* Required for pseudo-element */
+    position: absolute;
+    /* Position it absolutely within the a tag */
+    left: 0;
+    /* Start from the left */
+    bottom: 0;
+    /* Position it at the bottom */
+    height: 1px;
+    /* Height of the border */
+    background-color: rgb(0, 0, 0);
+    /* Change to your preferred color */
+    width: 0%;
+    /* Initial width */
+    transition: width 0.3s ease-in;
+    /* Smooth transition for width */
+}
+
+.NavigationChild .NavigationLinksContainer .Links a:hover::after {
+    width: 100%;
+    /* Full width on hover */
+}

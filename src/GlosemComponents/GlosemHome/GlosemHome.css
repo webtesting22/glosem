@@ -1,0 +1,14 @@
+.GlosemHomeContainer h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.125;
+}
+
+.HomeAnimatedContainer {
+    background-image: url("../../assets/GlosemHomeBack.jpg");
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+    margin-top: 3rem;
+    background-attachment: fixed;
+}

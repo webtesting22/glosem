@@ -1,0 +1,182 @@
+.MainCardContainer {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardImageContainer img {
+    width: 100%;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.CardImageContainer img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.CardImageContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BottomCardContainer {
+    /* position: absolute; */
+    height: 20vh;
+    background-color: white;
+    width: 90%;
+    margin-top: -3rem;
+    position: sticky;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    transition: .5s;
+    padding: 20px;
+}
+
+.MainCardContainer:hover .BottomCardContainer {
+    transform: translatey(-20px);
+    transition: .5s;
+}
+
+.BottomCardContainer h2 {
+    font-weight: 500;
+}
+
+.BottomCardContainer ul {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.BottomCardContainer ul li::marker {
+    color: #1c76d0;
+}
+
+.MainCardContainer:hover .CardImageContainer img {
+    webkit-filter: blur(4px);
+    /* Chrome, Safari, Opera */
+    filter: blur(4px);
+    opacity: 0.8;
+}
+
+.ProductApplicationHeaderContainer {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ProductApplicationHeaderContainer h4 {
+    font-weight: 400;
+    color: #1c77d0;
+}
+
+.ProductApplicationHeaderContainer hr {
+    height: 2px;
+    background-color: #f6f6f6;
+    border: none;
+    width: 0;
+    /* Initial width for the animation */
+    margin: auto;
+    position: relative;
+    animation: lineMove 3s ease-in-out infinite;
+    /* Infinite loop animation */
+}
+
+@keyframes lineMove {
+    0% {
+        width: 0;
+
+    }
+
+    50% {
+        width: 100px;
+        /* Full width at the middle */
+        background-color: #1c76d0f4;
+    }
+
+    80% {
+        background-color: #1c76d074;
+    }
+
+    100% {
+        width: 0;
+        /* Move back to the right */
+        background-color: #1c76d0;
+    }
+}
+
+.typing-container {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.cursor {
+    font-size: 2rem;
+    color: black;
+    animation: blink 0.7s step-start infinite;
+}
+
+.typed-word {
+    color: #1c77d0;
+    min-width: 130px;
+    text-align: left;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.typed-word {
+    display: inline-block;
+    transition: opacity 1s ease-in-out;
+    /* Smooth transition for word changes */
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+#ProductApplicationCardsContainer {
+    padding-top: 5rem;
+}
+
+.InlineHeading {
+    height: 30vh;
+    /* position: relative; */
+}
+
+.InlineHeading h1 {
+    background-color: transparent;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.InsideContaienr {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: #0c4680 !important;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

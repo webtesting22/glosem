@@ -1,0 +1,66 @@
+.LineAnimation {
+    border-bottom: 1px dotted rgb(226, 226, 226);
+    width: 100%;
+}
+
+
+.RightSideImageContainer img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.LeftSideContentContainer {
+    padding-right: 20px;
+}
+
+.FactorsBoxes h3 {
+    font-weight: 400;
+    background-color: #f6f6f6;
+    margin-left: 10px;
+
+}
+
+.FactorsBoxes>div {
+    padding: 15px;
+    background-color: #f6f6f6;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+
+}
+
+.IconContainer {
+    background-image: linear-gradient(90deg, #174fa6, #1c77d0);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.mainCard {
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+.mainCard p {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.RightSideImageContainer{
+    position: sticky;
+    top: 100px;
+}
+#GlosemFactorsContainer{
+    padding-top: 5rem ;
+    padding-bottom: 5rem;
+}
+@media (max-width:990px) {
+    .LeftSideContentContainer {
+        padding-right: 0px;
+    }
+    .mainCard {
+        padding-right: 00px;
+        padding-bottom: 30px;
+    }
+}
