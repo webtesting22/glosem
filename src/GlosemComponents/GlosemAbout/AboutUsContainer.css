@@ -136,12 +136,3 @@
 .ant-motion-collapse {
     transition: height 1s ease-in-out !important; /* Set animation duration to 1 second */
 }
-.ActiveImageContainer{
-    width: 100%;
-    margin: 10px;
-}
-.ActiveImageContainer img{
-    width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-}

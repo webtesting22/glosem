@@ -9,7 +9,7 @@ import smtImage from './smt.webp';
 import moldingImage from './molding.jpeg';
 import shieldingImage from './shielding.jpeg';
 import smtServiceImage from './smt.jpg';
-
+import 'swiper/css';
 const items = [
     {
         imagesrc: smtImage,
@@ -80,7 +80,7 @@ const GlosemAbout = () => {
             setActiveImage(selectedItem.imagesrc);  // Set image path based on selected key
         }
     };
-    
+
 
     return (
         <>
@@ -96,24 +96,27 @@ const GlosemAbout = () => {
                     </div>
                 </div>
                 <div className="SwiperContainer">
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={30}
-                        effect={'fade'}
-                        loop={true}
-                        autoplay={{
-                            delay: 2000,
-                            disableOnInteraction: false,
-                        }}
-                        modules={[Autoplay, EffectFade]}
-                        className="mySwiper"
-                    >
-                        {CarousalImages.map((item, index) => (
-                            <SwiperSlide key={index}>
-                                <img src={item.img} alt="" className="CarousalImages" />
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                    {/* <div className="SwiperContainer"> */}
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={30}
+                            effect={'fade'}
+                            loop={true}
+                            autoplay={{
+                                delay: 2000,
+                                disableOnInteraction: false,
+                            }}
+                            modules={[Autoplay, EffectFade]}
+                            className="mySwiper"
+                        >
+                            {CarousalImages.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                        <img src={item.img} alt="" className="CarousalImages" />
+
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    {/* </div> */}
                 </div>
                 <div className="ProductApplicationHeaderContainer">
                     <h4>Glosem</h4>
@@ -137,10 +140,7 @@ const GlosemAbout = () => {
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
-                            {/* Display the active image */}
-                            <div className="ActiveImageContainer">
-                                <img src={activeImage} alt="Active Collapse Item" className="ActiveImage" style={{ width: "100%" }} />
-                            </div>
+                           
                         </Col>
                     </Row>
                 </div>
