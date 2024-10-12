@@ -64,20 +64,27 @@
     background-color: transparent;
 }
 
-.ContentColumnContainer .CommonBtn .BookCallBtn {
+.ProductsApplicationCard .CommonBtn .BookCallBtn {
     padding: 0.5rem 0.500rem;
-    width: 200px;
+    width: 250px;
     font-size: 15px;
+    padding: 5px 10px;
+}
+.ProductsApplicationCard .CommonBtn{
+    background-color: transparent;
 }
 
 @media (max-width:769px) {
+    .ProductsApplicationCard .CommonBtn .BookCallBtn{
+        width: 100%;
+    }
     .ProductCardsContainer .ant-row .ant-col {
         display: flex;
         align-items: center;
         width: 100%;
         background-color: transparent;
     }
-    
+
     .ProductImageContainer {
         margin-left: 0px;
         height: 100%;
@@ -97,6 +104,7 @@
         border-radius: 10px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
+
     .ContentColumnContainer {
         width: 100%;
         background-color: white;
@@ -107,10 +115,11 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         padding: 20px;
     }
+
     #GlosemProductsContainer {
         padding-top: 5rem;
         padding-left: 1%;
         padding-right: 1%;
     }
-    
+
 }

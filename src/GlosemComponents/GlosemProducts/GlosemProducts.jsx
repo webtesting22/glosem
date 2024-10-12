@@ -357,7 +357,7 @@ const GlosemProducts = () => {
                 <div className="ProductsApplicationCard">
                     <Row>
                         {GlosemProductsData.map((item, index) => (
-                            <Col lg={8} data-aos="fade-up" // Set the AOS animation type
+                            <Col lg={8} md={12} data-aos="fade-up" // Set the AOS animation type
                                 data-aos-delay={index * 200}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
@@ -368,11 +368,11 @@ const GlosemProducts = () => {
                                     <div className="BottomCardContainer">
                                         <h2>{item.title}</h2>
                                         <div className="CommonBtn">
-                                        <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
-                                        <div className="LineAnimation">
+                                            <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
+                                            <div className="LineAnimation">
 
+                                            </div>
                                         </div>
-                                    </div>
                                         {/* <ul>
                                            {item.description}
                                         </ul> */}
