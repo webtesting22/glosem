@@ -70,14 +70,23 @@ const items = [
 ];
 
 const GlosemAbout = () => {
-    // Set the first item as default active
-    const [activeKey, setActiveKey] = useState('1');
+    const [activeKey, setActiveKey] = useState('1'); // Initialize with '1' or use `null`
 
     const handleCollapseChange = (key) => {
-        setActiveKey(key);
+        console.log("Selected key (raw):", key);   // Log raw key format
+        console.log("Selected key (string):", String(key)); // Ensure it's a string
+        setActiveKey(String(key));  // Convert to string, to ensure matching key types
+
+        // Find the selected item based on the key (ensure string comparison)
+        const selectedItem = items.find(item => String(item.key) === String(key));
+
+        if (selectedItem) {
+            console.log("Active image src:", selectedItem.imagesrc); // Log the image src
+        } else {
+            console.log("No image found for this key.");
+        }
     };
-
-
+    const activeItem = items.find(item => String(item.key) === String(activeKey));
 
     const CarousalImages = [
         { img: "https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
@@ -147,15 +156,14 @@ const GlosemAbout = () => {
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
-                            {/* <div style={{ textAlign: 'center' }}>
-                                {activeItem && (
-                                    <img
-                                        src={activeItem.imagesrc}
-                                        alt={activeItem.label}
-                                        className="ActiveItemImage"
-                                    />
-                                )}
-                            </div> */}
+                            {/* Display the corresponding image based on the activeKey */}
+                            <div style={{display:"flex",alignItems:"center",height:"100%",padding:"20px"}}>
+                            {activeItem ? (
+                                <img src={activeItem.imagesrc} alt={activeItem.label} style={{ width: '100%' }} />
+                            ) : (
+                                <p>No image available</p>
+                            )}
+                            </div>
                         </Col>
                     </Row>
                 </div>

@@ -13,7 +13,7 @@ const GlosemHome = () => {
             <section id="GlosemHome">
                 <div className="GlosemHomeContainer">
                     <Row>
-                        <Col lg={10} md={24}>
+                        <Col lg={12} md={24}>
                             <div>
                                 <h1 data-aos="fade-up"
                                     data-aos-duration="1000">
@@ -22,7 +22,7 @@ const GlosemHome = () => {
                                     </h1>
                             </div>
                         </Col>
-                        <Col lg={14} md={24}>
+                        <Col lg={12} md={24}>
                             <div>
                            
                             </div>

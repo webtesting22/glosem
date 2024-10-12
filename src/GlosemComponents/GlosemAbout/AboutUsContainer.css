@@ -86,7 +86,7 @@
 .ProductsContainer .ant-collapse-header {
     padding: 30px 20px !important;
     display: flex;
-    align-items: center;
+    align-items: center !important;
 }
 
 .ProductsContainer .ant-collapse-expand-icon .anticon {

@@ -13,7 +13,7 @@ const GlosemProducts = () => {
             description: (
                 <>
                     <Row>
-                        <Col lg={12} md={12}>
+                        <Col lg={24} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>Between the die and substrates, Flip Chip interconnection has replaced conventional wire bonding. Flip Chip interconnections provide high electrical performance demanded in ASICs, and memory applications where high frequency and high speed are required. Using Flip Chip interconnect improves package electrical performance by shorter electrical paths, removing high inductance wires, and fc-BGA is available in a high thermal performance with heat spreader. The array of bumps under the chip also allows the die to reduce wafer costs.</p>
@@ -31,8 +31,7 @@ const GlosemProducts = () => {
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
                             </div>
-                        </Col>
-                        <Col lg={12} md={12}>
+                   
                             <div>
                                 <h2>Applications</h2>
                                 <ul>
@@ -52,7 +51,7 @@ const GlosemProducts = () => {
                 <>
                     <Row>
 
-                        <Col>
+                        <Col lg={24} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>Cu pillar Fc-FBGA Package use Copper (Cu) pillar bump for electrical
@@ -80,8 +79,7 @@ const GlosemProducts = () => {
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
                             </div>
-                        </Col>
-                        <Col>
+                      
                             <div>
                                 <h2>Applications</h2>
                                 <ul>
@@ -100,7 +98,7 @@ const GlosemProducts = () => {
             description: (
                 <>
                     <Row>
-                        <Col>
+                        <Col lg={24} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>Underfill is a specialized encapsulant that fills the gap between chip and
@@ -142,7 +140,7 @@ const GlosemProducts = () => {
             description: (
                 <>
                     <Row>
-                        <Col>
+                        <Col lg={24} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>Hybrid fc-FBGA is a package that combines the benefits of wire bond packaging
@@ -184,7 +182,7 @@ const GlosemProducts = () => {
             description: (
                 <>
                     <Row>
-                        <Col>
+                        <Col lg={24} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>eMUF has a exposed die.</p>
@@ -226,7 +224,7 @@ const GlosemProducts = () => {
             description: (
                 <>
                     <Row>
-                        <Col>
+                        <Col lg={24} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>fc-QFN (Flip-Chip Quad Flat No lead) is a low cost molded package using flip
