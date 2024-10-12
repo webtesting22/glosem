@@ -116,14 +116,15 @@ const GlosemProductApplication = () => {
             <div id="ProductApplicationCardsContainer">
                
                 <div className="ProductApplicationHeaderContainer">
-                    <h4>Our Glosem</h4>
+                    <h4>Our Solutions</h4>
                     <hr />
                 </div>
                 <div style={{ display: "flex", alignItems: "center", textAlign: "center", justifyContent: "center" }}>
 
                     <div className="typing-container">
 
-                        <span>Products Used &nbsp;</span>
+                        {/* <span>Products Used &nbsp;</span> */}
+                        <span>Our Semiconductor Solutions Across Various Fields :&nbsp;</span>
                         <span className={`typed-word ${isFadingOut ? 'fade-out' : 'fade-in'}`}>
                             {words[currentWordIndex]}
                         </span>

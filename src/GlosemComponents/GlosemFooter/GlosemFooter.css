@@ -3,7 +3,17 @@
     padding-top: 5rem;
     
 }
-
+.footerLogoContainer{
+    width: 100%;
+    display:flex;
+    
+    justify-content: flex-end;
+}
+.footerLogoContainer img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 50%;
+}
 .QuickLinksContainer .Links {
     display: flex;
     flex-direction: column;

@@ -9,8 +9,8 @@ import { FaXTwitter } from "react-icons/fa6";
 const GlosemFooter = () => {
     const links = [
         { label: "Home", path: "/" },
-        { label: "About", path: "/about" },
-        { label: "Services", path: "/services" },
+        { label: "About", path: "/glosemAbout" },
+        { label: "Products", path: "/glosemProducts" },
         { label: "Contact", path: "/contact" },
     ];
 
@@ -19,7 +19,9 @@ const GlosemFooter = () => {
             <div className="GlosemFooterContainer">
                 <Row>
                     <Col lg={8} md={24} xs={0}>
-
+                    <div className="footerLogoContainer">
+                        <img src="/images/glosemLogo.png"/>
+                        </div>
                     </Col>
                     <Col lg={8} md={24} xs={12}>
                         <div className="QuickLinksContainer">

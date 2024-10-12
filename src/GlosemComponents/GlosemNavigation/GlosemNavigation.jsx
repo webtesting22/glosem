@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./GlosemNavigation.css";
-import { MdOutlineMenu, MdClose } from "react-icons/md"; // Import both icons
+import { MdOutlineMenu, MdClose, MdPhoneEnabled  } from "react-icons/md"; // Import both icons
 
 const GlosemNavigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control menu visibility
@@ -37,11 +37,14 @@ const GlosemNavigation = () => {
         <>
             <div className="GlosemNavigationContainer">
                 <div className="LogoContainer">
-                    <h3>Glosem</h3>
+                    <Link to="/"><img src="/images/glosemLogo.png"/></Link>
                 </div>
                 <div className="NavigationChild">
                     <div className="FirstIcon"></div>
-                    <div className="NavigationLogoContainer"></div>
+                    <div className="NavigationLogoContainer">
+                    <Link to="/">
+                    <img src="/images/glosemLogo.png" />
+                    </Link></div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">
                             {links.map((link, index) => (
@@ -53,8 +56,12 @@ const GlosemNavigation = () => {
                     </div>
                     <div className="NavigationContactContainer">
                         {/* You can add contact information here */}
+                                                <MdPhoneEnabled  />
+
                     </div>
-                    <div className="LastIcon"></div>
+                    <div className="LastIcon">
+
+                    </div>
                 </div>
                 <div className="menuBtn" onClick={toggleMenu}>
                     {isMenuOpen ? <MdClose /> : <MdOutlineMenu />} {/* Toggle icon */}

@@ -182,9 +182,32 @@
     align-items: center;
     justify-content: center;
 }
+@media (max-width:769px){
+    .typing-container{
+        font-size: 1.5rem;
+    }
+}
 @media (max-width:576px){
 
     .InlineHeading h1{
         font-size: 2.5rem;
+    }
+    .typing-container{
+        padding: 8px 0 0 2px;
+        display: flex;
+        /* justify-content: center; */
+        
+        font-size: 1rem;
+    }
+   
+}
+@media (max-width:500px){
+    .typing-container{
+        font-size: 0.95rem;
+    }
+}
+@media (max-width:450px){
+    .typing-container{
+        font-size: 0.85rem;
     }
 }
