@@ -5,15 +5,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Collapse, Row, Col } from 'antd';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import smtImage from './smt.webp';
-import moldingImage from './molding.jpeg';
-import shieldingImage from './shielding.jpeg';
-import smtServiceImage from './smt.jpg';
+import Img1 from './smt.webp';
+import Img2 from './molding.jpeg';
+import Img3 from './shielding.jpeg';
+import Img4 from './smt.jpg';
 import 'swiper/css';
+
+const { Panel } = Collapse;
+
 const items = [
     {
-        imagesrc: smtImage,
+
         key: '1',
+        imagesrc: Img1,
         label: 'Packaging Advanced SMT',
         children: (
             <ul>
@@ -25,8 +29,9 @@ const items = [
         ),
     },
     {
-        imagesrc: moldingImage,
+
         key: '2',
+        imagesrc: Img2,
         label: 'Packaging Molding & BGA',
         children: (
             <ul>
@@ -37,8 +42,9 @@ const items = [
         ),
     },
     {
-        imagesrc: shieldingImage,
+
         key: '3',
+        imagesrc: Img3,
         label: 'Packaging EMI Shielding',
         children: (
             <ul>
@@ -50,8 +56,9 @@ const items = [
         ),
     },
     {
-        imagesrc: smtServiceImage,
+
         key: '4',
+        imagesrc: Img4,
         label: "Services Package, REL & FA",
         children: (
             <ul>
@@ -63,24 +70,22 @@ const items = [
 ];
 
 const GlosemAbout = () => {
+    // Set the first item as default active
+    const [activeKey, setActiveKey] = useState('1');
+
+    const handleCollapseChange = (key) => {
+        setActiveKey(key);
+    };
+
+    // Find the active item based on the activeKey
+    const activeItem = items.find(item => item.key === activeKey);
+
     const CarousalImages = [
         { img: "https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1697952431907-8542919a16b3?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1721090394437-c7ab4daeebff?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
     ];
-
-    const [activeImage, setActiveImage] = useState(items[0].imagesrc);
-
-    // Function to handle collapse change
-    const handleCollapseChange = (key) => {
-        const selectedItem = items.find(item => item.key === key);  // No array wrapping needed
-        if (selectedItem) {
-            console.log("Selected Item:", selectedItem);  // Log to check if the correct item is selected
-            setActiveImage(selectedItem.imagesrc);  // Set image path based on selected key
-        }
-    };
-
 
     return (
         <>
@@ -96,27 +101,24 @@ const GlosemAbout = () => {
                     </div>
                 </div>
                 <div className="SwiperContainer">
-                    {/* <div className="SwiperContainer"> */}
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={30}
-                            effect={'fade'}
-                            loop={true}
-                            autoplay={{
-                                delay: 2000,
-                                disableOnInteraction: false,
-                            }}
-                            modules={[Autoplay, EffectFade]}
-                            className="mySwiper"
-                        >
-                            {CarousalImages.map((item, index) => (
-                                <SwiperSlide key={index}>
-                                        <img src={item.img} alt="" className="CarousalImages" />
-
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    {/* </div> */}
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        effect={'fade'}
+                        loop={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        modules={[Autoplay, EffectFade]}
+                        className="mySwiper"
+                    >
+                        {CarousalImages.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={item.img} alt="" className="CarousalImages" />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
                 <div className="ProductApplicationHeaderContainer">
                     <h4>Glosem</h4>
@@ -128,24 +130,29 @@ const GlosemAbout = () => {
                             <div>
                                 <h2>Full stack product portfolio with cutting-edge technologies</h2>
                                 <br /><br />
-                                <Collapse
-                                    accordion
-                                    onChange={(key) => handleCollapseChange([key])} // Wrap key in array
-                                    items={items.map((item) => ({
-                                        key: item.key,
-                                        label: item.label,
-                                        children: item.children
-                                    }))}
-                                />
+                                <Collapse accordion onChange={handleCollapseChange} defaultActiveKey={['1']}>
+                                    {items.map((item) => (
+                                        <Panel header={item.label} key={item.key}>
+                                            {item.children}
+                                        </Panel>
+                                    ))}
+                                </Collapse>
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
-                           
+                            {/* <div style={{ textAlign: 'center' }}>
+                                {activeItem && (
+                                    <img
+                                        src={activeItem.imagesrc}
+                                        alt={activeItem.label}
+                                        className="ActiveItemImage"
+                                    />
+                                )}
+                            </div> */}
                         </Col>
                     </Row>
                 </div>
             </div>
-
         </>
     );
 }

@@ -5,6 +5,7 @@
     position: sticky;
     top: 0px;
     z-index: 55555;
+    align-items: center;
 }
 
 .NavigationChild {
@@ -54,7 +55,7 @@
     /* Align items horizontally */
 }
 
-.NavigationLink{
+.NavigationLink {
     position: relative;
     /* Needed for the absolute positioning of ::after */
     margin: 0px 20px;
@@ -92,4 +93,65 @@
 .NavigationChild .NavigationLinksContainer .Links a:hover::after {
     width: 100%;
     /* Full width on hover */
+}
+
+.menuBtn {
+    display: none;
+}
+
+.menuBtn svg {
+    font-size: 30px;
+}
+
+@media (max-width:769px) {
+
+    .NavigationChild {
+        width: 90%;
+        /* background-color: red; */
+        height: 10vh;
+        border-bottom: 1px dashed rgba(128, 128, 128, 0.428);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+    }
+
+    .GlosemNavigationContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}
+
+.slideDownMenu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+}
+
+.slideDownMenu.open {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    /* When open, menu height is 40vh */
+}
+.slideMenuContent{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
 }
