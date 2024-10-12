@@ -136,6 +136,26 @@
 .ant-motion-collapse {
     transition: height 1s ease-in-out !important; /* Set animation duration to 1 second */
 }
+.FounderCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+  
+}
+.FounderImageContainer{
+    width: 100%;
+    padding: 10px;
+}
+.FounderImageContainer img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 100%;
+}
+.FounderHeading{
+    font-weight: 400;
+    font-size: 2rem;
+}
 @media (max-width:576px){
    .ProductsContainer .ant-collapse-header{
     padding: 20px 2% !important;

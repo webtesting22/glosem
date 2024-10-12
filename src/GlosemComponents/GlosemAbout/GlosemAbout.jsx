@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./AboutUsContainer.css";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -86,14 +86,14 @@ const GlosemAbout = () => {
         { img: "https://images.unsplash.com/photo-1721090394437-c7ab4daeebff?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
     ];
 
-   
 
-   
-   
+
+
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     return (
         <>
             <div id="AboutUsContainer">
@@ -159,7 +159,50 @@ const GlosemAbout = () => {
                         </Col>
                     </Row>
                 </div>
-            </div>
+                <h2 className="FounderHeading">Our Founders</h2>
+                <div classname="FounderCardsContainer">
+                    <Row>
+                        <Col lg={12} md={24}>
+                            <div className="FounderCard">
+                                <div className="FounderImageContainer">
+                                    <img src="/images/BhavikPatel.jpeg" />
+                                </div>
+                                <div className="FounderTitle">
+                                    <h3>Bhavik Patel</h3>
+                                </div>
+                                <div className="FounderDescription">
+                                    <ul>
+                                        <li>Mr. Bhavik Patel is a seasoned Real Estate visionary with 30 years at Parshvanath Land.</li>
+                                        <li>He's known for pioneering innovative real estate solutions and products.</li>
+                                        <li>Recently, he has ventured into the Semiconductor industry, demonstrating quick adaptability.</li>
+                                        <li>His work includes developing practical IoT use cases, reflecting his technical acumen.</li>
+                                        <li>Mr. Patel's dedication to learning and eye for detail make him a valuable industry leader.</li>
+                                        <li>With 30 years at Parshvanath Land, Mr. Bhavik Patel is a real estate innovator and emerging tech enthusiast in IoT and semiconductors.</li>
+                                        <li>His relentless pursuit of innovation and detail-oriented approach have cemented his status as a distinguished industry leader.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={12} md={24}>
+                            <div className="FounderCard">
+                                <div className="FounderImageContainer">
+                                    <img src="/images/TejasMajithia.jpeg" />
+                                </div>
+                                <div className="FounderTitle">
+                                    <h3>Tejas Majithia</h3>
+                                </div>
+                                <div className="FounderDescription">
+                                    <ul>
+                                        <li>Tejas Majithia brings over 25 years of business leadership experience, with a strong foundation in managing large-scale operations, investments, and strategic partnerships. Currently serving as the Managing Director of Urmin Group of Companies, Tejas oversees a diversified business portfolio in Ahmedabad, India, spanning FMCG, hospitality, and manufacturing. Under his leadership, Urmin Group has grown to employ over 1,500 people across six facilities covering more than 20,000 square meters.</li>
+                                        <li>Tejas is also a trained pharmacist from the Massachusetts College of Pharmacy and has honed his expertise in operational and administrative areas, including Accounting, Finance, and HR. Through his strategic acumen, Tejas has positioned Urmin as a key player in its industries, while expanding his family office’s investment portfolio to include over 30 companies and startups. These investments include early stakes in three unicorns and partnerships with leading VC and PE firms, embedding Urmin’s family office into the private market ecosystem.</li>
+                                        <li>Tejas’s recent focus is on India’s rapidly growing semiconductor ecosystem. This is reflected in his commitment to advancing India’s semiconductor industry and attracting global technology partners. With an in-depth understanding of the Indian market and a solid international network, Tejas is dedicated to building a world-class OSAT facility that aligns with India’s “Make in India” vision.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+            </div >
         </>
     );
 }
