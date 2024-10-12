@@ -6,9 +6,9 @@ import { Collapse, Row, Col } from 'antd';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 import Img1 from './smt.webp';
-import Img2 from './molding.jpeg';
-import Img3 from './shielding.jpeg';
-import Img4 from './smt.jpg';
+import Img2 from './molding.webp';
+import Img3 from './packaging.webp';
+import Img4 from './rel.webp';
 import 'swiper/css';
 
 const { Panel } = Collapse;
@@ -73,10 +73,14 @@ const GlosemAbout = () => {
     const [activeKey, setActiveKey] = useState('1'); // Initialize with '1' or use `null`
 
     const handleCollapseChange = (key) => {
-        console.log("Selected key (raw):", key);   // Log raw key format
-        console.log("Selected key (string):", String(key)); // Ensure it's a string
-        setActiveKey(String(key));  // Convert to string, to ensure matching key types
-
+        console.log("Selected key (raw):", key);   
+        console.log("Selected key (string):", String(key)); 
+        setActiveKey(String(key));  
+        // Ensure there's always an active key
+        // if (key) {
+        //     setActiveKey(key);
+        // }
+      
         // Find the selected item based on the key (ensure string comparison)
         const selectedItem = items.find(item => String(item.key) === String(key));
 
@@ -146,7 +150,11 @@ const GlosemAbout = () => {
                             <div>
                                 <h2>Full stack product portfolio with cutting-edge technologies</h2>
                                 <br /><br />
-                                <Collapse accordion onChange={handleCollapseChange} defaultActiveKey={['1']}>
+                                <Collapse accordion onChange={handleCollapseChange}
+                                    // defaultActiveKey={['1']}
+
+                                    activeKey={activeKey}
+                                >
                                     {items.map((item) => (
                                         <Panel header={item.label} key={item.key}>
                                             {item.children}
@@ -157,18 +165,18 @@ const GlosemAbout = () => {
                         </Col>
                         <Col lg={12} md={24}>
                             {/* Display the corresponding image based on the activeKey */}
-                            <div style={{display:"flex",alignItems:"center",height:"100%",padding:"20px"}}>
-                            {activeItem ? (
-                                <img src={activeItem.imagesrc} alt={activeItem.label} style={{ width: '100%' }} />
-                            ) : (
-                                <p>No image available</p>
-                            )}
+                            <div style={{ display: "flex", alignItems: "center", height: "100%", padding: "20px" }}>
+                                {activeItem ? (
+                                    <img src={activeItem.imagesrc} alt={activeItem.label} style={{ width: '100%' }} />
+                                ) : (
+                                    <p>Please choose one to view an image</p>
+                                )}
                             </div>
                         </Col>
                     </Row>
                 </div>
                 <h2 className="FounderHeading">Our Founders</h2>
-                <div classname="FounderCardsContainer">
+                <div className="FounderCardsContainer">
                     <Row>
                         <Col lg={12} md={24}>
                             <div className="FounderCard">

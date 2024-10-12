@@ -9,6 +9,7 @@ const GlosemProducts = () => {
 
     const GlosemProductsData = [
         {
+            imagePath:"/images/FCBGA.webp",
             title: "FCBGA",
             description: (
                 <>
@@ -46,6 +47,7 @@ const GlosemProducts = () => {
             )
         },
         {
+            imagePath:"/images/cuPillar.webp",
             title: "Fine Pitch Cu pillar FC",
             description: (
                 <>
@@ -94,6 +96,7 @@ const GlosemProducts = () => {
             )
         },
         {
+            imagePath:"/images/FCFBGA_MUF.webp",
             title: "FCFBGA_MUF",
             description: (
                 <>
@@ -136,6 +139,7 @@ const GlosemProducts = () => {
             )
         },
         {
+            imagePath:"/images/FCBGA_Hybrid.webp",
             title: "FCFBGA_HYBRID",
             description: (
                 <>
@@ -178,6 +182,7 @@ const GlosemProducts = () => {
             )
         },
         {
+            imagePath:"/images/FCFBGA_eMUF.webp",
             title: "FCFBGA_eMUF",
             description: (
                 <>
@@ -220,6 +225,7 @@ const GlosemProducts = () => {
             )
         },
         {
+            imagePath:"/images/FCQFN.webp",
             title: "FCQFN",
             description: (
                 <>
@@ -362,7 +368,7 @@ const GlosemProducts = () => {
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img
-                                            src="https://images.unsplash.com/photo-1716436329488-9a95773215e0?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            src={item.imagePath}
                                             alt={item.title}
                                         />                                    </div>
                                     <div className="BottomCardContainer">
