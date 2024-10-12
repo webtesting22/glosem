@@ -136,3 +136,15 @@
 .ant-motion-collapse {
     transition: height 1s ease-in-out !important; /* Set animation duration to 1 second */
 }
+@media (max-width:576px){
+   .ProductsContainer .ant-collapse-header{
+    padding: 20px 2% !important;
+   }
+    .ProductsContainer ul{
+        padding: 0 2%;
+    }
+    #AboutUsContainer{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
