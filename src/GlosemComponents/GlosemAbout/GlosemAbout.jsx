@@ -73,14 +73,14 @@ const GlosemAbout = () => {
     const [activeKey, setActiveKey] = useState('1'); // Initialize with '1' or use `null`
 
     const handleCollapseChange = (key) => {
-        console.log("Selected key (raw):", key);   
-        console.log("Selected key (string):", String(key)); 
-        setActiveKey(String(key));  
+        console.log("Selected key (raw):", key);
+        console.log("Selected key (string):", String(key));
+        setActiveKey(String(key));
         // Ensure there's always an active key
         // if (key) {
         //     setActiveKey(key);
         // }
-      
+
         // Find the selected item based on the key (ensure string comparison)
         const selectedItem = items.find(item => String(item.key) === String(key));
 
@@ -89,6 +89,7 @@ const GlosemAbout = () => {
         } else {
             console.log("No image found for this key.");
         }
+
     };
     const activeItem = items.find(item => String(item.key) === String(activeKey));
 

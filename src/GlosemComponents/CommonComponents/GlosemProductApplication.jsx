@@ -21,7 +21,7 @@ const GlosemProductApplication = () => {
 
     const ProductApplicationData = [
         {
-            imagePath:"/images/IOT.jpeg",
+            imagePath: "/images/IOT.jpeg",
             title: "IOT Sector",
             list: [
                 {
@@ -36,7 +36,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath:"/images/Automotive.jpeg",
+            imagePath: "/images/Automotive.jpeg",
             title: "Automotive",
             list: [
                 {
@@ -51,7 +51,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath:"/images/healthcare.jpeg",
+            imagePath: "/images/healthcare.jpeg",
             title: "Health Care",
             list: [
                 {
@@ -66,7 +66,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath:"/images/robotics.jpeg",
+            imagePath: "/images/robotics.jpeg",
             title: "Robotics",
             list: [
                 {
@@ -81,7 +81,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath:"/images/consumer.jpeg",
+            imagePath: "/images/consumer.jpeg",
             title: "Consumer",
             list: [
                 {
@@ -96,7 +96,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath:"/images/communication.jpeg",
+            imagePath: "/images/communication.jpeg",
             title: "Communication",
             list: [
                 {
@@ -114,7 +114,7 @@ const GlosemProductApplication = () => {
     return (
         <>
             <div id="ProductApplicationCardsContainer">
-               
+
                 <div className="ProductApplicationHeaderContainer">
                     <h4>Our Solutions</h4>
                     <hr />
@@ -135,7 +135,7 @@ const GlosemProductApplication = () => {
                     <Row>
                         {ProductApplicationData.map((item, index) => (
                             <Col lg={8} data-aos="fade-up" // Set the AOS animation type
-                                            data-aos-delay={index * 200}>
+                                data-aos-delay={index * 200}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img src={item.imagePath} alt="" />

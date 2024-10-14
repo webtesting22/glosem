@@ -48,7 +48,9 @@
 
 .ProductsContainer {
     padding: 1rem 0rem;
+    padding-bottom: 5rem;
 }
+
 .ant-collapse-expand-icon {
     position: absolute;
     right: 0px;
@@ -61,6 +63,7 @@
     width: 40px !important;
     background-color: transparent;
 }
+
 .ant-collapse-item-active .ant-collapse-expand-icon {
     position: absolute;
     right: 0px;
@@ -124,47 +127,82 @@
 
 .ant-collapse-item-active {
     border-color: #2180de !important;
-  
+
     /* Change border color to red */
 }
-.ProductsContainer b{
+
+.ProductsContainer b {
     font-weight: 500;
 }
-.ProductsContainer ul{
+
+.ProductsContainer ul {
     padding-left: 20px;
 }
+
 .ant-motion-collapse {
-    transition: height 1s ease-in-out !important; /* Set animation duration to 1 second */
+    transition: height 1s ease-in-out !important;
+    /* Set animation duration to 1 second */
 }
-.FounderCard{
+
+.FounderCard {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 50px;
-  
+
 }
-.FounderImageContainer{
+
+.FounderImageContainer {
     width: 100%;
     padding: 10px;
 }
-.FounderImageContainer img{
+
+.FounderImageContainer img {
     aspect-ratio: 3/2;
     object-fit: contain;
     width: 100%;
 }
-.FounderHeading{
+
+.FounderHeading {
     font-weight: 400;
     font-size: 2rem;
 }
-@media (max-width:576px){
-   .ProductsContainer .ant-collapse-header{
-    padding: 20px 2% !important;
-   }
-    .ProductsContainer ul{
+
+@media (max-width:576px) {
+    .SwiperContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        overflow: hidden;
+        margin: 0rem 0rem;
+    }
+
+    .ProductsContainer .ant-collapse-header {
+        padding: 20px 2% !important;
+    }
+
+    .ProductsContainer ul {
         padding: 0 2%;
     }
-    #AboutUsContainer{
-        padding-left: 2%;
-        padding-right: 2%;
+
+    #AboutUsContainer {
+        padding-top: 2rem;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .ProductsContainer {
+        padding: 1rem 0rem;
+        padding-bottom: 2rem;
+    }
+    .FounderCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    
+    }
+    .FounderDescription ul{
+        padding-left: 20px;
     }
 }
