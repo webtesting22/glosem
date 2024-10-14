@@ -73,7 +73,9 @@
 .ProductsApplicationCard .CommonBtn {
   background-color: transparent;
 }
-
+.ant-modal .ant-modal-content{
+  padding: 20px 40px !important;
+}
 @media (max-width: 769px) {
   .ProductsApplicationCard .CommonBtn .BookCallBtn {
     width: 100%;

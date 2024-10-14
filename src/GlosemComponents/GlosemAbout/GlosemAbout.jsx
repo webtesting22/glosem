@@ -10,6 +10,8 @@ import Img2 from './molding.webp';
 import Img3 from './packaging.webp';
 import Img4 from './rel.webp';
 import 'swiper/css';
+// import "../GlosemProducts/GlosemProductsContainer.css";
+
 
 const { Panel } = Collapse;
 
@@ -68,7 +70,53 @@ const items = [
         ),
     }
 ];
-
+const GlosemProductsData = [
+    {
+        imagePath: Img1,
+        title: "Packaging Advanced SMT",
+        children: (
+            <ul>
+                <li><b>Advanced SMT Capabilities:</b> Leading-edge surface mount technology (SMT) for assembling advanced packages with the highest component density</li>
+                <li><b>Multichip Module (MCM) Assembly:</b> Expertise in MCM assembly for complex applications, enabling the integration of multiple chips onto a single substrate</li>
+                <li><b>Bare Die and Wafer-Level Packaging:</b> Proficiency in assembling bare die and wafer-level packages using advanced technologies like flip chip</li>
+                <li><b>Wafer Backgrinding and Dicing:</b> Precision wafer backgrinding and dicing capabilities to create the smallest form factor packages</li>
+            </ul>
+        ),
+    },
+    {
+        imagePath: Img2,
+        title: "Packaging Molding & BGA",
+        children: (
+            <ul>
+                <li><b>Molding Encapsulation:</b> State-of-the-art molding encapsulation techniques for achieving the smallest form factor packages while meeting stringent reliability standards</li>
+                <li><b>Industry-Leading Materials and Equipment:</b> Utilization of mold machines and materials sourced from top suppliers in the industry</li>
+                <li><b>Ball Grid Array (BGA):</b> Advanced BGA technology to enable the highest density of input/output connections within the smallest package size</li>
+            </ul>
+        ),
+    },
+    {
+        imagePath: Img3,
+        title: "Packaging EMI Shielding",
+        children: (
+            <ul>
+                <li><b>EMI Shielding Importance:</b> As devices become more compact and integrated, EMI shielding is crucial to prevent interference that can degrade performance, especially in applications like IoT, 5G, RF, Wi-Fi, Bluetooth, and automotive SiP</li>
+                <li><b>Glosem's EMI Shielding Solutions:</b> Glosem offers two primary EMI shielding technologies: Metal Frame and PVD Sputter.</li>
+                <li><b>Metal Frame:</b> Provides lower cost, reworkability, thermal performance, and flexible sizing options.</li>
+                <li><b>PVD Sputter:</b> Offers the smallest size, high reliability, and customizable shielding design.</li>
+            </ul>
+        ),
+    },
+    {
+        imagePath: Img4,
+        title: "Services Package,REL & FA",
+        children: (
+            <ul>
+                <li><b>Reliability Testing:</b> JEDEC-compliant testing, Moisture, thermal, and humidity testing, Drop test</li>
+                <li><b>Failure Analysis:</b> Mechanical and electrical testing, X-ray, SAT, SEM, Electrical characterization</li>
+            </ul>
+        ),
+    },
+]
 const GlosemAbout = () => {
     const [activeKey, setActiveKey] = useState('1'); // Initialize with '1' or use `null`
 
@@ -145,7 +193,45 @@ const GlosemAbout = () => {
                     <h4>Glosem</h4>
                     <hr />
                 </div>
+
                 <div className="ProductsContainer">
+                    <h2>Full stack product portfolio with cutting-edge technologies</h2>
+                    <br /><br />
+                    <Row>
+                        {GlosemProductsData.map((item, index) => (
+                            <Col lg={8} md={12} data-aos="fade-up" // Set the AOS animation type
+                                data-aos-delay={index * 200}>
+                                <div key={index} className="ServiceCardContainer">
+                                    <div className="CardImageContainer">
+                                        <img
+                                            src={item.imagePath}
+                                            alt={item.title}
+                                        />                                    </div>
+                                    <div className="BottomCardContainer">
+                                        <h2>{item.title}</h2>
+                                        {/* <div className="CommonBtn">
+                                            <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
+                                            <div className="LineAnimation">
+
+                                            </div>
+                                        </div> */}
+
+                                        <ul>
+                                            {item.children}
+                                        </ul>
+                                    </div>
+                                    {/* <div className="CommonBtn">
+                                        <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
+                                        <div className="LineAnimation">
+
+                                        </div>
+                                    </div> */}
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </div>
+                {/* <div className="ProductsContainer">
                     <Row>
                         <Col lg={12} md={24}>
                             <div>
@@ -165,7 +251,6 @@ const GlosemAbout = () => {
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
-                            {/* Display the corresponding image based on the activeKey */}
                             <div style={{ display: "flex", alignItems: "center", height: "100%", padding: "20px" }}>
                                 {activeItem ? (
                                     <img src={activeItem.imagesrc} alt={activeItem.label} style={{ width: '100%' }} />
@@ -175,7 +260,7 @@ const GlosemAbout = () => {
                             </div>
                         </Col>
                     </Row>
-                </div>
+                </div> */}
                 <h2 className="FounderHeading">Our Founders</h2>
                 <div className="FounderCardsContainer">
                     <Row>

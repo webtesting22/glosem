@@ -1,208 +1,228 @@
 #AboutUsContainer {
-    padding-top: 5rem;
-    padding-left: 7%;
-    padding-right: 7%;
+  padding-top: 5rem;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .TopOfContainer h4 {
-    font-weight: 400;
-    display: flex;
-    align-items: center;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 .TopOfContainer h4::before {
-    content: "";
-    display: inline-block;
-    /* Ensures that the element respects width and height */
-    height: 5px;
-    width: 5px;
-    background-color: #e0e0e0;
-    margin-right: 10px;
-    /* Adds some space between the icon and the text */
-    vertical-align: middle;
-    /* Aligns the box with the text */
-    transform: rotate(45deg);
-
+  content: "";
+  display: inline-block;
+  /* Ensures that the element respects width and height */
+  height: 5px;
+  width: 5px;
+  background-color: #e0e0e0;
+  margin-right: 10px;
+  /* Adds some space between the icon and the text */
+  vertical-align: middle;
+  /* Aligns the box with the text */
+  transform: rotate(45deg);
 }
 
 #AboutUsContainer .ProductApplicationHeaderContainer hr {
-    margin: unset;
+  margin: unset;
 }
 
 #AboutUsContainer .ProductApplicationHeaderContainer h4 {
-    text-align: start;
+  text-align: start;
 }
 
 .CarousalImages {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .SwiperContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    overflow: hidden;
-    margin: 5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  overflow: hidden;
+  margin: 5rem 0rem;
 }
 
 .ProductsContainer {
-    padding: 1rem 0rem;
-    padding-bottom: 5rem;
+  padding: 1rem 0rem;
+  padding-bottom: 5rem;
 }
 
 .ant-collapse-expand-icon {
-    position: absolute;
-    right: 0px;
-    border: 1px solid rgba(0, 0, 0, 0.405);
-    display: flex;
-    justify-content: center;
-    padding-right: 0px !important;
-    border-radius: 50%;
-    height: 40px !important;
-    width: 40px !important;
-    background-color: transparent;
+  position: absolute;
+  right: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.405);
+  display: flex;
+  justify-content: center;
+  padding-right: 0px !important;
+  border-radius: 50%;
+  height: 40px !important;
+  width: 40px !important;
+  background-color: transparent;
 }
 
 .ant-collapse-item-active .ant-collapse-expand-icon {
-    position: absolute;
-    right: 0px;
-    border: 1px solid #2180de;
-    display: flex;
-    justify-content: center;
-    padding-right: 0px !important;
-    border-radius: 50%;
-    height: 40px !important;
-    width: 40px !important;
-    background-color: #2180de;
+  position: absolute;
+  right: 0px;
+  border: 1px solid #2180de;
+  display: flex;
+  justify-content: center;
+  padding-right: 0px !important;
+  border-radius: 50%;
+  height: 40px !important;
+  width: 40px !important;
+  background-color: #2180de;
 }
 
 .ProductsContainer .ant-collapse {
-    border: none;
-    transition: 3s;
+  border: none;
+  transition: 3s;
 }
 
 .ProductsContainer .ant-collapse-content {
-    border: none;
+  border: none;
 }
 
 .ProductsContainer .ant-collapse-header {
-    padding: 30px 20px !important;
-    display: flex;
-    align-items: center !important;
+  padding: 30px 20px !important;
+  display: flex;
+  align-items: center !important;
 }
 
 .ProductsContainer .ant-collapse-expand-icon .anticon {
-    background-color: transparent !important;
-    color: white !important;
+  background-color: transparent !important;
+  color: white !important;
 }
 
 .ant-collapse-item-active .ant-collapse-expand-icon span svg {
-    background-color: transparent !important;
-    color: white !important;
+  background-color: transparent !important;
+  color: white !important;
 }
 
 .ant-collapse-item-active .ant-collapse-expand-icon span svg path {
-    color: white !important;
+  color: white !important;
 }
 
-.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
-    background-color: transparent !important;
-    color: white !important;
+.ProductsContainer
+  .ant-collapse-item-active
+  .ant-collapse-expand-icon
+  .anticon {
+  background-color: transparent !important;
+  color: white !important;
 }
 
 .ant-collapse-expand-icon span svg {
-    background-color: transparent !important;
-    color: rgb(0, 0, 0) !important;
+  background-color: transparent !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .ant-collapse-expand-icon span svg path {
-    color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .ProductsContainer h2 {
-    font-weight: 400;
-    font-size: 2rem;
+  font-weight: 400;
+  /* font-size: 2rem; */
 }
 
 .ant-collapse-item-active {
-    border-color: #2180de !important;
+  border-color: #2180de !important;
 
-    /* Change border color to red */
+  /* Change border color to red */
 }
 
 .ProductsContainer b {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .ProductsContainer ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .ant-motion-collapse {
-    transition: height 1s ease-in-out !important;
-    /* Set animation duration to 1 second */
+  transition: height 1s ease-in-out !important;
+  /* Set animation duration to 1 second */
+}
+.ServiceCardContainer{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.ServiceCardContainer .CardImageContainer{
+    /* padding: 10px; */
+}
+.ServiceCardContainer .BottomCardContainer{
+    width: 100%;
+    border-radius: none;
+    background:transparent;
+    margin-top: 0;
+    height:max-content;
+}
+.ServiceCardContainer .BottomCardContainer h2,ul,li{
+    background-color: transparent;
 }
 
 .FounderCard {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 50px;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
 }
 
 .FounderImageContainer {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .FounderImageContainer img {
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 100%;
 }
 
 .FounderHeading {
-    font-weight: 400;
-    font-size: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
-@media (max-width:576px) {
-    .SwiperContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40vh;
-        overflow: hidden;
-        margin: 0rem 0rem;
-    }
+@media (max-width: 576px) {
+  .SwiperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    overflow: hidden;
+    margin: 0rem 0rem;
+  }
 
-    .ProductsContainer .ant-collapse-header {
-        padding: 20px 2% !important;
-    }
+  .ProductsContainer .ant-collapse-header {
+    padding: 20px 2% !important;
+  }
 
-    .ProductsContainer ul {
-        padding: 0 2%;
-    }
+  .ProductsContainer ul {
+    padding: 0 2%;
+  }
 
-    #AboutUsContainer {
-        padding-top: 2rem;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    .ProductsContainer {
-        padding: 1rem 0rem;
-        padding-bottom: 2rem;
-    }
-    .FounderCard {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0px;
-    
-    }
-    .FounderDescription ul{
-        padding-left: 20px;
-    }
+  #AboutUsContainer {
+    padding-top: 2rem;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .ProductsContainer {
+    padding: 1rem 0rem;
+    padding-bottom: 2rem;
+  }
+  .FounderCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+  .FounderDescription ul {
+    padding-left: 20px;
+  }
 }
