@@ -215,10 +215,7 @@ const GlosemAbout = () => {
 
                                             </div>
                                         </div> */}
-
-                                        <ul>
-                                            {item.children}
-                                        </ul>
+                                        {item.children}
                                     </div>
                                     {/* <div className="CommonBtn">
                                         <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>

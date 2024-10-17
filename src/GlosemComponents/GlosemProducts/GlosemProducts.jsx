@@ -402,7 +402,9 @@ const GlosemProducts = () => {
                     width={1000}
                     footer={null}
                 >
+                    <div className="ProjectModal">
                     {modalContent.description}
+                    </div>
                 </Modal>
             </div>
         </>
