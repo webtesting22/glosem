@@ -72,6 +72,7 @@
 }
 .ProductsApplicationCard .CommonBtn {
   background-color: transparent;
+  padding-bottom: 0rem;
 }
 .ant-modal .ant-modal-content{
   padding: 20px 40px !important;

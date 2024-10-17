@@ -190,6 +190,13 @@
 }
 
 @media (max-width: 576px) {
+  .ServiceCardContainer{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
   .SwiperContainer {
     display: flex;
     align-items: center;
