@@ -45,7 +45,7 @@
 .EvenContainer,
 .OddContainer {
   position: absolute;
-  background-color:#174ea617;
+  background-color: #174ea617;
   padding: 30px;
   max-height: 40vh;
 }
@@ -57,16 +57,29 @@
 .OddContainer {
   bottom: -5%;
 }
-.ContainerContent .CommonBtn .BookCallBtn{
+
+.ContainerContent .CommonBtn .BookCallBtn {
   width: 200px !important;
   padding: 10px 30px;
 }
 
-.ContainerContent .CommonBtn .LineAnimation{
+.ContainerContent .CommonBtn .LineAnimation {
   position: absolute;
-    right: -200%;
-    width: 400px;
-    z-index: -1;
-    opacity: 1;
-    border-bottom: 1px dotted rgb(0 0 0);
+  right: -200%;
+  width: 400px;
+  z-index: -1;
+  opacity: 1;
+  border-bottom: 1px dotted rgb(0 0 0);
+}
+
+.ContainerContent:nth-child(2) .OddContainer {
+  bottom: -10%;
+}
+
+.ContainerContent:nth-child(5) .EvenContainer,
+.ContainerContent:nth-child(7) .EvenContainer {
+  top: -8%;
+}
+.ContainerContent:nth-child(7) .LineAnimation{
+  display: none;
 }
