@@ -107,7 +107,7 @@ const GlosemProducts = () => {
                                 <p>Underfill is a specialized encapsulant that fills the gap between chip and
                                     substrate to protect the delicate interconnect structure and die face.</p>
                                 <p>But MUF allows to combine both underfill and overmold process in strip format.
-                                    MUF is filled up the gap between chip and substrate with mold material without |
+                                    MUF is filled up the gap between chip and substrate with mold material without 
                                     underfill.</p>
                                 <p>Molded underfill (MUF) is increasingly being used to lower costs and increase throughput in flip chip process. Compared to Traditional underfill processes,
                                     MUF decreases material costs, enables smaller package size for today's demands.</p>
@@ -163,7 +163,7 @@ const GlosemProducts = () => {
                                     <li>Stacked die hybrid with flip chip on the bottom and wire bonding on the
                                         top die</li>
                                     <li>Dispensed underfill (DUF)</li>
-                                    <li>Molded undertill (MUF)</li>
+                                    <li>Molded underfill (MUF)</li>
                                     <li>Available in Land Grid Array (LGA) format</li>
                                     <li>Available with multiple components & chip to form a system-in-package
                                         version (FCFBGA-SIP)|</li>
