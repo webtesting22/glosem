@@ -27,7 +27,7 @@ const GlosemProducts = () => {
                                         Immersion Tin</li>
                                     <li>Solder ball : Pb-free solder ball available</li>
                                     <li>Dispensed underfill (DUF) & Molded underfill (MUF) available
-                                        Supports minimum 0.4mmm ball pitch on bottom pads.</li>
+                                        Supports minimum 0.4mm ball pitch on bottom pads.</li>
                                     <li>Packing : JEDEC tray</li>
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
@@ -61,7 +61,7 @@ const GlosemProducts = () => {
                                     It composes with copper cylinder (Cu post) and mushroom shape solder cap
                                     (Solder tip).
                                 </p>
-                                <p>Cu pillar bump can not only reduce the die size about 5~10% due to the advan- tage of fine pitch, but also enhances the thermal and electrical performance,
+                                <p>Cu pillar bump can not only reduce the die size about 5~10% due to the advantage of fine pitch, but also enhances the thermal and electrical performance,
                                     higher reliability, improved electrical than conventional solder material.
                                     And it can accomplish to reduce the cost by design factors.
                                 </p>
@@ -76,7 +76,7 @@ const GlosemProducts = () => {
                                         Immersion Tin</li>
                                     <li>Solder ball : Pb-free solder ball available</li>
                                     <li>Dispensed underfill (DUF) & Molded underfill (MUF) available
-                                        Supports minimum 0.4mmm ball pitch on bottom pads.</li>
+                                        Supports minimum 0.4mm ball pitch on bottom pads.</li>
                                     <li>Packing : JEDEC tray</li>
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
@@ -107,7 +107,7 @@ const GlosemProducts = () => {
                                 <p>Underfill is a specialized encapsulant that fills the gap between chip and
                                     substrate to protect the delicate interconnect structure and die face.</p>
                                 <p>But MUF allows to combine both underfill and overmold process in strip format.
-                                    MUF is filled up the gap between chip and substrate with mold material without |
+                                    MUF is filled up the gap between chip and substrate with mold material without 
                                     underfill.</p>
                                 <p>Molded underfill (MUF) is increasingly being used to lower costs and increase throughput in flip chip process. Compared to Traditional underfill processes,
                                     MUF decreases material costs, enables smaller package size for today's demands.</p>
@@ -120,7 +120,7 @@ const GlosemProducts = () => {
                                     <li>Over molded & Exposed die available</li>
                                     <li>Dispensed underfill (DUF)
                                         Molded underfill (MUF) with solder bump</li>
-                                    <li>Supports minimum 0.4mmm ball pitch on bottom pads.</li>
+                                    <li>Supports minimum 0.4mm ball pitch on bottom pads.</li>
                                     <li>Available with multiple components & chip to form a system-in-package
                                         version (FCFBGA-SIP)
                                         Packing : JEDEC tray
@@ -159,11 +159,11 @@ const GlosemProducts = () => {
                                     <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative)</li>
                                     <li>Overall package height 1.4mm to 1.2mm</li>
                                     <li>150um min bump itch & 0.4mm min. ball pitch</li>
-                                    <li>110|m minimum bump pitch</li>
+                                    <li>110um minimum bump pitch</li>
                                     <li>Stacked die hybrid with flip chip on the bottom and wire bonding on the
                                         top die</li>
                                     <li>Dispensed underfill (DUF)</li>
-                                    <li>Molded undertill (MUF)</li>
+                                    <li>Molded underfill (MUF)</li>
                                     <li>Available in Land Grid Array (LGA) format</li>
                                     <li>Available with multiple components & chip to form a system-in-package
                                         version (FCFBGA-SIP)|</li>
@@ -208,7 +208,7 @@ const GlosemProducts = () => {
                                     <li>Thermally enhanced version with exposed die by Molded underfill</li>
                                     <li>Available Laser Drilled process for PoP Bottom package .</li>
                                     <li>Package thickness of max height 0.7mm to 1.0mm available.</li>
-                                    <li>Supports minimum 0.4mmm ball pitch on top and bottom pads.</li>
+                                    <li>Supports minimum 0.4mm ball pitch on top and bottom pads.</li>
                                     <li>Packing : JEDEC tray</li>
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
