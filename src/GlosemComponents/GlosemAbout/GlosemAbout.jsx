@@ -293,7 +293,7 @@ const GlosemAbout = () => {
                                 </div>
                                 <div className="FounderDescription">
                                     <ul>
-                                        <li>Tejas Majithia brings over 25 years of business leadership experience, with a strong foundation in managing large-scale operations, investments, and strategic partnerships. Currently serving as the Managing Director of Urmin Group of Companies, Tejas oversees a diversified business portfolio in Ahmedabad, India, spanning FMCG, hospitality, and manufacturing. Under his leadership, Urmin Group has grown to employ over 1,500 people across six facilities covering more than 20,000 square meters.</li>
+                                        <li>Tejas Majithia brings over 25 years of business leadership experience, with a strong foundation in managing large-scale operations, investments, and strategic partnerships. Currently serving as the Managing Director of Urmin Group of Companies, Tejas oversees a diversified business portfolio in Ahmedabad, India, spanning FMCG, hospitality, and manufacturing. Under his leadership, Urmin Group has grown to employ over 1500 people across six facilities covering more than 20,000 square meters.</li>
                                         <li>Tejas is also a trained pharmacist from the Massachusetts College of Pharmacy and has honed his expertise in operational and administrative areas, including Accounting, Finance, and HR. Through his strategic acumen, Tejas has positioned Urmin as a key player in its industries, while expanding his family office’s investment portfolio to include over 30 companies and startups. These investments include early stakes in three unicorns and partnerships with leading VC and PE firms, embedding Urmin’s family office into the private market ecosystem.</li>
                                         <li>Tejas’s recent focus is on India’s rapidly growing semiconductor ecosystem. This is reflected in his commitment to advancing India’s semiconductor industry and attracting global technology partners. With an in-depth understanding of the Indian market and a solid international network, Tejas is dedicated to building a world-class OSAT facility that aligns with India’s “Make in India” vision.</li>
                                     </ul>
@@ -302,7 +302,7 @@ const GlosemAbout = () => {
                         </Col>
                     </Row>
                 </div>
-            </div >
+            </div>
         </>
     );
 }

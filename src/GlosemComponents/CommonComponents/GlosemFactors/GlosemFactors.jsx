@@ -8,22 +8,22 @@ const GlosemFactors = () => {
         {
             iconPath:"/images/production.svg",
             title: "Driving domestic production",
-            description: "Contribute to the government's 'Make in India' initiative and strengthen India's self-sufficiency in the semiconductor sector by reducing reliance on imports andcreating local jobs"
+            description: "Contribute to the government's 'Make in India' initiative and strengthen India's self-sufficiency in the semiconductor sector by reducing reliance on imports and creating local jobs."
         },
         {
             iconPath:"/images/bulb.svg",
             title: "Advanced SiP Solution",
-            description: "Glosem’s SiP solution outperforms its peers by offering superior quality & performance, lower lead times and being cost-efficient"
+            description: "Glosem’s SiP solution outperforms its peers by offering superior quality & performance, lower lead times and being cost-efficient."
         },
         {
             iconPath:"/images/benefits.svg",
             title: "Leveraging PLI benefits",
-            description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand ouroperations and invest in advanced technologies"
+            description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand ouroperations and invest in advanced technologies."
         },
         {
             iconPath:"/images/team.svg",
             title: "Lead by visionary team",
-            description: "Founded by visionary team who has an extensive combined experience in the varied industries, supported by an experienced advisory board"
+            description: "Founded by visionary team who has an extensive combined experience in the varied industries, supported by an experienced advisory board."
         },
         {
             iconPath:"/images/technology.svg",
@@ -33,7 +33,7 @@ const GlosemFactors = () => {
         {
             iconPath:"/images/risk-management.svg",
             title: "Risk management expertise",
-            description: "Glosem’s experience can contribute to developing robust risk management strategies to help avoid potential downsides"
+            description: "Glosem’s experience can contribute to developing robust risk management strategies to help avoid potential downsides."
         }
     ]
     return (
@@ -45,7 +45,7 @@ const GlosemFactors = () => {
                             <div className="LeftSideContentContainer">
                                 <h1 className="mainheading">Strengthen your team in strategy, marketing & operations.</h1>
                                 <div className="CommonBtn">
-                                    <Link className="BookCallBtn">Book A Call Free</Link>
+                                    <Link className="BookCallBtn">Book A Free Call</Link>
                                     <div className="LineAnimation">
 
                                     </div>
