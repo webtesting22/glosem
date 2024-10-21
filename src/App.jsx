@@ -7,6 +7,7 @@ import GlosemFooter from './GlosemComponents/GlosemFooter/GlosemFooter';
 import GlosemAbout from './GlosemComponents/GlosemAbout/GlosemAbout';
 import GlosemProducts from './GlosemComponents/GlosemProducts/GlosemProducts';
 function App() {
+
   return (
     <>
       <Router>

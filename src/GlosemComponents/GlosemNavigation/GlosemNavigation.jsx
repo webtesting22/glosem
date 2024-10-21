@@ -1,12 +1,29 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./GlosemNavigation.css";
-import { MdOutlineMenu, MdClose, MdPhoneEnabled  } from "react-icons/md"; // Import both icons
+import { MdOutlineMenu, MdClose, MdPhoneEnabled } from "react-icons/md"; // Import both icons
 
 const GlosemNavigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control menu visibility
     const menuRef = useRef(null); // Ref to detect clicks outside the menu
+    const [isScrolled, setIsScrolled] = useState(false);
+    const location = useLocation();
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 300) {
+                setIsScrolled(true); // If scrolled more than 300px
+            } else {
+                setIsScrolled(false); // Reset if less than 300px
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     // Toggle menu visibility when the menu button is clicked
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen); // Toggle between open and close
@@ -32,23 +49,25 @@ const GlosemNavigation = () => {
         { label: "Products", path: "/glosemProducts" },
         // { label: "Contact", path: "/contact" },
     ];
+    const isNotHomePage = location.pathname !== '/';
+   
 
     return (
         <>
-            <div className="GlosemNavigationContainer">
+            <div className={`GlosemNavigationContainer ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="LogoContainer">
-                    <Link to="/"><img src="/images/glosemLogo.png"/></Link>
+                    <Link to="/"><img src="/images/glosemLogo.png" /></Link>
                 </div>
                 <div className="NavigationChild">
                     <div className="FirstIcon"></div>
                     <div className="NavigationLogoContainer">
-                    <Link to="/">
-                    <img src="/images/glosemLogo.png" />
-                    </Link></div>
+                        <Link to="/">
+                            <img src="/images/glosemLogo.png" />
+                        </Link></div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">
                             {links.map((link, index) => (
-                                <Link key={index} to={link.path} className="NavigationLink" onClick={() => setIsMenuOpen(false)}>
+                                <Link key={index} to={link.path}className={`NavigationLink ${isNotHomePage ? 'non-home-active' : ''}`} onClick={() => setIsMenuOpen(false)}>
                                     {link.label}
                                 </Link>
                             ))}
@@ -56,7 +75,7 @@ const GlosemNavigation = () => {
                     </div>
                     <div className="NavigationContactContainer">
                         {/* You can add contact information here */}
-                                                <MdPhoneEnabled  />
+                        <MdPhoneEnabled />
 
                     </div>
                     <div className="LastIcon">

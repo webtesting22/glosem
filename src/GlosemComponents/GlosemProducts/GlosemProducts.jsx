@@ -289,6 +289,7 @@ const GlosemProducts = () => {
       }, []);
     return (
         <>
+        <div className="sectionPadding"></div>
             <div id="GlosemProductsContainer">
                 <div className="TopOfContainer">
                     <div>

@@ -11,8 +11,81 @@
     background-position: center;
     margin-top: 3rem;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-#GlosemHome{
+#GlosemHome {
     padding-bottom: 3rem;
+    padding-top: 0rem;
+}
+
+.HeightContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+#GlosemHome video {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    /* z-index: 4; */
+
+}
+
+.Mainheading h1 {
+    color: white;
+}
+
+.VideoOvlayback {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+    /* z-index: 5; */
+    right: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+
+.OverlayBack {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007f;
+}
+.mobile{
+    display: none;
+}
+@media (max-width:769px){
+    #GlosemHome video {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        /* z-index: 4; */
+        display: none;
+    
+    }
+    .HeightContainer {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    
+    }
+    .mobile{
+        display: block;
+    }
+    .Mainheading h1 {
+        color: black;
+    }
+    #GlosemHome {
+        padding-bottom: 3rem;
+        padding-top: 5rem;
+    }
+    
 }

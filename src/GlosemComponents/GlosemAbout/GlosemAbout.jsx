@@ -158,6 +158,7 @@ const GlosemAbout = () => {
     }, []);
     return (
         <>
+            <div className="sectionPadding"></div>
             <div id="AboutUsContainer">
                 <div className="TopOfContainer">
                     <div>

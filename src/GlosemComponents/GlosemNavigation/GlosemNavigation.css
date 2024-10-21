@@ -6,6 +6,23 @@
   top: 0px;
   z-index: 55555;
   align-items: center;
+  position: fixed;
+  transition: .5s;
+}
+
+.GlosemNavigationContainer .NavigationLink {
+  color: white;
+}
+
+.GlosemNavigationContainer.scrolled {
+  background-color: white;
+  /* Set background color to white after scroll */
+  transition: .5s;
+  color: black;
+}
+
+.GlosemNavigationContainer.scrolled .NavigationLink {
+  color: black;
 }
 
 .NavigationChild {
@@ -99,31 +116,38 @@
 .menuBtn svg {
   font-size: 30px;
 }
+
 .NavigationLogoContainer {
   width: 8%;
   background-color: transparent;
 }
+
 .NavigationLogoContainer img {
   aspect-ratio: 3/2;
   object-fit: contain;
   width: 100%;
 }
+
 .NavigationContactContainer {
   font-size: 20px;
 }
+
 .NavigationContactContainer:hover {
   transform: scale(1.5);
   transition: transform 0.5s ease-in-out;
 }
+
 .LogoContainer {
   display: none;
 }
+
 @media (max-width: 769px) {
   .LogoContainer {
     display: block;
     width: 20%;
     background-color: transparent;
   }
+
   .LogoContainer img {
     aspect-ratio: 3/2;
     object-fit: contain;
@@ -147,8 +171,9 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding:10px 20px;
+    padding: 10px 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
   }
 
   .menuBtn {
@@ -175,8 +200,14 @@
   align-items: center;
   /* When open, menu height is 40vh */
 }
+
 .slideMenuContent {
   display: flex;
   /* align-items: center; */
   flex-direction: column;
+}
+
+
+.NavigationLink.non-home-active {
+  color: black;
 }

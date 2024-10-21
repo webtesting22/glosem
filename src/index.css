@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  background-color: white;
+  /* background-color: white; */
   color: black;
   padding: 0px;
   margin: 0px;
@@ -76,6 +76,10 @@ h1 {
   right: 0px;
 }
 
+.sectionPadding{
+  padding:3rem 0rem;
+}
+
 @media (max-width:769px){
   section {
     padding-top: 3rem;
@@ -87,5 +91,8 @@ h1 {
   }
   .CommonBtn::after{
     display:none;
+  }
+  .mainheading{
+    font-size: 40px !important;
   }
 }
