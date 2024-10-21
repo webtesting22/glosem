@@ -1,5 +1,5 @@
 #glosemAnimatedTimeline {
-  height: 600vh;
+  height: 500vh;
   /* Full viewport height */
   overflow: hidden;
 }
@@ -15,10 +15,9 @@
   flex-direction: row;
   /* Align images in a row */
   position: fixed;
-  /* Use absolute positioning for scroll effect */
   top: 20%;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   /* Ensure it takes full width */
   transition: transform 0.1s;
   /* Smooth transition for transform */
@@ -31,4 +30,43 @@
   /* Adjust as needed */
   margin: 10px;
   /* Space between images */
+}
+
+.ContainerContent {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  flex-direction: column;
+}
+
+
+.EvenContainer,
+.OddContainer {
+  position: absolute;
+  background-color:#174ea617;
+  padding: 30px;
+  max-height: 40vh;
+}
+
+.EvenContainer {
+  top: -5%;
+}
+
+.OddContainer {
+  bottom: -5%;
+}
+.ContainerContent .CommonBtn .BookCallBtn{
+  width: 200px !important;
+  padding: 10px 30px;
+}
+
+.ContainerContent .CommonBtn .LineAnimation{
+  position: absolute;
+    right: -200%;
+    width: 400px;
+    z-index: -1;
+    opacity: 1;
+    border-bottom: 1px dotted rgb(0 0 0);
 }
