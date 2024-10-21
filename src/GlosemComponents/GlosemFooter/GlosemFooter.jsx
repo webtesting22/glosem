@@ -19,8 +19,8 @@ const GlosemFooter = () => {
             <div className="GlosemFooterContainer">
                 <Row>
                     <Col lg={8} md={24} xs={0}>
-                    <div className="footerLogoContainer">
-                        <img src="/images/glosemLogo.png"/>
+                        <div className="footerLogoContainer">
+                            <img src="/images/glosemLogo.png" />
                         </div>
                     </Col>
                     <Col lg={8} md={24} xs={12}>
@@ -37,7 +37,7 @@ const GlosemFooter = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={8} md={24}  xs={12}>
+                    <Col lg={8} md={24} xs={12}>
                         <div className="SocialLinksContainer">
                             <div>
                                 <h2>Social Links</h2>
@@ -52,7 +52,7 @@ const GlosemFooter = () => {
                 </Row>
                 <br />
                 <div className="CopyrightText">
-                    <p>@2024 Outlead solutions. All rights reserved.</p>
+                    <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">Outlead solutions.</Link> All rights reserved.</p>
                 </div>
             </div>
         </>

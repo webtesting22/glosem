@@ -6,6 +6,7 @@ import GlosemHome from './GlosemComponents/GlosemHome/GlosemHome';
 import GlosemFooter from './GlosemComponents/GlosemFooter/GlosemFooter';
 import GlosemAbout from './GlosemComponents/GlosemAbout/GlosemAbout';
 import GlosemProducts from './GlosemComponents/GlosemProducts/GlosemProducts';
+import GlosemAnimatedTimeline from './GlosemComponents/CommonComponents/GlosemAnimatedTimeline/GlosemAnimatedTimeline';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<GlosemHome />} />
           <Route path="/glosemAbout" element={<GlosemAbout />} />
           <Route path="/glosemProducts" element={<GlosemProducts />} />
+          <Route path="/glosemJourney" element={<GlosemAnimatedTimeline />} />
         </Routes>
         <GlosemFooter />
       </Router>

@@ -1,0 +1,34 @@
+#glosemAnimatedTimeline {
+  height: 600vh;
+  /* Full viewport height */
+  overflow: hidden;
+}
+
+.ScrollContainer {
+  position: relative;
+  height: 100%;
+  /* Full height of the section */
+}
+
+.ScrollContainerContent {
+  display: flex;
+  flex-direction: row;
+  /* Align images in a row */
+  position: fixed;
+  /* Use absolute positioning for scroll effect */
+  top: 20%;
+  left: 0;
+  width: 100%;
+  /* Ensure it takes full width */
+  transition: transform 0.1s;
+  /* Smooth transition for transform */
+}
+
+.ScrollContainerContent img {
+  width: 200px;
+  /* Adjust as needed */
+  height: 300px;
+  /* Adjust as needed */
+  margin: 10px;
+  /* Space between images */
+}
