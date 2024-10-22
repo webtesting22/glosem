@@ -70,3 +70,8 @@
         padding-bottom: 30px;
     }
 }
+@media (max-width:769px){
+    .factorlineanimation{
+        display: none;
+    }
+}

@@ -186,9 +186,15 @@
     .typing-container {
         font-size: 1.5rem;
     }
+    .factorlineanimation{
+        display: none;
+    }
 }
 
 @media (max-width:576px) {
+    .factorlineanimation{
+        display: none;
+    }
 
     .InlineHeading h1 {
         font-size: 2.5rem;

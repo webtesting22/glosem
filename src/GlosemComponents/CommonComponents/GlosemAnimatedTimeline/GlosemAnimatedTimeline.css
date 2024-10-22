@@ -48,6 +48,7 @@
   background-color: #174ea617;
   padding: 30px;
   max-height: 40vh;
+  border-radius: 20px;
 }
 
 .EvenContainer {
@@ -73,13 +74,99 @@
 }
 
 .ContainerContent:nth-child(2) .OddContainer {
-  bottom: -10%;
+  bottom: -11%;
+}
+
+.ContainerContent:nth-child(6) .OddContainer {
+  bottom: 1%;
 }
 
 .ContainerContent:nth-child(5) .EvenContainer,
 .ContainerContent:nth-child(7) .EvenContainer {
-  top: -8%;
+  top: -12%;
 }
-.ContainerContent:nth-child(7) .LineAnimation{
+
+.ContainerContent:nth-child(7) .LineAnimation {
   display: none;
 }
+
+/* @media (max-width: 1024px) {
+  
+  .ScrollContainerContent {
+    top: 20%;
+    flex-direction: row; 
+  }
+  
+  .ScrollContainerContent img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .ContainerContent {
+    height: 28vh;
+    width: 500px;
+  }
+
+  .EvenContainer, .OddContainer {
+    padding: 20px;
+  }
+} */
+@media (max-width: 768px) {
+  .ScrollContainerContent {
+    top: 5;
+    flex-direction: row;
+  }
+
+  .ContainerContent {
+    width: 400px;
+  }
+
+  .EvenContainer,
+  .OddContainer {
+    max-height: 30vh;
+  }
+
+  .EvenContainer {
+    top: -2%;
+  }
+
+  .OddContainer {
+    bottom: -2%;
+  }
+
+  .CommonBtn .LineAnimation {
+    position: absolute;
+    right: -100%;
+    width: 200px;
+    z-index: 100;
+    opacity: 1;
+    border: 1px dotted black;
+  }
+
+  #glosemAnimatedTimeline {
+    height: 325vh;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 400px) {
+  #glosemAnimatedTimeline {
+    height: 355vh;
+    overflow: hidden;
+  }
+}
+@media (max-width: 376px) {
+  #glosemAnimatedTimeline {
+    height: 425vh;
+    overflow: hidden;
+  }
+  .EvenContainer{
+    top: -15%;
+  }
+  .OddContainer{
+    bottom: -18%;
+  }
+}
+
+

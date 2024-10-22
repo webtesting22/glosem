@@ -82,6 +82,7 @@
     }
     .Mainheading h1 {
         color: black;
+        margin-top: 10px;
     }
     #GlosemHome {
         padding-bottom: 3rem;

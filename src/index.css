@@ -87,7 +87,7 @@ h1 {
     padding-right: 2%;
   }
   .CommonBtn .LineAnimation{
-    display: none;
+     /* display: none;  */
   }
   .CommonBtn::after{
     display:none;

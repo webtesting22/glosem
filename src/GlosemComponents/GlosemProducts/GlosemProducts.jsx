@@ -376,7 +376,7 @@ const GlosemProducts = () => {
                                         <h2>{item.title}</h2>
                                         <div className="CommonBtn">
                                             <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
-                                            <div className="LineAnimation">
+                                            <div className="LineAnimation factorlineanimation">
 
                                             </div>
                                         </div>

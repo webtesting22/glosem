@@ -114,7 +114,7 @@ const GlosemAnimatedTimeline = () => {
                                         <div className="CommonBtn">
                                             <div className="BookCallBtn">{item.year}</div>
                                             <div className="LineAnimation">
-
+                                    
                                             </div>
                                         </div>
                                         {/* <div className="year"></div> Year for even index */}

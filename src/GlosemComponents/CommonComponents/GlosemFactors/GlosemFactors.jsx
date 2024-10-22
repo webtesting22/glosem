@@ -46,7 +46,7 @@ const GlosemFactors = () => {
                                 <h1 className="mainheading">Strengthen your team in strategy, marketing & operations.</h1>
                                 <div className="CommonBtn">
                                     <Link className="BookCallBtn">Book A Free Call</Link>
-                                    <div className="LineAnimation">
+                                    <div className="LineAnimation factorlineanimation">
 
                                     </div>
                                 </div>

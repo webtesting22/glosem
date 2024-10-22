@@ -92,6 +92,7 @@
 }
 
 @media (max-width: 769px) {
+  
   .ProductsApplicationCard .CommonBtn .BookCallBtn {
     width: 100%;
   }
@@ -142,6 +143,7 @@
 }
 
 @media (max-width:576px) {
+  
   #GlosemProductsContainer {
     padding-left: 2%;
     padding-right: 2%;
