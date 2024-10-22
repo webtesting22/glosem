@@ -3,6 +3,9 @@ import "./GlosemAnimatedTimeline.css";
 import { Row, Col } from "antd";
 import { Link } from "react-router-dom";
 const GlosemAnimatedTimeline = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     const scrollContainerRef = useRef(null);
 
     useEffect(() => {

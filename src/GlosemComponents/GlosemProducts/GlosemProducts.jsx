@@ -138,49 +138,49 @@ const GlosemProducts = () => {
                 </>
             )
         },
-        {
-            imagePath:"/images/FCBGA_Hybrid.webp",
-            title: "FCFBGA_HYBRID",
-            description: (
-                <>
-                    <Row>
-                        <Col lg={24} md={24}>
-                            <div>
-                                <h2>Description</h2>
-                                <p>Hybrid fc-FBGA is a package that combines the benefits of wire bond packaging
-                                    and the benefits of stack-die- techniques.</p>
-                                <p>This package is stacked die hybrid with flip chip connectivity on the bottom die and wire bonding on the top die with plastic overmolded encapsulation and an
-                                    array of fine pitch solder ball terminals.</p>
-                                <p>Hybrid FCFBGA is available with dispensed underfill(DUF) and Molded underfill i
-                                    (MUF) with solder bump.</p>
-                                <h2>Features</h2>
-                                <ul>
-                                    <li>Eutectic, Hi-Pb, Pb-free & Cu pillar bumps</li>
-                                    <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative)</li>
-                                    <li>Overall package height 1.4mm to 1.2mm</li>
-                                    <li>150um min bump itch & 0.4mm min. ball pitch</li>
-                                    <li>110um minimum bump pitch</li>
-                                    <li>Stacked die hybrid with flip chip on the bottom and wire bonding on the
-                                        top die</li>
-                                    <li>Dispensed underfill (DUF)</li>
-                                    <li>Molded underfill (MUF)</li>
-                                    <li>Available in Land Grid Array (LGA) format</li>
-                                    <li>Available with multiple components & chip to form a system-in-package
-                                        version (FCFBGA-SIP)|</li>
-                                    <li>Packing : JEDEC tray</li>
-                                    <li>Package configuration: JEDEC standards</li>
-                                </ul>
-                                <h2>Applications</h2>
-                                <ul>
-                                    <li>Handheld or portable electronic devices</li>
-                                    <li>Wearable devices</li>
-                                </ul>
-                            </div>
-                        </Col>
-                    </Row>
-                </>
-            )
-        },
+        // {
+        //     imagePath:"/images/FCBGA_Hybrid.webp",
+        //     title: "FCFBGA_HYBRID",
+        //     description: (
+        //         <>
+        //             <Row>
+        //                 <Col lg={24} md={24}>
+        //                     <div>
+        //                         <h2>Description</h2>
+        //                         <p>Hybrid fc-FBGA is a package that combines the benefits of wire bond packaging
+        //                             and the benefits of stack-die- techniques.</p>
+        //                         <p>This package is stacked die hybrid with flip chip connectivity on the bottom die and wire bonding on the top die with plastic overmolded encapsulation and an
+        //                             array of fine pitch solder ball terminals.</p>
+        //                         <p>Hybrid FCFBGA is available with dispensed underfill(DUF) and Molded underfill i
+        //                             (MUF) with solder bump.</p>
+        //                         <h2>Features</h2>
+        //                         <ul>
+        //                             <li>Eutectic, Hi-Pb, Pb-free & Cu pillar bumps</li>
+        //                             <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative)</li>
+        //                             <li>Overall package height 1.4mm to 1.2mm</li>
+        //                             <li>150um min bump itch & 0.4mm min. ball pitch</li>
+        //                             <li>110um minimum bump pitch</li>
+        //                             <li>Stacked die hybrid with flip chip on the bottom and wire bonding on the
+        //                                 top die</li>
+        //                             <li>Dispensed underfill (DUF)</li>
+        //                             <li>Molded underfill (MUF)</li>
+        //                             <li>Available in Land Grid Array (LGA) format</li>
+        //                             <li>Available with multiple components & chip to form a system-in-package
+        //                                 version (FCFBGA-SIP)|</li>
+        //                             <li>Packing : JEDEC tray</li>
+        //                             <li>Package configuration: JEDEC standards</li>
+        //                         </ul>
+        //                         <h2>Applications</h2>
+        //                         <ul>
+        //                             <li>Handheld or portable electronic devices</li>
+        //                             <li>Wearable devices</li>
+        //                         </ul>
+        //                     </div>
+        //                 </Col>
+        //             </Row>
+        //         </>
+        //     )
+        // },
         {
             imagePath:"/images/FCFBGA_eMUF.webp",
             title: "FCFBGA_eMUF",
@@ -224,51 +224,51 @@ const GlosemProducts = () => {
                 </>
             )
         },
-        {
-            imagePath:"/images/FCQFN.webp",
-            title: "FCQFN",
-            description: (
-                <>
-                    <Row>
-                        <Col lg={24} md={24}>
-                            <div>
-                                <h2>Description</h2>
-                                <p>fc-QFN (Flip-Chip Quad Flat No lead) is a low cost molded package using flip
-                                    chip interconnections on a copper lead frame substrate.</p>
-                                <p>This package provides small form factor compared with conventional QFP packages. And it also provides better electrical performance due to the short
-                                    electrical path.</p>
-                                <p>fc-QFN Packages include an exposed Thermal pad to improve heat transfer out
-                                    of the IC. Exposed thermal pad can give a low inductance ground connection.</p>
-                                <h2>Features</h2>
-                                <ul>
-                                    <li>Cu pillar with Sn/Ag plated</li>
-                                    <li>Excellent electrical and thermal performance</li>
-                                    <li>Minimum lead pitch 0.4mm</li>
-                                    <li>Up to 12 x 12mm body size available</li>
-                                    <li>Multiple lead rows available</li>
-                                    <li>Body thickness of 1.0mm and below</li>
-                                    <li>Low cost lead frame packaging solution</li>
-                                    <li>Electrical performance achieved by shorter lead lengths</li>
-                                    <li>Cost efficient vs. substrate packages</li>
-                                    <li>Thermal performance enhanced by having the die pad soldered to the PCB</li>
-                                    <li>VQFN Option Thickness: 0.85÷0.05mm</li>
-                                    <li>WQFN Option Thickness : 0.75$0.05mm</li>
-                                    <li>UQFN Option Thickness : 0.65‡0.05mm</li>
-                                    <li>JECEC Level 1 compliant (defending on body size)</li>
-                                </ul>
-                                <h2>Applications</h2>
-                                <ul>
-                                    <li>Applications include cellular phones</li>
-                                    <li>DSPs, USB Controllers</li>
-                                    <li>HD devices, Micro-Controllers</li>
-                                    <li>Wireless LAN</li>
-                                </ul>
-                            </div>
-                        </Col>
-                    </Row>
-                </>
-            )
-        }
+        // {
+        //     imagePath:"/images/FCQFN.webp",
+        //     title: "FCQFN",
+        //     description: (
+        //         <>
+        //             <Row>
+        //                 <Col lg={24} md={24}>
+        //                     <div>
+        //                         <h2>Description</h2>
+        //                         <p>fc-QFN (Flip-Chip Quad Flat No lead) is a low cost molded package using flip
+        //                             chip interconnections on a copper lead frame substrate.</p>
+        //                         <p>This package provides small form factor compared with conventional QFP packages. And it also provides better electrical performance due to the short
+        //                             electrical path.</p>
+        //                         <p>fc-QFN Packages include an exposed Thermal pad to improve heat transfer out
+        //                             of the IC. Exposed thermal pad can give a low inductance ground connection.</p>
+        //                         <h2>Features</h2>
+        //                         <ul>
+        //                             <li>Cu pillar with Sn/Ag plated</li>
+        //                             <li>Excellent electrical and thermal performance</li>
+        //                             <li>Minimum lead pitch 0.4mm</li>
+        //                             <li>Up to 12 x 12mm body size available</li>
+        //                             <li>Multiple lead rows available</li>
+        //                             <li>Body thickness of 1.0mm and below</li>
+        //                             <li>Low cost lead frame packaging solution</li>
+        //                             <li>Electrical performance achieved by shorter lead lengths</li>
+        //                             <li>Cost efficient vs. substrate packages</li>
+        //                             <li>Thermal performance enhanced by having the die pad soldered to the PCB</li>
+        //                             <li>VQFN Option Thickness: 0.85÷0.05mm</li>
+        //                             <li>WQFN Option Thickness : 0.75$0.05mm</li>
+        //                             <li>UQFN Option Thickness : 0.65‡0.05mm</li>
+        //                             <li>JECEC Level 1 compliant (defending on body size)</li>
+        //                         </ul>
+        //                         <h2>Applications</h2>
+        //                         <ul>
+        //                             <li>Applications include cellular phones</li>
+        //                             <li>DSPs, USB Controllers</li>
+        //                             <li>HD devices, Micro-Controllers</li>
+        //                             <li>Wireless LAN</li>
+        //                         </ul>
+        //                     </div>
+        //                 </Col>
+        //             </Row>
+        //         </>
+        //     )
+        // }
     ];
 
     // Function to open modal and set the content
@@ -372,7 +372,7 @@ const GlosemProducts = () => {
                                             src={item.imagePath}
                                             alt={item.title}
                                         />                                    </div>
-                                    <div className="BottomCardContainer">
+                                    <div className="BottomCardContainer bottomProduct">
                                         <h2>{item.title}</h2>
                                         <div className="CommonBtn">
                                             <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
