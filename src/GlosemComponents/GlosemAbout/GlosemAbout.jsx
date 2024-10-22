@@ -208,7 +208,7 @@ const GlosemAbout = () => {
                                             src={item.imagePath}
                                             alt={item.title}
                                         />                                    </div>
-                                    <div className="BottomCardContainer">
+                                    <div className="BottomCardContainer" id="aboutCardBottomContainer">
                                         <h2>{item.title}</h2>
                                         {/* <div className="CommonBtn">
                                             <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>

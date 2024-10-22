@@ -32,7 +32,7 @@
 
 .BottomCardContainer {
     /* position: absolute; */
-    min-height: 45vh;
+    /* min-height: 45vh; */
     background-color: white;
     width: 90%;
     margin-top: -3rem;
@@ -42,7 +42,9 @@
     transition: .5s;
     padding: 20px;
 }
-
+#aboutCardBottomContainer{
+    min-height: 45vh;
+}
 .MainCardContainer:hover .BottomCardContainer {
     transform: translatey(-20px);
     transition: .5s;
@@ -199,7 +201,9 @@
 
         font-size: 1rem;
     }
-
+    #aboutCardBottomContainer{
+        min-height: 100%;
+    }
 }
 
 @media (max-width:500px) {

@@ -90,9 +90,7 @@
   font-weight: 400;
   margin-top: 20px;
 }
-.bottomProduct{
-  min-height:22vh;
-}
+
 @media (max-width: 769px) {
   .ProductsApplicationCard .CommonBtn .BookCallBtn {
     width: 100%;
