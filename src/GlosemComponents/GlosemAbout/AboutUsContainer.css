@@ -2,6 +2,8 @@
   padding-top: 0rem;
   padding-left: 7%;
   padding-right: 7%;
+  position: sticky;
+  background-color: white;
 }
 .TopOfContainer{
   margin: 2rem 0rem;
@@ -10,6 +12,7 @@
   font-weight: 400;
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 .TopOfContainer h4::before {
@@ -47,10 +50,12 @@
   margin: 6rem 1rem;
   margin-bottom: 2rem;
   border-radius: 20px;
+  position: sticky;
+  top: 12%;
 }
 
 .ProductsContainer {
-  padding: 1rem 0rem;
+  
   padding-bottom: 5rem;
 }
 

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Button, Modal } from "antd";
 import "./GlosemProductsContainer.css";
@@ -9,7 +9,7 @@ const GlosemProducts = () => {
 
     const GlosemProductsData = [
         {
-            imagePath:"/images/FCBGA.webp",
+            imagePath: "/images/FCBGA.webp",
             title: "FCBGA",
             description: (
                 <>
@@ -32,7 +32,7 @@ const GlosemProducts = () => {
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
                             </div>
-                   
+
                             <div>
                                 <h2>Applications</h2>
                                 <ul>
@@ -47,7 +47,7 @@ const GlosemProducts = () => {
             )
         },
         {
-            imagePath:"/images/cuPillar.webp",
+            imagePath: "/images/cuPillar.webp",
             title: "Fine Pitch Cu pillar FC",
             description: (
                 <>
@@ -81,7 +81,7 @@ const GlosemProducts = () => {
                                     <li>Package configuration: JEDEC standards</li>
                                 </ul>
                             </div>
-                      
+
                             <div>
                                 <h2>Applications</h2>
                                 <ul>
@@ -96,7 +96,7 @@ const GlosemProducts = () => {
             )
         },
         {
-            imagePath:"/images/FCFBGA_MUF.webp",
+            imagePath: "/images/FCFBGA_MUF.webp",
             title: "FCFBGA_MUF",
             description: (
                 <>
@@ -107,7 +107,7 @@ const GlosemProducts = () => {
                                 <p>Underfill is a specialized encapsulant that fills the gap between chip and
                                     substrate to protect the delicate interconnect structure and die face.</p>
                                 <p>But MUF allows to combine both underfill and overmold process in strip format.
-                                    MUF is filled up the gap between chip and substrate with mold material without 
+                                    MUF is filled up the gap between chip and substrate with mold material without
                                     underfill.</p>
                                 <p>Molded underfill (MUF) is increasingly being used to lower costs and increase throughput in flip chip process. Compared to Traditional underfill processes,
                                     MUF decreases material costs, enables smaller package size for today's demands.</p>
@@ -182,7 +182,7 @@ const GlosemProducts = () => {
         //     )
         // },
         {
-            imagePath:"/images/FCFBGA_eMUF.webp",
+            imagePath: "/images/FCFBGA_eMUF.webp",
             title: "FCFBGA_eMUF",
             description: (
                 <>
@@ -286,10 +286,10 @@ const GlosemProducts = () => {
     };
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     return (
         <>
-        <div className="sectionPadding"></div>
+            <div className="sectionPadding"></div>
             <div id="GlosemProductsContainer">
                 <div className="TopOfContainer">
                     <div>
@@ -301,14 +301,11 @@ const GlosemProducts = () => {
                         </h4>
                     </div>
                 </div>
-                <br /><br />
                 <div className="ProductApplicationHeaderContainer">
-                    <h4>Glosem</h4>
+                    <h4>Glosem packages</h4>
                     <hr />
                 </div>
-                <br />
                 <h2 style={{ fontWeight: "400", fontSize: "2rem" }}>Flip Chip Package</h2>
-                <br /><br />
                 {/* <div className="ProductCardsContainer">
                     {GlosemProductsData.map((item, index) => (
                         <Row key={index} className="ProductRow" data-aos="fade-up" // Set the AOS animation type
@@ -375,7 +372,7 @@ const GlosemProducts = () => {
                                     <div className="BottomCardContainer bottomProduct">
                                         <h2>{item.title}</h2>
                                         <div className="CommonBtn">
-                                            <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
+                                            <Link className="BookCallBtn" onClick={() => showModal(item)}>Read&nbsp;More</Link>
                                             <div className="LineAnimation factorlineanimation">
 
                                             </div>
@@ -404,7 +401,7 @@ const GlosemProducts = () => {
                     footer={null}
                 >
                     <div className="ProjectModal">
-                    {modalContent.description}
+                        {modalContent.description}
                     </div>
                 </Modal>
             </div>
