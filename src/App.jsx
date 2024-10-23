@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<GlosemHome />} />
           <Route path="/glosemAbout" element={<GlosemAbout />} />
           <Route path="/glosemProducts" element={<GlosemProducts />} />
-          <Route path="/glosemJourney" element={<GlosemAnimatedTimeline />} />
+          {/* <Route path="/glosemJourney" element={<GlosemAnimatedTimeline />} /> */}
         </Routes>
         <GlosemFooter />
       </Router>

@@ -47,7 +47,7 @@ const GlosemNavigation = () => {
         { label: "Home", path: "/" },
         { label: "About", path: "/glosemAbout" },
         { label: "Products", path: "/glosemProducts" },
-        { label: "Journey", path: "/glosemJourney" },
+        // { label: "Journey", path: "/glosemJourney" },
         // { label: "Contact", path: "/contact" },
     ];
     const isNotHomePage = location.pathname !== '/';
