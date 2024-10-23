@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./AboutUsContainer.css";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Collapse, Row, Col } from 'antd';
+import { Collapse, Row, Col,Image } from 'antd';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 import Img1 from './smt.webp';
@@ -192,7 +192,7 @@ const GlosemAbout = () => {
                 <div className="ProductsContainer">
                     <h2>Full stack product portfolio with cutting-edge technologies</h2>
                     <br /><br />
-                    <Row>
+                    {/* <Row>
                         {GlosemProductsData.map((item, index) => (
                             <Col lg={8} md={12} data-aos="fade-up" // Set the AOS animation type
                                 data-aos-delay={index * 200}>
@@ -204,24 +204,47 @@ const GlosemAbout = () => {
                                         />                                    </div>
                                     <div className="BottomCardContainer" id="aboutCardBottomContainer">
                                         <h2>{item.title}</h2>
-                                        {/* <div className="CommonBtn">
-                                            <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
-                                            <div className="LineAnimation">
-
-                                            </div>
-                                        </div> */}
+                                       
                                         {item.children}
                                     </div>
-                                    {/* <div className="CommonBtn">
-                                        <Link className="BookCallBtn" onClick={() => showModal(item)}>Read More</Link>
-                                        <div className="LineAnimation">
-
-                                        </div>
-                                    </div> */}
+                                   
                                 </div>
                             </Col>
                         ))}
+                    </Row> */}
+                    {/* <div> */}
+                    <Row>
+                        <Col lg={4}>
+                            <div className="stickyContainer">
+
+                                <div className="LinksShow">
+                                    <div className="ProgressBar">
+
+                                    </div>
+                                    {GlosemProductsData.map((item, index) => (
+                                        <div key={index}>
+                                            <h4 style={{ fontWeight: "400" }}>{item.title}</h4>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={20}>
+                            {GlosemProductsData.map((item, index) => (
+                                <div id="RightSideCondition">
+                                    <div>
+                                        <h2>{item.title}</h2>
+                                        <br />
+                                        <p>{item.children}</p>
+                                    </div>
+                                    <div>
+                                        <Image src={item.imagePath} alt="" />
+                                    </div>
+                                </div>
+                            ))}
+                        </Col>
                     </Row>
+                    {/* </div> */}
                 </div>
                 {/* <div className="ProductsContainer">
                     <Row>
@@ -253,7 +276,7 @@ const GlosemAbout = () => {
                         </Col>
                     </Row>
                 </div> */}
-                
+
             </div>
         </>
     );

@@ -5,9 +5,11 @@
   position: sticky;
   background-color: white;
 }
-.TopOfContainer{
+
+.TopOfContainer {
   margin: 2rem 0rem;
 }
+
 .TopOfContainer h4 {
   font-weight: 400;
   display: flex;
@@ -55,7 +57,7 @@
 }
 
 .ProductsContainer {
-  
+
   padding-bottom: 5rem;
 }
 
@@ -254,4 +256,54 @@ li {
   .FounderDescription ul {
     padding-left: 20px;
   }
+}
+.LinksShow{
+  position: relative;
+}
+
+.LinksShow h4 {
+  padding: 2rem 1rem;
+}
+
+.LinksShow h4:first-child{
+  padding-top: 0rem;
+}
+.ProgressBar {
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+
+}
+#RightSideCondition{
+  padding: 2rem 2rem;
+  width: 100%;
+  display: flex;
+}
+.stickyContainer{
+  position: sticky;
+  top: 600px;
+}
+
+#RightSideCondition img{
+ width: 300px;
+ height: 300px;
+ aspect-ratio: 3/2;
+ object-fit: contain;
+ border-radius: 20px;
+  
+}
+#RightSideCondition .ant-image-mask{
+  background-color: transparent !important;
+}
+
+#RightSideCondition .ant-image-mask-info{
+  display: none !important;
+}
+#RightSideCondition div:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+  width: 100%;
 }
