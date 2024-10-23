@@ -45,7 +45,7 @@ const GlosemHome = () => {
                         playsInline // Prevent fullscreen on mobile
                         onTimeUpdate={() => handleTimeUpdate(videoRefPc)}
                         onEnded={() => handleVideoEnd(videoRefPc)} // Optional if you want to handle the end event
-                        style={{ width: '100%', height: 'auto', objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
+                        style={{ width: '100%',     objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
                     />
                     {/* <div className="VideoOvlayback">
 

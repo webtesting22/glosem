@@ -20,7 +20,7 @@ const GlosemFooter = () => {
                 <Row>
                     <Col lg={8} md={24} xs={0}>
                         <div className="footerLogoContainer">
-                            <img src="/images/glosemLogo.png" />
+                            <img src="/images/GlosemLogo.jpeg" />
                         </div>
                     </Col>
                     <Col lg={8} md={24} xs={12}>
