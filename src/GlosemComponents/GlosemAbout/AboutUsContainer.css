@@ -115,10 +115,7 @@
   color: white !important;
 }
 
-.ProductsContainer
-  .ant-collapse-item-active
-  .ant-collapse-expand-icon
-  .anticon {
+.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
   background-color: transparent !important;
   color: white !important;
 }
@@ -211,7 +208,29 @@ li {
   background-color: red;
 }
 
+#RightSideCondition img {
+  width: 300px;
+  height: 300px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.ImageHover:hover {
+  transition: .5s;
+  transform: scale(1.1);
+}
+
 @media (max-width: 576px) {
+  #RightSideCondition img {
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    border-radius: 20px;
+    margin: auto;
+  }
+
   .ServiceCardContainer {
     margin-top: 0;
     display: flex;
@@ -219,16 +238,19 @@ li {
     justify-content: center;
     padding: 10px;
   }
+
   .stickyContainer {
     display: none;
   }
+
   #RightSideCondition {
-    padding: 1rem 1.2rem !important;
-   /* padding: 1rem 1rem !important; */
+    padding: 1rem 0rem !important;
+    /* padding: 1rem 1rem !important; */
     flex-direction: column;
     gap: 30px;
     /* margin: 50px 0; */
   }
+
   .SwiperContainer {
     display: flex;
     align-items: center;
@@ -268,40 +290,44 @@ li {
     padding-left: 20px;
   }
 }
+
 .LinksShow {
   position: relative;
 }
 
+.LinksShow div{
+  padding: 1rem 1rem;
+}
+.LinksShow div:first-child{
+  padding: 0px;
+}
 .LinksShow h4 {
-  padding: 2rem 1rem;
+  color: #174fa6;
 }
 
 .LinksShow h4:first-child {
   padding-top: 0rem;
 }
+
 .ProgressBar {
   height: 100%;
   width: 2px;
-  background-color: black;
+  background-color: #000000;
   position: absolute;
 }
+
 #RightSideCondition {
   padding: 2rem 2rem;
   width: 100%;
   display: flex;
 }
+
 .stickyContainer {
   position: sticky;
   top: 600px;
 }
 
-#RightSideCondition img {
-  width: 300px;
-  height: 300px;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  border-radius: 20px;
-}
+
 #RightSideCondition .ant-image-mask {
   background-color: transparent !important;
 }
@@ -309,6 +335,7 @@ li {
 #RightSideCondition .ant-image-mask-info {
   display: none !important;
 }
+
 #RightSideCondition div:first-child {
   display: flex;
   flex-direction: column;
@@ -316,3 +343,4 @@ li {
   padding: 0px 20px;
   width: 100%;
 }
+

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./AboutUsContainer.css";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Collapse, Row, Col,Image } from 'antd';
+import { Collapse, Row, Col, Image } from 'antd';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 import Img1 from './smt.webp';
@@ -237,7 +237,7 @@ const GlosemAbout = () => {
                                         <br />
                                         <p>{item.children}</p>
                                     </div>
-                                    <div>
+                                    <div className="ImageHover">
                                         <Image src={item.imagePath} alt="" />
                                     </div>
                                 </div>
