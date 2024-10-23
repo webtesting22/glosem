@@ -2,10 +2,11 @@ import React, { useEffect, useRef } from "react";
 import "./GlosemAnimatedTimeline.css";
 import { Row, Col } from "antd";
 import { Link } from "react-router-dom";
+import KeyStages from "./KeyStages.png"
 const GlosemAnimatedTimeline = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const scrollContainerRef = useRef(null);
 
     useEffect(() => {
@@ -114,7 +115,7 @@ const GlosemAnimatedTimeline = () => {
                                         <div className="CommonBtn">
                                             <div className="BookCallBtn">{item.year}</div>
                                             <div className="LineAnimation">
-                                    
+
                                             </div>
                                         </div>
                                         {/* <div className="year"></div> Year for even index */}
@@ -158,6 +159,17 @@ const GlosemAnimatedTimeline = () => {
                     </div>
                 </div>
             </section>
+            <div className="GlosemKeyStages">
+                <div className="ProductApplicationHeaderContainer">
+                    <h4 style={{textAlign:"start"}}>Glosem</h4>
+                    
+                    <hr style={{margin:"unset"}}/>
+                    <h2 style={{textAlign:"start",fontWeight:"400"}}>Full stack product portfolio with cutting-edge technologies</h2>
+                </div>
+                <div className="KeystagesContainer">
+                    <img src={KeyStages} alt="" />
+                </div>
+            </div>
         </>
     );
 };

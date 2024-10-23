@@ -1,5 +1,5 @@
 #glosemAnimatedTimeline {
-  height: 500vh;
+  height: 600vh;
   /* Full viewport height */
   overflow: hidden;
 }
@@ -111,7 +111,17 @@
     padding: 20px;
   }
 } */
+.KeystagesContainer img {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
+  .GlosemKeyStages {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding: 1rem auto;
+  }
+
   .ScrollContainerContent {
     top: 5;
     flex-direction: row;
@@ -144,7 +154,7 @@
   }
 
   #glosemAnimatedTimeline {
-    height: 325vh;
+    height: 340vh;
     overflow: hidden;
   }
 
@@ -156,17 +166,18 @@
     overflow: hidden;
   }
 }
+
 @media (max-width: 376px) {
   #glosemAnimatedTimeline {
     height: 425vh;
     overflow: hidden;
   }
-  .EvenContainer{
+
+  .EvenContainer {
     top: -15%;
   }
-  .OddContainer{
+
+  .OddContainer {
     bottom: -18%;
   }
 }
-
-

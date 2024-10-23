@@ -6,32 +6,32 @@ const GlosemFactors = () => {
 
     const GlosemFactors = [
         {
-            iconPath:"/images/production.svg",
+            iconPath: "/images/production.svg",
             title: "Driving domestic production",
             description: "Contribute to the government's 'Make in India' initiative and strengthen India's self-sufficiency in the semiconductor sector by reducing reliance on imports and creating local jobs."
         },
         {
-            iconPath:"/images/bulb.svg",
+            iconPath: "/images/bulb.svg",
             title: "Advanced SiP Solution",
             description: "Glosem’s SiP solution outperforms its peers by offering superior quality & performance, lower lead times and being cost-efficient."
         },
         {
-            iconPath:"/images/benefits.svg",
+            iconPath: "/images/benefits.svg",
             title: "Leveraging PLI benefits",
             description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand ouroperations and invest in advanced technologies."
         },
         {
-            iconPath:"/images/team.svg",
+            iconPath: "/images/team.svg",
             title: "Lead by visionary team",
             description: "Founded by visionary team who has an extensive combined experience in the varied industries, supported by an experienced advisory board."
         },
         {
-            iconPath:"/images/technology.svg",
+            iconPath: "/images/technology.svg",
             title: "Excellence through technology",
             description: "Glosem continuously monitor industry trends to ensure their offerings remainrelevant and meet their clients’ everchanging needs."
         },
         {
-            iconPath:"/images/risk-management.svg",
+            iconPath: "/images/risk-management.svg",
             title: "Risk management expertise",
             description: "Glosem’s experience can contribute to developing robust risk management strategies to help avoid potential downsides."
         }
@@ -54,13 +54,13 @@ const GlosemFactors = () => {
                                     <Row>
                                         {GlosemFactors.map((item, index) => (
                                             <Col key={index} lg={12} md={24} data-aos="fade-up" // Set the AOS animation type
-                                            data-aos-delay={index * 200} >
+                                                data-aos-delay={index * 200} >
                                                 <div className="mainCard">
                                                     <div className="FactorsBoxes">
 
-                                                        <div style={{display:"flex"}}>
+                                                        <div style={{ display: "flex" }}>
                                                             <div className="IconContainer">
-                                                    <img src={item.iconPath}/>
+                                                                <img src={item.iconPath} />
                                                             </div>
                                                             <h3>{item.title}</h3>
                                                         </div>

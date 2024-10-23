@@ -1,9 +1,11 @@
 #AboutUsContainer {
-  padding-top: 5rem;
+  padding-top: 0rem;
   padding-left: 7%;
   padding-right: 7%;
 }
-
+.TopOfContainer{
+  margin: 2rem 0rem;
+}
 .TopOfContainer h4 {
   font-weight: 400;
   display: flex;
@@ -42,7 +44,9 @@
   justify-content: center;
   height: 50vh;
   overflow: hidden;
-  margin: 5rem 0rem;
+  margin: 6rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
 }
 
 .ProductsContainer {
@@ -105,10 +109,7 @@
   color: white !important;
 }
 
-.ProductsContainer
-  .ant-collapse-item-active
-  .ant-collapse-expand-icon
-  .anticon {
+.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
   background-color: transparent !important;
   color: white !important;
 }
@@ -145,25 +146,31 @@
   transition: height 1s ease-in-out !important;
   /* Set animation duration to 1 second */
 }
-.ServiceCardContainer{
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+
+.ServiceCardContainer {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
-.ServiceCardContainer .CardImageContainer{
-    /* padding: 10px; */
+
+.ServiceCardContainer .CardImageContainer {
+  /* padding: 10px; */
 }
-.ServiceCardContainer .BottomCardContainer{
-    width: 100%;
-    border-radius: none;
-    background:transparent;
-    margin-top: 0;
-    height:max-content;
+
+.ServiceCardContainer .BottomCardContainer {
+  width: 100%;
+  border-radius: none;
+  background: transparent;
+  margin-top: 0;
+  height: max-content;
 }
-.ServiceCardContainer .BottomCardContainer h2,ul,li{
-    background-color: transparent;
+
+.ServiceCardContainer .BottomCardContainer h2,
+ul,
+li {
+  background-color: transparent;
 }
 
 .FounderCard {
@@ -189,14 +196,21 @@
   font-size: 2rem;
 }
 
+.AnimatedImageContainer {
+  height: 40vh;
+  width: 100%;
+  background-color: red;
+}
+
 @media (max-width: 576px) {
-  .ServiceCardContainer{
+  .ServiceCardContainer {
     margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-}
+  }
+
   .SwiperContainer {
     display: flex;
     align-items: center;
@@ -219,16 +233,19 @@
     padding-left: 3%;
     padding-right: 3%;
   }
+
   .ProductsContainer {
     padding: 1rem 0rem;
     padding-bottom: 2rem;
   }
+
   .FounderCard {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px;
   }
+
   .FounderDescription ul {
     padding-left: 20px;
   }

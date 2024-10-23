@@ -50,10 +50,7 @@ const GlosemHome = () => {
                     {/* <div className="VideoOvlayback">
 
                 </div> */}
-                </div>
-               
-                <div className="GlosemHomeContainer">
-                    <div className="HeightContainer">
+                <div className="HeightContainer">
                         <div>
                             <Row>
                                 <Col lg={12} md={24}>
@@ -73,6 +70,10 @@ const GlosemHome = () => {
                             </Row>
                         </div>
                     </div>
+                </div>
+               
+                <div className="GlosemHomeContainer">
+                    
                     <div className="HomeAnimatedContainer mobile" data-aos="fade-up"
                         data-aos-duration="2000">
                             {/* <div className="OverlayBack">
