@@ -108,7 +108,7 @@ const GlosemProductsData = [
     },
     {
         imagePath: Img4,
-        title: "Services Package,REL & FA",
+        title: "Services Package, REL & FA",
         children: (
             <ul>
                 <li><b>Reliability Testing:</b> JEDEC-compliant testing, Moisture, thermal, and humidity testing, Drop test</li>
