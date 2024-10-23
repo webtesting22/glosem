@@ -57,13 +57,13 @@ const GlosemNavigation = () => {
         <>
             <div className={`GlosemNavigationContainer ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="LogoContainer">
-                    <Link to="/"><img src="/images/glosemLogo.png" /></Link>
+                    <Link to="/"><img src="/images/logo.png" /></Link>
                 </div>
                 <div className="NavigationChild">
                     <div className="FirstIcon"></div>
                     <div className="NavigationLogoContainer">
                         <Link to="/">
-                            <img src="/images/glosemLogo.png" />
+                            <img src="/images/logo.png" />
                         </Link></div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">
