@@ -11,7 +11,7 @@ const GlosemFooter = () => {
         { label: "Home", path: "/" },
         { label: "About", path: "/glosemAbout" },
         { label: "Products", path: "/glosemProducts" },
-        { label: "Contact", path: "/contact" },
+        // { label: "Contact", path: "/contact" },
     ];
 
     return (

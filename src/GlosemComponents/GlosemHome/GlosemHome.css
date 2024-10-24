@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    border-radius: 20px;
 }
 
 #GlosemHome {
@@ -58,6 +59,7 @@
     height: 100%;
     width: 100%;
     background-color: #0000007f;
+    border-radius: 20px;
 }
 .mobile{
     display: none;
