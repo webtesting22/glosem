@@ -18,7 +18,7 @@ const GlosemFactors = () => {
         {
             iconPath: "/images/benefits.svg",
             title: "Leveraging PLI benefits",
-            description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand ouroperations and invest in advanced technologies."
+            description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand our operations and invest in advanced technologies."
         },
         {
             iconPath: "/images/team.svg",
@@ -28,7 +28,7 @@ const GlosemFactors = () => {
         {
             iconPath: "/images/technology.svg",
             title: "Excellence through technology",
-            description: "Glosem continuously monitor industry trends to ensure their offerings remainrelevant and meet their clients’ everchanging needs."
+            description: "Glosem continuously monitor industry trends to ensure their offerings remain relevant and meet their clients’ everchanging needs."
         },
         {
             iconPath: "/images/risk-management.svg",

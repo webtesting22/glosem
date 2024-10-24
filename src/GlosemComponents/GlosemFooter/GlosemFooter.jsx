@@ -52,7 +52,7 @@ const GlosemFooter = () => {
                 </Row>
                 <br />
                 <div className="CopyrightText">
-                    <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">OutLead Solution.</Link> All rights reserved.</p>
+                    <p>@2024 <Link to="https://www.outleadsolutions.com/" target="_blank">OutLead Solutions.</Link> All rights reserved.</p>
                 </div>
             </div>
         </>
