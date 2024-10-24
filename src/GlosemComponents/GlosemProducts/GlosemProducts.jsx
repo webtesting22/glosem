@@ -335,7 +335,7 @@ const GlosemProducts = () => {
                     <h4>Glosem packages</h4>
                     <hr />
                 </div>
-                <h2 style={{ fontWeight: "400", fontSize: "2rem" }}>Flip Chip Package</h2>
+                <h2 style={{ fontWeight: "400" }}>Flip Chip Package</h2>
                 {/* <div className="ProductCardsContainer">
                     {GlosemProductsData.map((item, index) => (
                         <Row key={index} className="ProductRow" data-aos="fade-up" // Set the AOS animation type
