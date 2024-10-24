@@ -202,11 +202,7 @@ li {
   font-size: 2rem;
 }
 
-.AnimatedImageContainer {
-  height: 40vh;
-  width: 100%;
-  background-color: red;
-}
+
 
 #RightSideCondition img {
   width: 300px;
@@ -324,7 +320,7 @@ li {
 
 .stickyContainer {
   position: sticky;
-  top: 600px;
+  top: 300px;
 }
 
 
