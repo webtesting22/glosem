@@ -8,6 +8,7 @@ const GlosemNavigation = () => {
     const menuRef = useRef(null); // Ref to detect clicks outside the menu
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
+    const isHomePage = location.pathname === "/";
 
     useEffect(() => {
         const handleScroll = () => {
@@ -63,8 +64,10 @@ const GlosemNavigation = () => {
                     <div className="FirstIcon"></div>
                     <div className="NavigationLogoContainer">
                         <Link to="/">
-                        <img src={isScrolled ? "/images/logo.png" : "/images/glosem.png"} alt="Logo" />
-                        </Link></div>
+                        <img 
+  src={isHomePage ? (isScrolled ? "/images/logo.png" : "/images/glosem.png") : "/images/logo.png"} 
+  alt="Logo" 
+/>                        </Link></div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">
                             {links.map((link, index) => (
