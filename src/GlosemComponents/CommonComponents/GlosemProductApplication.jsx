@@ -130,7 +130,6 @@ const GlosemProductApplication = () => {
                         </span>
                     </div>
                 </div>
-                <br /><br />
                 <div className="ProductsApplicationCard">
                     <Row>
                         {ProductApplicationData.map((item, index) => (
