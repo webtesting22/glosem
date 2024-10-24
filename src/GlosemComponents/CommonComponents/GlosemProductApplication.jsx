@@ -129,6 +129,12 @@ const GlosemProductApplication = () => {
                             {words[currentWordIndex]}
                         </span>
                     </div>
+                    <div className="typing-container-mobile">
+                    <span>Semiconductor Solutions For :&nbsp;</span>
+                        <span className={`typed-word ${isFadingOut ? 'fade-out' : 'fade-in'}`}>
+                            {words[currentWordIndex]}
+                        </span>
+                    </div>
                 </div>
                 <div className="ProductsApplicationCard">
                     <Row>

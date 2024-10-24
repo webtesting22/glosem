@@ -41,6 +41,12 @@
 .Mainheading h1 {
     color: white;
     font-weight: 400;
+    font-size: 3rem;
+}
+.Mainheading p{
+    color: white;
+    text-transform:uppercase;
+    margin-bottom: 10px;
 }
 
 .VideoOvlayback {

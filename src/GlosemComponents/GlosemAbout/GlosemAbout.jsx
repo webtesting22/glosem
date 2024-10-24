@@ -13,63 +13,7 @@ import 'swiper/css';
 // import "../GlosemProducts/GlosemProductsContainer.css";
 
 
-const { Panel } = Collapse;
 
-const items = [
-    {
-
-        key: '1',
-        imagesrc: Img1,
-        label: 'Packaging Advanced SMT',
-        children: (
-            <ul>
-                <li><b>Advanced SMT Capabilities:</b> Leading-edge surface mount technology (SMT) for assembling advanced packages with the highest component density</li>
-                <li><b>Multichip Module (MCM) Assembly:</b> Expertise in MCM assembly for complex applications, enabling the integration of multiple chips onto a single substrate</li>
-                <li><b>Bare Die and Wafer-Level Packaging:</b> Proficiency in assembling bare die and wafer-level packages using advanced technologies like flip chip</li>
-                <li><b>Wafer Backgrinding and Dicing:</b> Precision wafer backgrinding and dicing capabilities to create the smallest form factor packages</li>
-            </ul>
-        ),
-    },
-    {
-
-        key: '2',
-        imagesrc: Img2,
-        label: 'Packaging Molding & BGA',
-        children: (
-            <ul>
-                <li><b>Molding Encapsulation:</b> State-of-the-art molding encapsulation techniques for achieving the smallest form factor packages while meeting stringent reliability standards</li>
-                <li><b>Industry-Leading Materials and Equipment:</b> Utilization of mold machines and materials sourced from top suppliers in the industry</li>
-                <li><b>Ball Grid Array (BGA):</b> Advanced BGA technology to enable the highest density of input/output connections within the smallest package size</li>
-            </ul>
-        ),
-    },
-    {
-
-        key: '3',
-        imagesrc: Img3,
-        label: 'Packaging EMI Shielding',
-        children: (
-            <ul>
-                <li><b>EMI Shielding Importance:</b> As devices become more compact and integrated, EMI shielding is crucial to prevent interference that can degrade performance, especially in applications like IoT, 5G, RF, Wi-Fi, Bluetooth, and automotive SiP</li>
-                <li><b>Glosem's EMI Shielding Solutions:</b> Glosem offers two primary EMI shielding technologies: Metal Frame and PVD Sputter.</li>
-                <li><b>Metal Frame:</b> Provides lower cost, reworkability, thermal performance, and flexible sizing options.</li>
-                <li><b>PVD Sputter:</b> Offers the smallest size, high reliability, and customizable shielding design.</li>
-            </ul>
-        ),
-    },
-    {
-
-        key: '4',
-        imagesrc: Img4,
-        label: "Services Package, REL & FA",
-        children: (
-            <ul>
-                <li><b>Reliability Testing:</b> JEDEC-compliant testing, Moisture, thermal, and humidity testing, Drop test</li>
-                <li><b>Failure Analysis:</b> Mechanical and electrical testing, X-ray, SAT, SEM, Electrical characterization</li>
-            </ul>
-        ),
-    }
-];
 const GlosemProductsData = [
     {
         imagePath: Img1,
@@ -129,25 +73,52 @@ const GlosemAbout = () => {
         //     setActiveKey(key);
         // }
 
-        // Find the selected item based on the key (ensure string comparison)
-        const selectedItem = items.find(item => String(item.key) === String(key));
+        //     // Find the selected item based on the key (ensure string comparison)
+        //     const selectedItem = items.find(item => String(item.key) === String(key));
 
-        if (selectedItem) {
-            console.log("Active image src:", selectedItem.imagesrc); // Log the image src
-        } else {
-            console.log("No image found for this key.");
-        }
+        //     if (selectedItem) {
+        //         console.log("Active image src:", selectedItem.imagesrc); // Log the image src
+        //     } else {
+        //         console.log("No image found for this key.");
+        //     }
 
     };
-    const activeItem = items.find(item => String(item.key) === String(activeKey));
+    // const activeItem = items.find(item => String(item.key) === String(activeKey));
+    const [scrollProgress, setScrollProgress] = useState(0);
 
+    const handleScroll = () => {
+        const scrollTop = window.pageYOffset; // How far the page is scrolled
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
+        const scrollPercentage = (scrollTop / scrollHeight) * 100; // Percentage of the page scrolled
+        setScrollProgress(scrollPercentage);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll); // Cleanup the event listener
+    }, []);
     const CarousalImages = [
         { img: "https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1697952431907-8542919a16b3?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1721090394437-c7ab4daeebff?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
     ];
+    const scrollToSection = (id, offset = 100) => {
+        // const section = document.getElementById(id);
+        // if (section) {
+        //     section.scrollIntoView({ behavior: "smooth" });
+        // }
+        const section = document.getElementById(id);
+        if (section) {
+            const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = sectionPosition - offset;
 
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -218,12 +189,14 @@ const GlosemAbout = () => {
                             <div className="stickyContainer">
 
                                 <div className="LinksShow">
-                                    <div className="ProgressBar">
+                                <div className="ProgressBar" style={{ height: `${scrollProgress}%`, width: '2px', backgroundColor: '#001e60' }}>
 
                                     </div>
                                     {GlosemProductsData.map((item, index) => (
                                         <div key={index}>
-                                            <h4 style={{ fontWeight: "400" }}>{item.title}</h4>
+                                            <h4 style={{ fontWeight: "400", cursor: "pointer" }}
+                                                onClick={() => scrollToSection(`section-${index}`)}
+                                            >{item.title}</h4>
                                         </div>
                                     ))}
                                 </div>
@@ -231,7 +204,7 @@ const GlosemAbout = () => {
                         </Col>
                         <Col lg={20}>
                             {GlosemProductsData.map((item, index) => (
-                                <div id="RightSideCondition">
+                                <div id={`section-${index}`} className="RightSideCondition" >
                                     <div>
                                         <h2>{item.title}</h2>
                                         <br />

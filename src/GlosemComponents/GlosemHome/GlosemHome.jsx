@@ -55,6 +55,7 @@ const GlosemHome = () => {
                             <Row>
                                 <Col lg={12} md={24}>
                                     <div className="Mainheading">
+                                    <p>/ Innovating Your Future with Global Expertise</p>
                                         <h1 data-aos="fade-up"
                                             data-aos-duration="1000" className="mainheading">
                                             {/* We have global expertise to grow your organization */}
