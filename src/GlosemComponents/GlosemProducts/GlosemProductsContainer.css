@@ -96,6 +96,7 @@
 .ProjectModal h2{
   font-weight: 400;
   margin-top: 10px;
+  color: #001e60;
 }
 
 @media (max-width: 769px) {

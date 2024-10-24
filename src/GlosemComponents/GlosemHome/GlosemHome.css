@@ -84,6 +84,9 @@
         border-radius: 20px;
         display: none;
     } */
+    .HomeAnimatedContainer{
+        background-attachment:unset;
+    }
     #GlosemHome video {
         position: absolute;
         right: 0px;

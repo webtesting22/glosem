@@ -88,14 +88,13 @@ const GlosemHome = () => {
                     </div>
 
                     <GlosemFactors />
-                    <div className="HomeAnimatedContainer pc" data-aos="fade-up"
-                        data-aos-duration="2000">
+                    <div className="HomeAnimatedContainer pc" >
                             <div className="OverlayBack">
 
                             </div>
                         <div className="InlineHeading">
                             <div className="InsideContaienr">
-                                <h1 data-aos="zoom-in">Glosem: Powering innovations across industries</h1>
+                                <h1 data-aos="zoom-in" data-aos-duration="1000">Glosem: Powering innovations across industries</h1>
                             </div>
                         </div>
                     </div>
