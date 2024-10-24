@@ -66,7 +66,7 @@ const GlosemProducts = () => {
                                     And it can accomplish to reduce the cost by design factors.
                                 </p>
                                 <p>Copper pillar bumps will also help to small fillet requirement for underfill
-                                    enables more aggressive die-to-package design rule / smaller package footprint.
+                                    enables more aggressive die-to-package design rule/smaller package footprint.
                                 </p>
                                 <h2>Features</h2>
                                 <ul>

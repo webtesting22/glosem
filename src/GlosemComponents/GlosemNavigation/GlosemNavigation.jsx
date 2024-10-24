@@ -11,7 +11,7 @@ const GlosemNavigation = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 300) {
+            if (window.scrollY > 50) {
                 setIsScrolled(true); // If scrolled more than 300px
             } else {
                 setIsScrolled(false); // Reset if less than 300px
@@ -63,7 +63,7 @@ const GlosemNavigation = () => {
                     <div className="FirstIcon"></div>
                     <div className="NavigationLogoContainer">
                         <Link to="/">
-                            <img src="/images/logo.png" />
+                        <img src={isScrolled ? "/images/logo.png" : "/images/glosem.png"} alt="Logo" />
                         </Link></div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">

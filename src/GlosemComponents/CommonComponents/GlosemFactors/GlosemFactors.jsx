@@ -43,7 +43,7 @@ const GlosemFactors = () => {
                     <Row>
                         <Col lg={16}>
                             <div className="LeftSideContentContainer">
-                                <h1 className="mainheading">Strengthen your team in strategy, marketing & operations.</h1>
+                                <h1 className="mainheading">Strengthen your team in strategy, marketing & operations</h1>
                                 <div className="CommonBtn">
                                     <Link className="BookCallBtn">Book A Free Call</Link>
                                     <div className="LineAnimation factorlineanimation">
