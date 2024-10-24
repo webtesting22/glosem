@@ -218,6 +218,12 @@ li {
 }
 
 @media (max-width: 576px) {
+
+.TopOfContainer {
+  margin: 2rem 0rem;
+  margin-top: 0rem;
+}
+
   #RightSideCondition img {
     width: 300px;
     height: 300px;
@@ -254,6 +260,7 @@ li {
     height: 40vh;
     overflow: hidden;
     margin: 0rem 0rem;
+    top: 0%;
   }
 
   .ProductsContainer .ant-collapse-header {
@@ -265,7 +272,7 @@ li {
   }
 
   #AboutUsContainer {
-    padding-top: 2rem;
+    padding-top: 0rem;
     padding-left: 3%;
     padding-right: 3%;
   }
