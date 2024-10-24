@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col, Button, Modal } from "antd";
 import "./GlosemProductsContainer.css";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import 'swiper/css/effect-fade';
 const GlosemProducts = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [modalContent, setModalContent] = useState({ title: '', description: '' });
@@ -287,10 +289,36 @@ const GlosemProducts = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    const CarousalImages = [
+        { img: "https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+        { img: "https://images.unsplash.com/photo-1697952431907-8542919a16b3?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+        { img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+        { img: "https://images.unsplash.com/photo-1721090394437-c7ab4daeebff?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+    ];
     return (
         <>
             <div className="AnimatedImageContainer">
 
+            </div>
+            <div className="SwiperContainer">
+                <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    effect={'fade'}
+                    loop={true}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay, EffectFade]}
+                    className="mySwiper"
+                >
+                    {CarousalImages.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <img src={item.img} alt="" className="CarousalImages" />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
             <div id="GlosemProductsContainer">
                 <div className="TopOfContainer">
