@@ -118,3 +118,44 @@
     }
     
 }
+
+/* GlosemHome.css */
+#loader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 9999099999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2rem;
+    transition: opacity 1s ease-in-out;
+    transition: 1s;
+}
+
+#loader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1s;
+}
+
+.HeightContainer {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    transition: 1s;
+}
+
+.faded-in {
+    opacity: 1;
+    transition: 1s;
+}

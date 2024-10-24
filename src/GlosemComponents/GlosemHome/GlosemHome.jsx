@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./GlosemHome.css"
 import { Row, Col } from "antd";
 import GlosemHomeBack from "../../assets/GlosemHomeBack.jpg"
@@ -7,6 +7,8 @@ import GlosemProductApplication from "../CommonComponents/GlosemProductApplicati
 import GlosemVideo from "./GlosemBackImage.mp4"
 const GlosemHome = () => {
     const videoRefPc = useRef(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [isFading, setIsFading] = useState(false);
     const handleTimeUpdate = (videoRef) => {
         const video = videoRef.current;
         if (video && video.duration - video.currentTime <= 0.5) { // 0.5 seconds before the video ends
@@ -14,8 +16,6 @@ const GlosemHome = () => {
         }
     };
 
-
-    // Handle video ending event to loop smoothly
     const handleVideoEnd = (videoRef) => {
         const video = videoRef.current;
         setIsFading(false); // Reset fading
@@ -31,9 +31,28 @@ const GlosemHome = () => {
         }
 
     }, []);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        setTimeout(() => {
+            setIsLoaded(true);
+        }, 3000);
+    }, []);
     return (
         <>
+            {/* {!isLoaded && (
+                <div id="loader" className={`${isLoaded ? "fade-out" : ""}`}>
+                    <video src={LoaderVideo} ref={videoRefPc}
+                        loop={true} // Set loop to true for continuous playback
+                        autoPlay
+                        muted
+                        playsInline // Prevent fullscreen on mobile
+                        onTimeUpdate={() => handleTimeUpdate(videoRefPc)}
+                        onEnded={() => handleVideoEnd(videoRefPc)} // Optional if you want to handle the end event
+                        style={{ width: '100%', objectFit: 'cover', poinsterEvents: 'none' }} // Ensure no interaction triggers fullscreen>
+                    />
+                </div >
+            )} */}
+
             <section id="GlosemHome">
                 <div style={{ height: "100%", overflow: "hidden" }}>
                     <video
@@ -45,17 +64,17 @@ const GlosemHome = () => {
                         playsInline // Prevent fullscreen on mobile
                         onTimeUpdate={() => handleTimeUpdate(videoRefPc)}
                         onEnded={() => handleVideoEnd(videoRefPc)} // Optional if you want to handle the end event
-                        style={{ width: '100%',     objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
+                        style={{ width: '100%', objectFit: 'cover', pointerEvents: 'none' }} // Ensure no interaction triggers fullscreen
                     />
                     {/* <div className="VideoOvlayback">
 
                 </div> */}
-                <div className="HeightContainer">
+                    <div className="HeightContainer">
                         <div>
                             <Row>
                                 <Col lg={12} md={24}>
                                     <div className="Mainheading">
-                                    <p>/ Innovating Your Future with Global Expertise</p>
+                                        <p>/ Innovating Your Future with Global Expertise</p>
                                         <h1 data-aos="fade-up"
                                             data-aos-duration="1000" className="mainheading">
                                             {/* We have global expertise to grow your organization */}
@@ -72,12 +91,12 @@ const GlosemHome = () => {
                         </div>
                     </div>
                 </div>
-               
+
                 <div className="GlosemHomeContainer">
-                    
+
                     <div className="HomeAnimatedContainer mobile" data-aos="fade-up"
                         data-aos-duration="2000">
-                            {/* <div className="OverlayBack">
+                        {/* <div className="OverlayBack">
 
                             </div> */}
                         {/* <div className="InlineHeading">
@@ -91,7 +110,7 @@ const GlosemHome = () => {
                     <div className="HomeAnimatedContainer pc" >
                             <div className="OverlayBack">
 
-                            </div>
+                        </div>
                         <div className="InlineHeading">
                             <div className="InsideContaienr">
                                 <h1 data-aos="zoom-in" data-aos-duration="1000">Glosem: Powering innovations across industries</h1>

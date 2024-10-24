@@ -10,6 +10,8 @@ import Img2 from './molding.webp';
 import Img3 from './packaging.webp';
 import Img4 from './rel.webp';
 import 'swiper/css';
+import Craousal2 from "./Craousal2.jpeg"
+import Craousal3 from "./Craousal3.jpeg"
 // import "../GlosemProducts/GlosemProductsContainer.css";
 
 
@@ -98,10 +100,10 @@ const GlosemAbout = () => {
         return () => window.removeEventListener("scroll", handleScroll); // Cleanup the event listener
     }, []);
     const CarousalImages = [
-        { img: "https://images.unsplash.com/photo-1523655223303-4e9ef5234587?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+        { img: Craousal2 },
         { img: "https://images.unsplash.com/photo-1697952431907-8542919a16b3?q=80&w=3029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
         { img: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-        { img: "https://images.unsplash.com/photo-1721090394437-c7ab4daeebff?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
+        { img: Craousal3 }
     ];
     const scrollToSection = (id, offset = 100) => {
         // const section = document.getElementById(id);
@@ -189,7 +191,7 @@ const GlosemAbout = () => {
                             <div className="stickyContainer">
 
                                 <div className="LinksShow">
-                                <div className="ProgressBar" style={{ height: `${scrollProgress}%`, width: '2px', backgroundColor: '#001e60' }}>
+                                    <div className="ProgressBar" style={{ height: `${scrollProgress}%`, width: '2px', backgroundColor: '#001e60' }}>
 
                                     </div>
                                     {GlosemProductsData.map((item, index) => (
