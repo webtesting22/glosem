@@ -209,10 +209,13 @@ li {
   height: 300px !important;
   aspect-ratio: 3/2;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+.ImageHover{
+  transition: .5s;
 }
 
-.ImageHover:hover {
+.RightSideCondition:hover .ImageHover {
   transition: .5s;
   transform: scale(1.1);
 }
@@ -229,7 +232,7 @@ li {
     height: 300px;
     aspect-ratio: 3/2;
     object-fit: contain;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: auto;
   }
 
@@ -323,6 +326,15 @@ li {
   padding: 2rem 2rem;
   width: 100%;
   display: flex;
+  border-bottom: 1px solid rgb(161, 161, 161);
+  transition: .5s;
+}
+.RightSideCondition:hover {
+  padding: 3rem 2rem;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgb(161, 161, 161);
+  transition: .5s;
 }
 
 .stickyContainer {
