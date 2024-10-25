@@ -5,6 +5,7 @@ import "./GlosemProductsContainer.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
+// import backFadeImage from "./backFadeImage.png"
 const GlosemProducts = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [modalContent, setModalContent] = useState({ title: '', description: '' });
@@ -303,6 +304,7 @@ const GlosemProducts = () => {
     ];
     return (
         <>
+       
             <div className="AnimatedImageContainer">
 
             </div>

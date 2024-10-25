@@ -4,7 +4,6 @@ import { Row, Col } from "antd";
 import GlosemHomeBack from "../../assets/GlosemHomeBack.jpg"
 import GlosemFactors from "../CommonComponents/GlosemFactors/GlosemFactors";
 import GlosemProductApplication from "../CommonComponents/GlosemProductApplication";
-import GlosemVideo from "./GlosemBackImage.mp4"
 const GlosemHome = () => {
     const videoRefPc = useRef(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -56,7 +55,7 @@ const GlosemHome = () => {
             <section id="GlosemHome">
                 <div style={{ height: "100%", overflow: "hidden" }}>
                     <video
-                        src={GlosemVideo}
+                        src="https://webtesting-upload.vercel.app/assets/GlosemBackImage-CJQo_7U3.mp4"
                         ref={videoRefPc}
                         loop={true} // Set loop to true for continuous playback
                         autoPlay
@@ -108,7 +107,7 @@ const GlosemHome = () => {
 
                     <GlosemFactors />
                     <div className="HomeAnimatedContainer pc" >
-                            <div className="OverlayBack">
+                        <div className="OverlayBack">
 
                         </div>
                         <div className="InlineHeading">

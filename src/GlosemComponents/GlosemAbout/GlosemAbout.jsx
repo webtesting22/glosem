@@ -12,6 +12,7 @@ import Img4 from './rel.webp';
 import 'swiper/css';
 import Craousal2 from "./Craousal2.jpeg"
 import Craousal3 from "./Craousal3.jpeg"
+import backFadeImage from "./backFadeImage.png"
 // import "../GlosemProducts/GlosemProductsContainer.css";
 
 
@@ -147,6 +148,9 @@ const GlosemAbout = () => {
                 </Swiper>
             </div>
             <div id="AboutUsContainer">
+            {/* <div className="BackGroundFadeImage">
+                <img src={backFadeImage} alt="" />
+        </div> */}
                 <div className="TopOfContainer">
                     <div>
                         <h4>
