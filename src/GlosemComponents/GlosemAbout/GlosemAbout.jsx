@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./AboutUsContainer.css";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,6 +13,7 @@ import 'swiper/css';
 import Craousal2 from "./Craousal2.jpeg"
 import Craousal3 from "./Craousal3.jpeg"
 import backFadeImage from "./backFadeImage.png"
+import Test2 from "./Test2.jpeg"
 // import "../GlosemProducts/GlosemProductsContainer.css";
 
 
@@ -66,7 +67,32 @@ const GlosemProductsData = [
 ]
 const GlosemAbout = () => {
     const [activeKey, setActiveKey] = useState('1'); // Initialize with '1' or use `null`
+    const [width, setWidth] = useState(50); // initial width as 50%
+    const [borderRadius, setBorderRadius] = useState(20); // initial border radius as 30%
+    const containerRef = useRef(null);
 
+    useEffect(() => {
+        const handleScrollImage = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+
+            // Adjust width and border radius based on scroll percentage
+            const newWidth = Math.min(100, Math.max(50, 50 + scrollPercent));
+            const newBorderRadius = Math.max(0, 20 - (scrollPercent / 0.5)); // Reduce border radius to 0 at maximum scroll
+
+            setWidth(newWidth);
+            setBorderRadius(newBorderRadius);
+        };
+
+        window.addEventListener('scroll', handleScrollImage);
+
+        return () => {
+            window.removeEventListener('scroll', handleScrollImage);
+        };
+    }, []);
+
+    
     const handleCollapseChange = (key) => {
         console.log("Selected key (raw):", key);
         console.log("Selected key (string):", String(key));
@@ -127,7 +153,7 @@ const GlosemAbout = () => {
     }, []);
     return (
         <>
-            <div className="SwiperContainer">
+            {/* <div className="SwiperContainer">
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
@@ -146,11 +172,19 @@ const GlosemAbout = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-            </div>
+            </div> */}
             <div id="AboutUsContainer">
-            {/* <div className="BackGroundFadeImage">
-                <img src={backFadeImage} alt="" />
-        </div> */}
+                <div className="ParallaxImage"> {/* Extra height for scrolling */}
+                    <img
+                        src={Test2}// Replace with your image source
+                        alt="Scrolling Image"
+                        style={{
+                            width: `${width}%`,
+                            borderRadius: `${borderRadius}%`,
+                            transition: 'width 0.2s ease-in-out', // Smooth transition
+                        }}
+                    />
+                </div>
                 <div className="TopOfContainer">
                     <div>
                         <h4>
