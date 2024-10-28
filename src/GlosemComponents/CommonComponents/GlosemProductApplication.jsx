@@ -21,7 +21,7 @@ const GlosemProductApplication = () => {
 
     const ProductApplicationData = [
         {
-            imagePath: "/images/IOT.jpeg",
+            imagePath: "https://webtesting-upload.vercel.app/assets/IOT-DOfTFzF0.jpeg",
             title: "IOT Sector",
             list: [
                 {
@@ -36,7 +36,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath: "/images/Automotive.jpeg",
+            imagePath: "https://webtesting-upload.vercel.app/assets/Automotive-hugLzEJW.jpeg",
             title: "Automotive",
             list: [
                 {
@@ -51,7 +51,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath: "/images/healthcare.jpeg",
+            imagePath: "https://webtesting-upload.vercel.app/assets/healthcare-BGbDkXE-.jpeg",
             title: "Health Care",
             list: [
                 {
@@ -66,7 +66,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath: "/images/robotics.jpeg",
+            imagePath: "https://webtesting-upload.vercel.app/assets/robotics-CNKGKy5l.jpeg",
             title: "Robotics",
             list: [
                 {
@@ -81,7 +81,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath: "/images/consumer.jpeg",
+            imagePath: "https://webtesting-upload.vercel.app/assets/consumer-Csgp5cGQ.jpeg",
             title: "Consumer",
             list: [
                 {
@@ -96,7 +96,7 @@ const GlosemProductApplication = () => {
             ]
         },
         {
-            imagePath: "/images/communication.jpeg",
+            imagePath: "https://webtesting-upload.vercel.app/assets/communication-BMwb_c6j.jpeg",
             title: "Communication",
             list: [
                 {

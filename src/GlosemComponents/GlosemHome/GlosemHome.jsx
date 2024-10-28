@@ -108,7 +108,7 @@ const GlosemHome = () => {
                     <GlosemFactors />
                     <div className="HomeAnimatedContainer pc" >
                         <div className="OverlayBack">
-
+                            
                         </div>
                         <div className="InlineHeading">
                             <div className="InsideContaienr">
