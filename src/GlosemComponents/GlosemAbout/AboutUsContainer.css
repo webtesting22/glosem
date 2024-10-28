@@ -385,3 +385,15 @@ li {
   height: 300vh;
   /* overflow: hidden; */
 }
+
+
+@media (max-width:769px){
+  .ParallaxImage{
+    height: 43vh;
+    /* overflow: hidden; */
+  }
+  .ParallaxImage img {
+    width: 100%; /* Set width to 100% on mobile */
+    border-radius: 0; /* Reset border radius on mobile */
+}
+}

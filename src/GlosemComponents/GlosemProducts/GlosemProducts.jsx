@@ -399,8 +399,8 @@ const GlosemProducts = () => {
                 <div className="ProductsApplicationCard">
                     <Row>
                         {GlosemProductsData.map((item, index) => (
-                            <Col lg={8} md={12} data-aos="fade-up" // Set the AOS animation type
-                                data-aos-delay={index * 200}>
+                            <Col lg={12} md={12} data-aos="fade-up" // Set the AOS animation type
+                                data-aos-delay={index * 200} style={{margin:"20px 0px"}}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img

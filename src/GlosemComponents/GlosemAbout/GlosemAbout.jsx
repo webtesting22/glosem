@@ -70,27 +70,29 @@ const GlosemAbout = () => {
     const [width, setWidth] = useState(50); // initial width as 50%
     const [borderRadius, setBorderRadius] = useState(20); // initial border radius as 30%
     const containerRef = useRef(null);
+    const isMobile = window.innerWidth <= 768; // Determine if the device is mobile
 
     useEffect(() => {
-        const handleScrollImage = () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = (scrollTop / docHeight) * 100;
+        if (!isMobile) {
+            const handleScrollImage = () => {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
 
-            // Adjust width and border radius based on scroll percentage
-            const newWidth = Math.min(100, Math.max(50, 50 + scrollPercent));
-            const newBorderRadius = Math.max(0, 20 - (scrollPercent / 0.5)); // Reduce border radius to 0 at maximum scroll
+                const newWidth = Math.min(100, Math.max(50, 50 + scrollPercent));
+                const newBorderRadius = Math.max(0, 20 - (scrollPercent / 0.5));
 
-            setWidth(newWidth);
-            setBorderRadius(newBorderRadius);
-        };
+                setWidth(newWidth);
+                setBorderRadius(newBorderRadius);
+            };
 
-        window.addEventListener('scroll', handleScrollImage);
+            window.addEventListener('scroll', handleScrollImage);
 
-        return () => {
-            window.removeEventListener('scroll', handleScrollImage);
-        };
-    }, []);
+            return () => {
+                window.removeEventListener('scroll', handleScrollImage);
+            };
+        }
+    }, [isMobile]);
 
     
     const handleCollapseChange = (key) => {
@@ -179,8 +181,8 @@ const GlosemAbout = () => {
                         src={Test2}// Replace with your image source
                         alt="Scrolling Image"
                         style={{
-                            width: `${width}%`,
-                            borderRadius: `${borderRadius}%`,
+                            width: isMobile ? '100%' : `${width}%`,
+                            borderRadius: isMobile ?"0px": `${borderRadius}%`,
                             transition: 'width 0.2s ease-in-out', // Smooth transition
                         }}
                     />
