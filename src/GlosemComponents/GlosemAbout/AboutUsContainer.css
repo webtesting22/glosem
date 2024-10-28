@@ -335,7 +335,13 @@ li {
   width: 100%;
   display: flex;
   border-bottom: 1px solid rgb(161, 161, 161);
+  background-color: #001e60db;
+  border-radius: 20px;
+  color: white;
   transition: .5s;
+}
+.RightSideCondition:hover h2, .RightSideCondition:hover p ul li, .RightSideCondition:hover p ul b{
+  color: white;
 }
 
 .stickyContainer {
