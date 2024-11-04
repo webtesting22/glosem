@@ -120,8 +120,16 @@ const GlosemAbout = () => {
     const handleScroll = () => {
         const scrollTop = window.pageYOffset; // How far the page is scrolled
         const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
-        const scrollPercentage = (scrollTop / scrollHeight) * 100; // Percentage of the page scrolled
-        setScrollProgress(scrollPercentage);
+        const startScroll = scrollHeight * 0.5; // Start calculating after 50% of total height
+
+        if (scrollTop > startScroll) {
+            const adjustedScroll = scrollTop - startScroll;
+            const adjustedHeight = scrollHeight - startScroll;
+            const scrollPercentage = (adjustedScroll / adjustedHeight) * 100;
+            setScrollProgress(scrollPercentage);
+        } else {
+            setScrollProgress(0); // Keep progress at 0 before 50% scroll
+        }
     };
 
     useEffect(() => {
