@@ -10,6 +10,11 @@
   margin: 0px;
   font-family: "Kanit", sans-serif;
 }
+/* body{
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(165, 165, 245, 0.7) 50%, rgba(0, 0, 100, 0.6) 70%);
+  box-shadow: 0 0 20px rgba(0, 100, 255, 0.8), 0 0 40px rgba(0, 100, 255, 0.5);
+  color: white; 
+} */
 
 a {
   text-decoration: none;
@@ -78,23 +83,26 @@ h1 {
   right: 0px;
 }
 
-.sectionPadding{
-  padding:3rem 0rem;
+.sectionPadding {
+  padding: 3rem 0rem;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
   section {
     padding-top: 3rem;
     padding-left: 2%;
     padding-right: 2%;
   }
-  .CommonBtn .LineAnimation{
-     /* display: none;  */
+
+  .CommonBtn .LineAnimation {
+    /* display: none;  */
   }
-  .CommonBtn::after{
-    display:none;
+
+  .CommonBtn::after {
+    display: none;
   }
-  .mainheading{
+
+  .mainheading {
     font-size: 40px !important;
   }
 }
