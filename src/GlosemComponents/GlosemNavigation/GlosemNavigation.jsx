@@ -77,11 +77,11 @@ const GlosemNavigation = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="NavigationContactContainer">
-                        {/* You can add contact information here */}
+                    {/* <div className="NavigationContactContainer">
+                        
                         <MdPhoneEnabled />
 
-                    </div>
+                    </div> */}
                     <div className="LastIcon">
 
                     </div>

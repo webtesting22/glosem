@@ -118,14 +118,17 @@
 }
 
 .NavigationLogoContainer {
-  width: 15%;
+  /* width: 15%; */
+
   background-color: transparent;
 }
 
 .NavigationLogoContainer img {
   aspect-ratio: 3/2;
   object-fit: contain;
-  width: 100%;
+  width: 200px;
+  position: fixed;
+  top: -24px;
 }
 
 .NavigationContactContainer {
@@ -144,7 +147,7 @@
 @media (max-width: 769px) {
   .LogoContainer {
     display: block;
-    width: 20%;
+    width: 30%;
     background-color: transparent;
   }
 
@@ -171,7 +174,8 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding: 0 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: white;
   }
