@@ -33,7 +33,7 @@ const GlosemProductsData = [
     },
     {
         imagePath: Img2,
-        title: "Packaging Molding & BGA",
+        title: "Packaging Molding & BGA, Flip chip CSP",
         children: (
             <ul>
                 <li><b>Molding Encapsulation:</b> State-of-the-art molding encapsulation techniques for achieving the smallest form factor packages while meeting stringent reliability standards.</li>
