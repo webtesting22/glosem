@@ -383,13 +383,28 @@ li {
 }
 .ParallaxImage{
   height: 300vh;
+  width: 50%;
   /* overflow: hidden; */
 }
+.CombineImageContainer{
+  display: flex;
+}
 
-
+.ParallaxImage:last-child img{
+  margin-top: 20rem;
+}
 @media (max-width:769px){
+  .ParallaxImage:last-child img{
+    margin-top: 20rem;
+    display: none;
+  }
+  .ParallaxImage:last-child {
+    display: none;
+  }
+
   .ParallaxImage{
     height: 43vh;
+    width: 100%;
     /* overflow: hidden; */
   }
   .ParallaxImage img {

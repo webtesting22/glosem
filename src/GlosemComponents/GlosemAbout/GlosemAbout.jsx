@@ -94,7 +94,7 @@ const GlosemAbout = () => {
         }
     }, [isMobile]);
 
-    
+
     const handleCollapseChange = (key) => {
         console.log("Selected key (raw):", key);
         console.log("Selected key (string):", String(key));
@@ -184,17 +184,35 @@ const GlosemAbout = () => {
                 </Swiper>
             </div> */}
             <div id="AboutUsContainer">
-                <div className="ParallaxImage"> {/* Extra height for scrolling */}
-                    <img
-                        src={Test2}// Replace with your image source
-                        alt="Scrolling Image"
-                        style={{
-                            width: isMobile ? '100%' : `${width}%`,
-                            borderRadius: isMobile ?"0px": `${borderRadius}%`,
-                            transition: 'width 0.01s ease-in-out', // Smooth transition
-                        }}
-                    />
+                <div className="CombineImageContainer">
+                    <div className="ParallaxImage"> {/* Extra height for scrolling */}
+                        <img
+                            src={Test2}// Replace with your image source
+                            alt="Scrolling Image"
+                            style={{
+                                width: isMobile ? '100%' : `${width}%`,
+                                borderRadius: isMobile ? "0px" : `${borderRadius}%`,
+                                transition: 'width 0.01s ease-in-out', // Smooth transition
+                            }}
+                        />
+                        
+
+                    </div>
+                    <div className="ParallaxImage"> {/* Extra height for scrolling */}
+                        <img
+                            src={Test2}// Replace with your image source
+                            alt="Scrolling Image"
+                            style={{
+                                width: isMobile ? '100%' : `${width}%`,
+                                borderRadius: isMobile ? "0px" : `${borderRadius}%`,
+                                transition: 'width 0.01s ease-in-out', // Smooth transition
+                            }}
+                        />
+
+                    </div>
+                    
                 </div>
+                
                 <div className="TopOfContainer">
                     <div>
                         <h4>
