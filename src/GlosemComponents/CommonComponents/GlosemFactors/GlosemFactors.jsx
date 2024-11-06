@@ -15,11 +15,11 @@ const GlosemFactors = () => {
             title: "Advanced SiP Solution",
             description: "Glosem’s SiP solution outperforms its peers by offering superior quality & performance, lower lead times and being cost-efficient."
         },
-        {
-            iconPath: "/images/benefits.svg",
-            title: "Leveraging PLI benefits",
-            description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand our operations and invest in advanced technologies."
-        },
+        // {
+        //     iconPath: "/images/benefits.svg",
+        //     title: "Leveraging PLI benefits",
+        //     description: "Glosem is strategically aligned with the PLI scheme, enabling us to capitalize on the government's incentives to expand our operations and invest in advanced technologies."
+        // },
         {
             iconPath: "/images/team.svg",
             title: "Lead by visionary team",

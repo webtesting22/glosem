@@ -52,7 +52,7 @@ const GlosemNavigation = () => {
         // { label: "Contact", path: "/contact" },
     ];
     const isNotHomePage = location.pathname !== '/';
-   
+
 
     return (
         <>
@@ -64,14 +64,14 @@ const GlosemNavigation = () => {
                     <div className="FirstIcon"></div>
                     <div className="NavigationLogoContainer">
                         <Link to="/">
-                        <img 
-  src={isHomePage ? (isScrolled ? "/images/logo.png" : "/images/glosem.png") : "/images/logo.png"} 
-  alt="Logo" 
-/>                        </Link></div>
+                            <img
+                                src={isHomePage ? (isScrolled ? "/images/logo.png" : "/images/glosem.png") : "/images/logo.png"}
+                                alt="Logo"
+                            />                        </Link></div>
                     <div className="NavigationLinksContainer">
                         <div className="Links">
                             {links.map((link, index) => (
-                                <Link key={index} to={link.path}className={`NavigationLink ${isNotHomePage ? 'non-home-active' : ''}`} onClick={() => setIsMenuOpen(false)}>
+                                <Link key={index} to={link.path} className={`NavigationLink ${isNotHomePage ? 'non-home-active' : ''}`} onClick={() => setIsMenuOpen(false)}>
                                     {link.label}
                                 </Link>
                             ))}
