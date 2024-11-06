@@ -12,7 +12,7 @@ const GlosemFactors = () => {
         },
         {
             iconPath: "/images/bulb.svg",
-            title: "Advanced SiP Solution",
+            title: "Advanced SiP, fcCSP, fcBGA Solutions",
             description: "Glosem’s SiP solution outperforms its peers by offering superior quality & performance, lower lead times and being cost-efficient."
         },
         // {
@@ -34,7 +34,7 @@ const GlosemFactors = () => {
             iconPath: "/images/risk-management.svg",
             title: "Risk management expertise",
             description: "Glosem’s experience can contribute to developing robust risk management strategies to help avoid potential downsides."
-        }
+        },
     ]
     return (
         <>
