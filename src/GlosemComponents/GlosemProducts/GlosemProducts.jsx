@@ -13,29 +13,43 @@ const GlosemProducts = () => {
     const GlosemProductsData = [
         {
             imagePath: "/images/FCBGA.webp",
-            title: "FCBGA",
+            title: "FCBGA (Flip chip Ball Grid Array)",
             description: (
                 <>
-                    <Row>
+                    <Row className="ProductFirstRow">
+                        <div className="FirstIcon"></div>
+
                         <Col lg={12} md={24}>
                             <div>
                                 <h2>Description</h2>
                                 <p>Between the die and substrates, Flip Chip interconnection has replaced conventional wire bonding. Flip Chip interconnections provide high electrical performance demanded in ASICs, and memory applications where high frequency and high speed are required. Using Flip Chip interconnect improves package electrical performance by shorter electrical paths, removing high inductance wires, and fc-BGA is available in a high thermal performance with heat spreader. The array of bumps under the chip also allows the die to reduce wafer costs.</p>
                                 <p>Signetics offers flip chip packages in both BGA and CSP types and continues to develop a range of flip chip packages to meet customers' requests.</p>
-                                <h2>Features</h2>
-                                <ul>
-                                    <li>Cu pillar with Sn/Ag plated</li>
-                                    <li>50um to 100um pitch w/ BOF bonding tech.</li>
-                                    <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative),
-                                        Immersion Tin</li>
-                                    <li>Solder ball : Pb-free solder ball available</li>
-                                    <li>Dispensed underfill (DUF) & Molded underfill (MUF) available
-                                        Supports minimum 0.4mm ball pitch on bottom pads.</li>
-                                    <li>Packing : JEDEC tray</li>
-                                    <li>Package configuration: JEDEC standards</li>
-                                </ul>
+
                             </div>
 
+
+                        </Col>
+                        <Col lg={12} md={24}><img src="" alt="Product image" /></Col>
+                        <div className="LastIcon">
+
+                        </div>
+                    </Row>
+                    <Row>
+                        <Col lg={12} md={24}>
+                            <h2>Features</h2>
+                            <ul>
+                                <li>Cu pillar with Sn/Ag plated</li>
+                                <li>50um to 100um pitch w/ BOF bonding tech.</li>
+                                <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative),
+                                    Immersion Tin</li>
+                                <li>Solder ball : Pb-free solder ball available</li>
+                                <li>Dispensed underfill (DUF) & Molded underfill (MUF) available
+                                    Supports minimum 0.4mm ball pitch on bottom pads.</li>
+                                <li>Packing : JEDEC tray</li>
+                                <li>Package configuration: JEDEC standards</li>
+                            </ul>
+                        </Col>
+                        <Col lg={12} md={24}>
                             <div>
                                 <h2>Applications</h2>
                                 <ul>
@@ -45,7 +59,6 @@ const GlosemProducts = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image"/></Col>
                     </Row>
                 </>
             )
@@ -55,8 +68,8 @@ const GlosemProducts = () => {
             title: "Fine Pitch Cu pillar FC",
             description: (
                 <>
-                    <Row>
-
+                    <Row className="ProductFirstRow">
+                        <div className="FirstIcon"></div>
                         <Col lg={12} md={24}>
                             <div>
                                 <h2>Description</h2>
@@ -72,20 +85,30 @@ const GlosemProducts = () => {
                                 <p>Copper pillar bumps will also help to small fillet requirement for underfill
                                     enables more aggressive die-to-package design rule/smaller package footprint.
                                 </p>
-                                <h2>Features</h2>
-                                <ul>
-                                    <li>Cu pillar with Sn/Ag plated</li>
-                                    <li>50um to 100um pitch w/ BOF bonding tech.</li>
-                                    <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative),
-                                        Immersion Tin</li>
-                                    <li>Solder ball : Pb-free solder ball available</li>
-                                    <li>Dispensed underfill (DUF) & Molded underfill (MUF) available
-                                        Supports minimum 0.4mm ball pitch on bottom pads.</li>
-                                    <li>Packing : JEDEC tray</li>
-                                    <li>Package configuration: JEDEC standards</li>
-                                </ul>
+
                             </div>
 
+
+                        </Col>
+                        <Col lg={12} md={24}><img src="" alt="Product image" /></Col>
+                        <div className="LastIcon"></div>
+                    </Row>
+                    <Row>
+                        <Col lg={12} md={24}>
+                            <h2>Features</h2>
+                            <ul>
+                                <li>Cu pillar with Sn/Ag plated</li>
+                                <li>50um to 100um pitch w/ BOF bonding tech.</li>
+                                <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative),
+                                    Immersion Tin</li>
+                                <li>Solder ball : Pb-free solder ball available</li>
+                                <li>Dispensed underfill (DUF) & Molded underfill (MUF) available
+                                    Supports minimum 0.4mm ball pitch on bottom pads.</li>
+                                <li>Packing : JEDEC tray</li>
+                                <li>Package configuration: JEDEC standards</li>
+                            </ul>
+                        </Col>
+                        <Col lg={12} md={24}>
                             <div>
                                 <h2>Applications</h2>
                                 <ul>
@@ -95,17 +118,18 @@ const GlosemProducts = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image"/></Col>
                     </Row>
+
                 </>
             )
         },
         {
             imagePath: "/images/FCFBGA_MUF.webp",
-            title: "FCFBGA_MUF",
+            title: "FCFBGA_MUF (Molded Underfill)",
             description: (
                 <>
-                    <Row>
+                    <Row className="ProductFirstRow">
+                        <div className="FirstIcon"></div>
                         <Col lg={12} md={24}>
                             <div>
                                 <h2>Description</h2>
@@ -116,31 +140,35 @@ const GlosemProducts = () => {
                                     underfill.</p>
                                 <p>Molded underfill (MUF) is increasingly being used to lower costs and increase throughput in flip chip process. Compared to Traditional underfill processes,
                                     MUF decreases material costs, enables smaller package size for today's demands.</p>
-                                <h2>Features</h2>
-                                <ul>
-                                    <li>2-6 layer, laminate substrates w/ strip base</li>
-                                    <li>40N/ELK, 32N/ELK, 28N/ELK</li>
-                                    <li>Eutectic, Hi-Pb, Pb-free & Cu pillar bumps
-                                        Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative)</li>
-                                    <li>Over molded & Exposed die available</li>
-                                    <li>Dispensed underfill (DUF)
-                                        Molded underfill (MUF) with solder bump</li>
-                                    <li>Supports minimum 0.4mm ball pitch on bottom pads.</li>
-                                    <li>Available with multiple components & chip to form a system-in-package
-                                        version (FCFBGA-SIP)
-                                        Packing : JEDEC tray
-                                        Package configuration: JEDEC standards</li>
-                                </ul>
-                                <h2>Applications</h2>
-                                <ul>
-                                    <li>Handheld or portable electronic devices</li>
-                                    <li>Mobile Processors for smart phones, Tablets, Network AP, Chipsets for
-                                        peripheral IC's</li>
-                                </ul>
+
+
                             </div>
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image"/></Col>
-
+                        <Col lg={12} md={24}><img src="" alt="Product image" /></Col>
+                        <div className="lastIcon"></div>
+                    </Row>
+                    <Row>
+                        <Col lg={12} md={24}> <h2>Features</h2>
+                            <ul>
+                                <li>2-6 layer, laminate substrates w/ strip base</li>
+                                <li>40N/ELK, 32N/ELK, 28N/ELK</li>
+                                <li>Eutectic, Hi-Pb, Pb-free & Cu pillar bumps
+                                    Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP(organic solder preservative)</li>
+                                <li>Over molded & Exposed die available</li>
+                                <li>Dispensed underfill (DUF)
+                                    Molded underfill (MUF) with solder bump</li>
+                                <li>Supports minimum 0.4mm ball pitch on bottom pads.</li>
+                                <li>Available with multiple components & chip to form a system-in-package
+                                    version (FCFBGA-SIP)
+                                    Packing : JEDEC tray
+                                    Package configuration: JEDEC standards</li>
+                            </ul></Col>
+                        <Col lg={12} md={24}>  <h2>Applications</h2>
+                            <ul>
+                                <li>Handheld or portable electronic devices</li>
+                                <li>Mobile Processors for smart phones, Tablets, Network AP, Chipsets for
+                                    peripheral IC's</li>
+                            </ul></Col>
                     </Row>
                 </>
             )
@@ -190,10 +218,12 @@ const GlosemProducts = () => {
         // },
         {
             imagePath: "/images/FCFBGA_eMUF.webp",
-            title: "FCFBGA_eMUF",
+            title: "FCFBGA_eMUF (Exposed Molded Underfill)",
             description: (
                 <>
-                    <Row>
+                    <Row className="ProductFirstRow">
+                        <div className="FirstIcon"></div>
+
                         <Col lg={12} md={24}>
                             <div>
                                 <h2>Description</h2>
@@ -204,31 +234,43 @@ const GlosemProducts = () => {
                                     as build up. eMUF & LDP feature thin and small profile, lightweight packages.</p>
                                 <p>Thus, these packages are improved electrical and thermal characteristics than
                                     conventional wire bonding method.</p>
-                                <h2>Features</h2>
-                                <ul>
-                                    <li>Eutectic, Pb-free & Cu pillar bumps</li>
-                                    <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP (organic solder preservative),
-                                        Immersion Tin</li>
-                                    <li>Overall package height 1.0mm to 0.7mm</li>
-                                    <li>Solder ball : Pb-free solder ball available</li>
-                                    <li>Marking : Laser Marking</li>
-                                    <li>Thermally enhanced version with exposed die by Molded underfill</li>
-                                    <li>Available Laser Drilled process for PoP Bottom package .</li>
-                                    <li>Package thickness of max height 0.7mm to 1.0mm available.</li>
-                                    <li>Supports minimum 0.4mm ball pitch on top and bottom pads.</li>
-                                    <li>Packing : JEDEC tray</li>
-                                    <li>Package configuration: JEDEC standards</li>
-                                </ul>
-                                <h2>Applications</h2>
-                                <ul>
-                                    <li>Handheld or portable electronic devices</li>
-                                    <li>Mobile Processors for smart phones, Tablets, Network AP, Chipsets for
-                                        peripheral IC's</li>
-                                </ul>
+
+
                             </div>
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image"/></Col>
+                        <Col lg={12} md={24}>
+                            <div style={{ minHeight: "30vh" }}><img src="" alt="Product image" /></div>
 
+                        </Col>
+                        <div className="LastIcon">
+
+                        </div>
+                    </Row>
+                    <Row>
+                        <Col lg={12} md={24}>
+                            <h2>Features</h2>
+                            <ul>
+                                <li>Eutectic, Pb-free & Cu pillar bumps</li>
+                                <li>Ni-Au, Ni-Pd-Au, SOP (solder on pad), OSP (organic solder preservative),
+                                    Immersion Tin</li>
+                                <li>Overall package height 1.0mm to 0.7mm</li>
+                                <li>Solder ball : Pb-free solder ball available</li>
+                                <li>Marking : Laser Marking</li>
+                                <li>Thermally enhanced version with exposed die by Molded underfill</li>
+                                <li>Available Laser Drilled process for PoP Bottom package .</li>
+                                <li>Package thickness of max height 0.7mm to 1.0mm available.</li>
+                                <li>Supports minimum 0.4mm ball pitch on top and bottom pads.</li>
+                                <li>Packing : JEDEC tray</li>
+                                <li>Package configuration: JEDEC standards</li>
+                            </ul>
+                        </Col>
+                        <Col lg={12} md={24}>
+                            <h2>Applications</h2>
+                            <ul>
+                                <li>Handheld or portable electronic devices</li>
+                                <li>Mobile Processors for smart phones, Tablets, Network AP, Chipsets for
+                                    peripheral IC's</li>
+                            </ul></Col>
                     </Row>
                 </>
             )
@@ -304,7 +346,7 @@ const GlosemProducts = () => {
     ];
     return (
         <>
-       
+
             <div className="AnimatedImageContainer">
 
             </div>
@@ -400,7 +442,7 @@ const GlosemProducts = () => {
                     <Row>
                         {GlosemProductsData.map((item, index) => (
                             <Col lg={12} md={12} data-aos="fade-up" // Set the AOS animation type
-                                data-aos-delay={index * 200} style={{margin:"20px 0px"}}>
+                                data-aos-delay={index * 200} style={{ margin: "20px 0px" }}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img
