@@ -6,13 +6,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 // import backFadeImage from "./backFadeImage.png"
+import BackFCBGA from "./BackFCBGA.png"
+import BackFCFBGA_MUF from "./BackFCFBGA_MUF (Molded Underfill).png"
 const GlosemProducts = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const [modalContent, setModalContent] = useState({ title: '', description: '' });
+    const [modalContent, setModalContent] = useState({ title: '', description: '', backImage: '' });
 
     const GlosemProductsData = [
         {
             imagePath: "/images/FCBGA.webp",
+            backImage: BackFCBGA,
             title: "FCBGA (Flip chip Ball Grid Array)",
             description: (
                 <>
@@ -65,7 +68,9 @@ const GlosemProducts = () => {
         },
         {
             imagePath: "/images/cuPillar.webp",
+            backImage: BackFCBGA,
             title: "Fine Pitch Cu pillar FC",
+
             description: (
                 <>
                     <Row className="ProductFirstRow">
@@ -126,6 +131,7 @@ const GlosemProducts = () => {
         {
             imagePath: "/images/FCFBGA_MUF.webp",
             title: "FCFBGA_MUF (Molded Underfill)",
+            backImage: BackFCFBGA_MUF,
             description: (
                 <>
                     <Row className="ProductFirstRow">
@@ -219,6 +225,7 @@ const GlosemProducts = () => {
         {
             imagePath: "/images/FCFBGA_eMUF.webp",
             title: "FCFBGA_eMUF (Exposed Molded Underfill)",
+            backImage: BackFCFBGA_MUF,
             description: (
                 <>
                     <Row className="ProductFirstRow">
@@ -327,6 +334,7 @@ const GlosemProducts = () => {
         setModalContent({
             title: item.title,
             description: item.description,
+            backImage: item.backImage
         });
         setIsModalVisible(true);
     };
@@ -481,6 +489,9 @@ const GlosemProducts = () => {
                     footer={null}
                 >
                     <div className="ProjectModal">
+                        <div className="backoverlayImage">
+                            <img src={modalContent.backImage} alt="" />
+                        </div>
                         {modalContent.description}
                     </div>
                 </Modal>
