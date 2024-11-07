@@ -14,7 +14,8 @@ const GlosemProducts = () => {
 
     const GlosemProductsData = [
         {
-            imagePath: "/images/FCBGA.webp",
+            // imagePath: "/images/FCBGA.webp",
+            imagePath:"/images/Product Images/Bare-Die-FcBGA.png",
             backImage: BackFCBGA,
             title: "FCBGA (Flip chip Ball Grid Array)",
             description: (
@@ -67,7 +68,8 @@ const GlosemProducts = () => {
             )
         },
         {
-            imagePath: "/images/cuPillar.webp",
+            // imagePath: "/images/cuPillar.webp",
+            imagePath:"/images/Product Images/Lidded-FcBGA.png",
             backImage: BackFCBGA,
             title: "Fine Pitch Cu pillar FC",
 
@@ -129,7 +131,8 @@ const GlosemProducts = () => {
             )
         },
         {
-            imagePath: "/images/FCFBGA_MUF.webp",
+            // imagePath: "/images/FCFBGA_MUF.webp",
+            imagePath:"/images/Product Images/Sip-FcBGA.png",
             title: "FCFBGA_MUF (Molded Underfill)",
             backImage: BackFCFBGA_MUF,
             description: (
@@ -223,7 +226,8 @@ const GlosemProducts = () => {
         //     )
         // },
         {
-            imagePath: "/images/FCFBGA_eMUF.webp",
+            // imagePath: "/images/FCFBGA_eMUF.webp",
+            imagePath:"/images/Product Images/FcCSP.png",
             title: "FCFBGA_eMUF (Exposed Molded Underfill)",
             backImage: BackFCFBGA_MUF,
             description: (
