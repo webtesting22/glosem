@@ -8,10 +8,16 @@
 
 .CardImageContainer img {
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio:unset;
     object-fit: cover;
     transition: .5s;
     /* border-radius: 10px; */
+}
+#ProductApplicationCardsContainer .ant-row .ant-col .CardImageContainer img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: .5s;
 }
 
 .CardImageContainer img:hover {
