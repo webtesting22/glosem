@@ -13,7 +13,7 @@ const GlosemFactors = () => {
         {
             iconPath: "/images/bulb.svg",
             title: "Advanced SiP, fcCSP, fcBGA Solutions",
-            description: "Glosem’s SiP solution outperforms its peers by offering superior quality & performance, lower lead times and being cost-efficient."
+            description: "Glosem offers IC packaging solutions to meet needs for different markets via advanced packaging technologies with superior quality & performance, faster lead times with cost in mind."
         },
         // {
         //     iconPath: "/images/benefits.svg",
@@ -30,11 +30,11 @@ const GlosemFactors = () => {
             title: "Excellence through technology",
             description: "Glosem continuously monitor industry trends to ensure their offerings remain relevant and meet their clients’ everchanging needs."
         },
-        {
-            iconPath: "/images/risk-management.svg",
-            title: "Risk management expertise",
-            description: "Glosem’s experience can contribute to developing robust risk management strategies to help avoid potential downsides."
-        },
+        // {
+        //     iconPath: "/images/risk-management.svg",
+        //     title: "Risk management expertise",
+        //     description: "Glosem’s experience can contribute to developing robust risk management strategies to help avoid potential downsides."
+        // },
     ]
     return (
         <>
