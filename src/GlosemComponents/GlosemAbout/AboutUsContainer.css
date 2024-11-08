@@ -440,6 +440,11 @@ li {
 @media (max-width: 769px) {
   .aboutswiper{
     display: block;
+    padding-top: 3rem;
+    height: auto;
+  }
+  .aboutswiper img{
+    height: 100%;
   }
   .ParallaxImage:last-child img {
     margin-top: 20rem;

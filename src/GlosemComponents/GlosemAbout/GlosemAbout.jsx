@@ -244,25 +244,24 @@ const GlosemAbout = () => {
                     </div> */}
                 </div>
                 <div className="SwiperContainer aboutswiper">
-                <Swiper
-                    slidesPerView={1}
-                    spaceBetween={30}
-                    effect={'fade'}
-                    loop={true}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    }}
-                    modules={[Autoplay, EffectFade]}
-                    className="mySwiper"
-                >
-                    {CarousalImages.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <img src={item.img} alt="" className="CarousalImages" />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        effect={'fade'}
+                        loop={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        modules={[Autoplay, EffectFade]}
+                    >
+                        {CarousalImages.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={item.img} alt="" className="CarousalImages" />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
                 {/* <div className="aboutTopImages">
                     {AboutImagesData.map((item, index) => (
                         <Row key={index} >
