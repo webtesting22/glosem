@@ -215,7 +215,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.s ease-in-out', // Smooth transition
+                                    transition: 'width 0.1s ease-in-out', // Smooth transition
                                 }}
                             />
                         </div>
