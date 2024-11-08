@@ -5,11 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Collapse, Row, Col, Image } from 'antd';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import Img1 from './smt.webp';
+// import Img1 from './smt.webp';
+import Img1 from "/images/Product Images/Chip Mockups - Copy-04.png";
 import Img2 from "/images/Product Images/Sip-FcCSP--MUF.png";
 // import Img2 from './molding.webp';
 import Img3 from './packaging.webp';
-import Img4 from './rel.webp';
+// import Img4 from './rel.webp';
+import Img4 from "/images/Product Images/Chip Mockups - Copy-01.png";
 import 'swiper/css';
 import Craousal2 from "./Craousal2.jpeg"
 import Craousal3 from "./Craousal3.jpeg"
@@ -181,7 +183,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.05s ease-in-out', // Smooth transition
+                                    transition: 'width 0.1s ease-in-out', // Smooth transition
                                 }}
                             />
                             <img
@@ -190,7 +192,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.05s ease-in-out', // Smooth transition
+                                    transition: 'width 0.1s ease-in-out', // Smooth transition
                                 }}
                             />
                         </div>
@@ -205,7 +207,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.05s ease-in-out', // Smooth transition
+                                    transition: 'width 0.1s ease-in-out', // Smooth transition
                                 }}
                             /> <img
                                 src={Test4}// Replace with your image source
@@ -213,7 +215,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.05s ease-in-out', // Smooth transition
+                                    transition: 'width 0.s ease-in-out', // Smooth transition
                                 }}
                             />
                         </div>
