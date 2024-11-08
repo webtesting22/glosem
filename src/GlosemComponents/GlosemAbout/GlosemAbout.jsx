@@ -181,7 +181,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.01s ease-in-out', // Smooth transition
+                                    transition: 'width 0.05s ease-in-out', // Smooth transition
                                 }}
                             />
                             <img
@@ -190,7 +190,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.01s ease-in-out', // Smooth transition
+                                    transition: 'width 0.05s ease-in-out', // Smooth transition
                                 }}
                             />
                         </div>
@@ -205,7 +205,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.01s ease-in-out', // Smooth transition
+                                    transition: 'width 0.05s ease-in-out', // Smooth transition
                                 }}
                             /> <img
                                 src={Test4}// Replace with your image source
@@ -213,7 +213,7 @@ const GlosemAbout = () => {
                                 style={{
                                     width: isMobile ? '100%' : `${width}%`,
                                     borderRadius: isMobile ? "0px" : `${borderRadius}%`,
-                                    transition: 'width 0.01s ease-in-out', // Smooth transition
+                                    transition: 'width 0.05s ease-in-out', // Smooth transition
                                 }}
                             />
                         </div>

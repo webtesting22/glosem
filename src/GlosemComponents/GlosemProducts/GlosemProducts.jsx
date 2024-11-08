@@ -239,7 +239,7 @@ const GlosemProducts = () => {
         // },
         {
             // imagePath: "/images/FCFBGA_eMUF.webp",
-            imagePath: "/images/Product Images/FcCSP.png",
+            imagePath: "/images/Product Images/MUF1.png",
             title: "FCFBGA_eMUF (Exposed Molded Underfill)",
             backImage: BackFCFBGA_MUF,
             description: (
