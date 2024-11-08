@@ -19,9 +19,11 @@ const GlosemFooter = () => {
             <div className="GlosemFooterContainer">
                 <Row>
                     <Col lg={8} md={24} xs={0}>
-                        <div className="footerLogoContainer">
-                            <img src="/images/logo.png" />
-                        </div>
+                        <Link to="/">
+                            <div className="footerLogoContainer">
+                                <img src="/images/logo.png" />
+                            </div>
+                        </Link>
                     </Col>
                     <Col lg={8} md={24} xs={12}>
                         <div className="QuickLinksContainer">

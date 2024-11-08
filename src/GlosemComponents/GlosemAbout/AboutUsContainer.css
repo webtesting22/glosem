@@ -116,7 +116,10 @@
   color: white !important;
 }
 
-.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
+.ProductsContainer
+  .ant-collapse-item-active
+  .ant-collapse-expand-icon
+  .anticon {
   background-color: transparent !important;
   color: white !important;
 }
@@ -203,8 +206,6 @@ li {
   font-size: 2rem;
 }
 
-
-
 .RightSideCondition img {
   width: 300px !important;
   height: 300px !important;
@@ -212,21 +213,20 @@ li {
   object-fit: contain;
   border-radius: 10px;
 }
-.ImageHover{
-  transition: .5s;
+.ImageHover {
+  transition: 0.5s;
 }
 
 .RightSideCondition:hover .ImageHover {
-  transition: .5s;
+  transition: 0.5s;
   transform: scale(1.1);
 }
 
 @media (max-width: 576px) {
-
-.TopOfContainer {
-  margin: 2rem 0rem;
-  margin-top: 0rem;
-}
+  .TopOfContainer {
+    margin: 2rem 0rem;
+    margin-top: 0rem;
+  }
 
   .RightSideCondition img {
     width: 300px;
@@ -302,14 +302,14 @@ li {
   position: relative;
 }
 
-.LinksShow div{
+.LinksShow div {
   padding: 1rem 1rem;
 }
-.LinksShow div:first-child{
+.LinksShow div:first-child {
   padding: 0px;
 }
 .LinksShow h4 {
-  color: rgb(0,30,96);
+  color: rgb(0, 30, 96);
 }
 
 .LinksShow h4:first-child {
@@ -328,7 +328,7 @@ li {
   width: 100%;
   display: flex;
   border-bottom: 1px solid rgb(161, 161, 161);
-  transition: .5s;
+  transition: 0.5s;
 }
 .RightSideCondition:hover {
   padding: 3rem 2rem;
@@ -338,9 +338,11 @@ li {
   background-color: #001e60db;
   border-radius: 20px;
   color: white;
-  transition: .5s;
+  transition: 0.5s;
 }
-.RightSideCondition:hover h2, .RightSideCondition:hover p ul li, .RightSideCondition:hover p ul b{
+.RightSideCondition:hover h2,
+.RightSideCondition:hover p ul li,
+.RightSideCondition:hover p ul b {
   color: white;
 }
 
@@ -348,7 +350,6 @@ li {
   position: sticky;
   top: 300px;
 }
-
 
 .RightSideCondition .ant-image-mask {
   background-color: transparent !important;
@@ -366,35 +367,81 @@ li {
   width: 100%;
 }
 
-
-.AnimatedParallaxImageContainer img{
-    width: 50%; /* Default width */
-    border: 1px solid red;
-    transition: width 0.3s ease; /* Smooth transition */
+.AnimatedParallaxImageContainer img {
+  width: 50%; /* Default width */
+  border: 1px solid red;
+  transition: width 0.3s ease; /* Smooth transition */
 }
 
-.ParallaxImage img{
+.ParallaxImage img {
+  /* margin: auto;
+  position: sticky;
+  top: 20%;
+  display: flex;
+  border-radius: 10px; */
+}
+.pImage{
+  align-items: center;
   margin: auto;
   position: sticky;
   top: 20%;
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
-
 }
-.ParallaxImage{
+.ParallaxImage {
   height: 300vh;
   width: 50%;
   /* overflow: hidden; */
 }
-.CombineImageContainer{
+.CombineImageContainer {
   display: flex;
+  
+}
+.ParallaxImage:nth-child(2) img{
+  /* margin-top: 20rem; */
+}
+.ParallaxImage:nth-child(3) img{
+  /* margin-top: 40rem; */
+}
+.ParallaxImage:nth-child(4) img{
+  /* margin-top: 60rem; */
+}
+.ParallaxImage:last-child{
+  /* margin-top: 20rem; */
 }
 
-.ParallaxImage:last-child img{
-  margin-top: 20rem;
+.leftSideImageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-@media (max-width:769px){
-  .ParallaxImage:last-child img{
+.rightSideImageContainer {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  transform: rotate(360deg);
+}
+.rightSideImageContainer img {
+  width: 100%;
+  border-radius: 20px;
+}
+.aboutswiper{
+  display: none;
+  position: static;
+}
+.aboutswiper img{
+  background-color: white;
+  z-index: 0;
+}
+@media (max-width: 769px) {
+  .aboutswiper{
+    display: block;
+  }
+  .ParallaxImage:last-child img {
     margin-top: 20rem;
     display: none;
   }
@@ -402,7 +449,7 @@ li {
     display: none;
   }
 
-  .ParallaxImage{
+  .ParallaxImage {
     height: 43vh;
     width: 100%;
     /* overflow: hidden; */
@@ -410,5 +457,8 @@ li {
   .ParallaxImage img {
     width: 100%; /* Set width to 100% on mobile */
     border-radius: 0; /* Reset border radius on mobile */
-}
+  }
+  .CombineImageContainer{
+    display: none;
+  }
 }

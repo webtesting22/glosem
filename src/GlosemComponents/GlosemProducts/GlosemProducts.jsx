@@ -15,7 +15,7 @@ const GlosemProducts = () => {
     const GlosemProductsData = [
         {
             // imagePath: "/images/FCBGA.webp",
-            imagePath:"/images/Product Images/Bare-Die-FcBGA.png",
+            imagePath: "/images/Product Images/Bare-Die-FcBGA.png",
             backImage: BackFCBGA,
             title: "FCBGA (Flip chip Ball Grid Array)",
             description: (
@@ -33,7 +33,11 @@ const GlosemProducts = () => {
 
 
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image" /></Col>
+                        <Col lg={12} md={24}>
+                            <div className="ProductInsideImageContainer">
+                                <img src="/images/Product Images/Bare-Die-FcBGA.png" alt="Product image" />
+                            </div>
+                        </Col>
                         <div className="LastIcon">
 
                         </div>
@@ -69,10 +73,10 @@ const GlosemProducts = () => {
         },
         {
             // imagePath: "/images/cuPillar.webp",
-            imagePath:"/images/Product Images/Lidded-FcBGA.png",
+            imagePath: "/images/Product Images/Lidded-FcBGA.png",
             backImage: BackFCBGA,
-            title: "Fine Pitch Cu pillar FC",
-
+            // title: "Fine Pitch Cu pillar FC",
+            title:"Lidded FCBGA",
             description: (
                 <>
                     <Row className="ProductFirstRow">
@@ -97,8 +101,11 @@ const GlosemProducts = () => {
 
 
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image" /></Col>
-                        <div className="LastIcon"></div>
+                        <Col lg={12} md={24}>
+                            <div className="ProductInsideImageContainer">
+                                <img src="/images/Product Images/Lidded-FcBGA.png" alt="Product image" />
+                            </div>
+                        </Col>                        <div className="LastIcon"></div>
                     </Row>
                     <Row>
                         <Col lg={12} md={24}>
@@ -132,8 +139,10 @@ const GlosemProducts = () => {
         },
         {
             // imagePath: "/images/FCFBGA_MUF.webp",
-            imagePath:"/images/Product Images/Sip-FcBGA.png",
-            title: "FCFBGA_MUF (Molded Underfill)",
+            imagePath: "/images/Product Images/Sip-FcBGA.png",
+            
+            // title: "FCFBGA_MUF (Molded Underfill)",
+            title:"SiP(System in Package)",
             backImage: BackFCFBGA_MUF,
             description: (
                 <>
@@ -153,8 +162,11 @@ const GlosemProducts = () => {
 
                             </div>
                         </Col>
-                        <Col lg={12} md={24}><img src="" alt="Product image" /></Col>
-                        <div className="lastIcon"></div>
+                        <Col lg={12} md={24}>
+                            <div className="ProductInsideImageContainer">
+                                <img src="/images/Product Images/Sip-FcBGA.png" alt="Product image" />
+                            </div>
+                        </Col>                        <div className="lastIcon"></div>
                     </Row>
                     <Row>
                         <Col lg={12} md={24}> <h2>Features</h2>
@@ -227,7 +239,7 @@ const GlosemProducts = () => {
         // },
         {
             // imagePath: "/images/FCFBGA_eMUF.webp",
-            imagePath:"/images/Product Images/FcCSP.png",
+            imagePath: "/images/Product Images/FcCSP.png",
             title: "FCFBGA_eMUF (Exposed Molded Underfill)",
             backImage: BackFCFBGA_MUF,
             description: (
@@ -250,9 +262,12 @@ const GlosemProducts = () => {
                             </div>
                         </Col>
                         <Col lg={12} md={24}>
-                            <div style={{ minHeight: "30vh" }}><img src="" alt="Product image" /></div>
 
+                            <div className="ProductInsideImageContainer">
+                                <img src="/images/Product Images/FcCSP.png" alt="Product image" />
+                            </div>
                         </Col>
+
                         <div className="LastIcon">
 
                         </div>
@@ -463,12 +478,12 @@ const GlosemProducts = () => {
                                         />                                    </div>
                                     <div className="BottomCardContainer bottomProduct">
                                         <h2>{item.title}</h2>
-                                        <div className="CommonBtn">
+                                        {/* <div className="CommonBtn">
                                             <Link className="BookCallBtn" onClick={() => showModal(item)}>Read&nbsp;More</Link>
                                             <div className="LineAnimation factorlineanimation">
 
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <ul>
                                            {item.description}
                                         </ul> */}

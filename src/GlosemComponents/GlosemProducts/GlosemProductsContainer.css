@@ -131,6 +131,15 @@
     right: 0px;
     opacity: 0.05;
 }
+.ProductInsideImageContainer{
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 3/2; */
+  /* object-fit: contain; */
+}
+.ProductInsideImageContainer img{
+  width: 100%;
+}
 @media (max-width: 769px) {
   .ant-modal .ant-modal-content {
     padding: 20px 20px !important;
@@ -190,5 +199,8 @@
   #GlosemProductsContainer {
     padding-left: 2%;
     padding-right: 2%;
+  }
+  .ProductFirstRow{
+    padding-bottom: 0;
   }
 }
