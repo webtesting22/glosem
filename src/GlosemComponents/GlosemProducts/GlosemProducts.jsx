@@ -142,7 +142,7 @@ const GlosemProducts = () => {
             imagePath: "/images/Product Images/Sip-FcBGA.png",
             
             // title: "FCFBGA_MUF (Molded Underfill)",
-            title:"SiP(System in Package)",
+            title:"SiP (System in Package)",
             backImage: BackFCFBGA_MUF,
             description: (
                 <>
