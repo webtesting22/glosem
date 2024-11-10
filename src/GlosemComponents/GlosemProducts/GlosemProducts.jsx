@@ -76,7 +76,7 @@ const GlosemProducts = () => {
             imagePath: "/images/Product Images/Lidded-FcBGA.png",
             backImage: BackFCBGA,
             // title: "Fine Pitch Cu pillar FC",
-            title:"Lidded FCBGA",
+            title: "Lidded FCBGA",
             description: (
                 <>
                     <Row className="ProductFirstRow">
@@ -140,9 +140,9 @@ const GlosemProducts = () => {
         {
             // imagePath: "/images/FCFBGA_MUF.webp",
             imagePath: "/images/Product Images/Sip-FcBGA.png",
-            
+
             // title: "FCFBGA_MUF (Molded Underfill)",
-            title:"SiP (System in Package)",
+            title: "SiP (System in Package)",
             backImage: BackFCFBGA_MUF,
             description: (
                 <>
@@ -240,7 +240,7 @@ const GlosemProducts = () => {
         {
             // imagePath: "/images/FCFBGA_eMUF.webp",
             imagePath: "/images/Product Images/MUF1.png",
-            title: "FCFBGA_eMUF (Exposed Molded Underfill)",
+            title: "FC CSP (Flip Chip Chip Scale Package)",
             backImage: BackFCFBGA_MUF,
             description: (
                 <>
