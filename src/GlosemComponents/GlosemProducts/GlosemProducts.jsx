@@ -76,7 +76,7 @@ const GlosemProducts = () => {
             imagePath: "/images/Product Images/Lidded-FcBGA.png",
             backImage: BackFCBGA,
             // title: "Fine Pitch Cu pillar FC",
-            title: "Lidded FCBGA",
+            title: "Lidded FCBGA (Lidded Flip chip Ball Grid Array)",
             description: (
                 <>
                     <Row className="ProductFirstRow">
