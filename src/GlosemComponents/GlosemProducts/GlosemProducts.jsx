@@ -15,7 +15,8 @@ const GlosemProducts = () => {
     const GlosemProductsData = [
         {
             // imagePath: "/images/FCBGA.webp",
-            imagePath: "/images/Product Images/Bare-Die-FcBGA.png",
+            // imagePath: "/images/Product Images/Bare-Die-FcBGA.png",
+            imagePath:"/images/Product Images/BARE DIE FCBGA-new.png",
             backImage: BackFCBGA,
             title: "FCBGA (Flip chip Ball Grid Array)",
             description: (
@@ -73,7 +74,7 @@ const GlosemProducts = () => {
         },
         {
             // imagePath: "/images/cuPillar.webp",
-            imagePath: "/images/Product Images/Lidded-FcBGA.png",
+            imagePath: "/images/Product Images/LIDDED FCBGA-new.png",
             backImage: BackFCBGA,
             // title: "Fine Pitch Cu pillar FC",
             title: "Lidded FCBGA (Lidded Flip chip Ball Grid Array)",
@@ -139,7 +140,7 @@ const GlosemProducts = () => {
         },
         {
             // imagePath: "/images/FCFBGA_MUF.webp",
-            imagePath: "/images/Product Images/Sip-FcBGA.png",
+            imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
 
             // title: "FCFBGA_MUF (Molded Underfill)",
             title: "SiP (System in Package)",
@@ -239,7 +240,7 @@ const GlosemProducts = () => {
         // },
         {
             // imagePath: "/images/FCFBGA_eMUF.webp",
-            imagePath: "/images/Product Images/MUF1.png",
+            imagePath: "/images/Product Images/FCCSP-new.png",
             title: "FC CSP (Flip Chip Chip Scale Package)",
             backImage: BackFCFBGA_MUF,
             description: (

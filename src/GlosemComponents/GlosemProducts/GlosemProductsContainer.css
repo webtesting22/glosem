@@ -140,6 +140,9 @@
 .ProductInsideImageContainer img{
   width: 100%;
 }
+.ProductsApplicationCard .CardImageContainer{
+  padding: 30px;
+}
 @media (max-width: 769px) {
   .ant-modal .ant-modal-content {
     padding: 20px 20px !important;
