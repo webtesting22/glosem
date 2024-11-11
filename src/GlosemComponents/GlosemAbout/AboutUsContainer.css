@@ -2,8 +2,10 @@
   padding-top: 0rem;
   padding-left: 7%;
   padding-right: 7%;
+  padding-bottom: 2rem;
   position: sticky;
   background-color: white;
+  margin-top: 6rem;
 }
 
 .TopOfContainer {
@@ -116,10 +118,7 @@
   color: white !important;
 }
 
-.ProductsContainer
-  .ant-collapse-item-active
-  .ant-collapse-expand-icon
-  .anticon {
+.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
   background-color: transparent !important;
   color: white !important;
 }
@@ -213,6 +212,7 @@ li {
   object-fit: contain;
   border-radius: 10px;
 }
+
 .ImageHover {
   transition: 0.5s;
 }
@@ -305,9 +305,11 @@ li {
 .LinksShow div {
   padding: 1rem 1rem;
 }
+
 .LinksShow div:first-child {
   padding: 0px;
 }
+
 .LinksShow h4 {
   color: rgb(0, 30, 96);
 }
@@ -330,6 +332,7 @@ li {
   border-bottom: 1px solid rgb(161, 161, 161);
   transition: 0.5s;
 }
+
 .RightSideCondition:hover {
   padding: 3rem 2rem;
   width: 100%;
@@ -340,6 +343,7 @@ li {
   color: white;
   transition: 0.5s;
 }
+
 .RightSideCondition:hover h2,
 .RightSideCondition:hover p ul li,
 .RightSideCondition:hover p ul b {
@@ -368,9 +372,11 @@ li {
 }
 
 .AnimatedParallaxImageContainer img {
-  width: 50%; /* Default width */
+  width: 50%;
+  /* Default width */
   border: 1px solid red;
-  transition: width 0.3s ease; /* Smooth transition */
+  transition: width 0.3s ease;
+  /* Smooth transition */
 }
 
 .ParallaxImage img {
@@ -380,7 +386,8 @@ li {
   display: flex;
   border-radius: 10px; */
 }
-.pImage{
+
+.pImage {
   align-items: center;
   margin: auto;
   position: sticky;
@@ -389,25 +396,31 @@ li {
   flex-direction: column;
   border-radius: 10px;
 }
+
 .ParallaxImage {
   height: 300vh;
   width: 50%;
   /* overflow: hidden; */
 }
+
 .CombineImageContainer {
   display: flex;
-  
+
 }
-.ParallaxImage:nth-child(2) img{
+
+.ParallaxImage:nth-child(2) img {
   /* margin-top: 20rem; */
 }
-.ParallaxImage:nth-child(3) img{
+
+.ParallaxImage:nth-child(3) img {
   /* margin-top: 40rem; */
 }
-.ParallaxImage:nth-child(4) img{
+
+.ParallaxImage:nth-child(4) img {
   /* margin-top: 60rem; */
 }
-.ParallaxImage:last-child{
+
+.ParallaxImage:last-child {
   /* margin-top: 20rem; */
 }
 
@@ -417,39 +430,102 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
+
 .rightSideImageContainer {
   width: 100%;
   aspect-ratio: 3/2;
   object-fit: contain;
   transform: rotate(360deg);
 }
+
 .rightSideImageContainer img {
   width: 100%;
   border-radius: 20px;
 }
-.aboutswiper{
+
+.aboutswiper {
   display: none;
   position: static;
 }
-.aboutswiper img{
+
+.aboutswiper img {
   background-color: white;
   z-index: 0;
 }
+
+.FounderCards {
+  padding: 20px;
+  height: 650px;
+  border: 1px dashed #001e6035;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.FounderCards p {
+  text-align: justify;
+
+}
+
+.FounderCards .Role {
+  color: #001e60;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.FounderCards div h2 {
+  color: #001e60;
+  padding: 0px 0px;
+  text-align: center;
+}
+
+.FounderCards img {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+.BackOverlayimage {
+  position: absolute;
+  height: 100%;
+  width: 100% !important;
+  opacity: 0.1;
+  top: 0px;
+  right: 0px;
+}
+
 @media (max-width: 769px) {
-  .aboutswiper{
+  .FounderCards {
+    padding: 20px;
+    height: 650px;
+    border: 1px dashed #001e6035;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .aboutswiper {
     display: block;
     padding-top: 3rem;
     height: auto;
   }
-  .aboutswiper img{
+
+  .aboutswiper img {
     height: 100%;
   }
+
   .ParallaxImage:last-child img {
     margin-top: 20rem;
     display: none;
   }
+
   .ParallaxImage:last-child {
     display: none;
   }
@@ -459,11 +535,15 @@ li {
     width: 100%;
     /* overflow: hidden; */
   }
+
   .ParallaxImage img {
-    width: 100%; /* Set width to 100% on mobile */
-    border-radius: 0; /* Reset border radius on mobile */
+    width: 100%;
+    /* Set width to 100% on mobile */
+    border-radius: 0;
+    /* Reset border radius on mobile */
   }
-  .CombineImageContainer{
+
+  .CombineImageContainer {
     display: none;
   }
 }

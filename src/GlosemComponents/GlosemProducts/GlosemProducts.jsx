@@ -7,6 +7,7 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 // import backFadeImage from "./backFadeImage.png"
 import BackFCBGA from "./BackFCBGA.png"
+import Lideed from "./Lideed.jpeg"
 import BackFCFBGA_MUF from "./BackFCFBGA_MUF (Molded Underfill).png"
 const GlosemProducts = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -74,7 +75,7 @@ const GlosemProducts = () => {
         },
         {
             // imagePath: "/images/cuPillar.webp",
-            imagePath: "/images/Product Images/LIDDED FCBGA-new.png",
+            imagePath: Lideed,
             backImage: BackFCBGA,
             // title: "Fine Pitch Cu pillar FC",
             title: "Lidded FCBGA (Lidded Flip chip Ball Grid Array)",
@@ -516,6 +517,7 @@ const GlosemProducts = () => {
                     </div>
                 </Modal>
             </div>
+            
         </>
     );
 };
