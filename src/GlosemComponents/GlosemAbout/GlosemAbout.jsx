@@ -33,7 +33,7 @@ const GlosemProductsData = [
             <ul>
                 <li><b>Advanced SMT Capabilities:</b> Leading-edge surface mount technology (SMT) for assembling advanced packages with the highest component density.</li>
                 {/* <li><b>Multichip Module (MCM) Assembly:</b> Expertise in MCM assembly for complex applications, enabling the integration of multiple chips onto a single substrate.</li> */}
-                <li><b>Molding Encapsulation:</b>State of the art molding encapsulation techniques for achieving small form factor packages.</li>
+                <li><b>Molding Encapsulation:</b> State of the art molding encapsulation techniques for achieving small form factor packages.</li>
                 <li><b>EMI Shielding Solutions:</b> Offers metal frame and PVD sputter based; based on end customer requirements can provide perfect solution.</li>
                 <li><b>Bare Die and Wafer-Level Packaging Assembly Capabilities</b>
                     {/* Proficiency in assembling bare die and wafer-level packages using advanced technologies like flip chip. */}
