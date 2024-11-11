@@ -45,7 +45,7 @@ const GlosemProductsData = [
         ),
     },
     {
-        imagePath: Img2,
+        imagePath:"/images/Product Images/SIP FCCSP MUF-new.png",
         // title: "Packaging Molding & BGA, Flip chip CSP",
         title: "SiP, fcCSP, fcBGA",
         children: (
@@ -264,22 +264,7 @@ const GlosemAbout = () => {
                         ))}
                     </Swiper>
                 </div>
-                {/* <div className="aboutTopImages">
-                    {AboutImagesData.map((item, index) => (
-                        <Row key={index} >
-                            <Col lg={12}>
-                                <div className="leftSideImageContainer">
-                                <h2>{item.title}</h2>
-                                </div>
-                            </Col>
-                            <Col lg={12}>
-                                <div className="rightSideImageContainer">
-                                    <img src={item.imgsrc}  alt={item.title} style={{ maxWidth: '100%' }} />
-                                </div>
-                            </Col>
-                        </Row>
-                    ))}
-                </div> */}
+                
                 <div className="TopOfContainer">
                     <div>
                         <h4>
