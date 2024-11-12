@@ -1,60 +1,77 @@
 .GlosemFooterContainer {
-    height: 30vh;
-    padding-top: 2rem;
-    border-top: 1px solid #e0e0e0;
-    background-color: white;
-    position: sticky;
+  height: 30vh;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  background-color: white;
+  position: sticky;
 }
-.footerLogoContainer{
-    width: 100%;
-    display:flex;
-    
-    justify-content: flex-end;
+.footerLogoContainer {
+  width: 100%;
+  display: flex;
+
+  justify-content: flex-end;
 }
-.footerLogoContainer img{
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    width: 50%;
+.footerLogoContainer img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 50%;
 }
 .QuickLinksContainer .Links {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .QuickLinksContainer .Links .NavigationLink {
-    margin: 0px;
+  margin: 0px;
 }
 
 .QuickLinksContainer .Links .NavigationLink:hover {
-    color: #0c4680;
+  color: #0c4680;
 }
 
-.QuickLinksContainer h2, .SocialLinksContainer h2 {
-    font-weight: 500;
+.QuickLinksContainer h2,
+.SocialLinksContainer h2,
+.AddressContainer h2 {
+  font-weight: 500;
 }
 
 .QuickLinksContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .CopyrightText {
-    
-    padding: 10px 20px;
-    margin: 0px 20px;
-    border-top: 1px solid #e0e0e0;
+  padding: 10px 20px;
+  margin: 0px 20px;
+  border-top: 1px solid #e0e0e0;
 }
 
 .CopyrightText p {
-    color: #5c5c5c;
-    font-weight: 300;
-    text-align: center;
+  color: #5c5c5c;
+  font-weight: 300;
+  text-align: center;
 }
 
-.SocialLinksContainer a{
-    font-size: 25px;
-    margin: 10px 10px;
+.SocialLinksContainer a {
+  font-size: 25px;
+  margin: 10px 10px;
+}
+.AddressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+@media (max-width:769px){
+    .AddressContainer{
+        padding: 1rem 5rem;
+    }
+}
+@media (max-width: 576px) {
+  .AddressContainer {
+    /* flex-direction: row; */
+    /* align-items: left; */
+    padding: 1rem 4rem;
+}
 }

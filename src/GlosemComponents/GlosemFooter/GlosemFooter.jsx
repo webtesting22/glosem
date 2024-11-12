@@ -18,14 +18,14 @@ const GlosemFooter = () => {
         <>
             <div className="GlosemFooterContainer">
                 <Row>
-                    <Col lg={8} md={24} xs={0}>
+                    <Col lg={6} md={24} xs={0}>
                         <Link to="/">
                             <div className="footerLogoContainer">
                                 <img src="/images/logo.png" />
                             </div>
                         </Link>
                     </Col>
-                    <Col lg={8} md={24} xs={12}>
+                    <Col lg={6} md={24} xs={12}>
                         <div className="QuickLinksContainer">
                             <div>
                                 <h2>Quick Links</h2>
@@ -39,7 +39,7 @@ const GlosemFooter = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={8} md={24} xs={12}>
+                    <Col lg={4} md={24} xs={12}>
                         <div className="SocialLinksContainer">
                             <div>
                                 <h2>Social Links</h2>
@@ -49,6 +49,12 @@ const GlosemFooter = () => {
                                     <Link><FaXTwitter /></Link>
                                 </div>
                             </div>
+                        </div>
+                    </Col>
+                    <Col lg={6} md={24} xs={24}>
+                        <div className="AddressContainer">
+                            <h2>Office</h2>
+                            <p>6, Shantiniketan Society, Surendra Mangaldas Road, Near Gujarat College, Ellisbridge, Ahmedabad-380001.</p>
                         </div>
                     </Col>
                 </Row>

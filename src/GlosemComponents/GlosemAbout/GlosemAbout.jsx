@@ -349,7 +349,7 @@ const GlosemAbout = () => {
                     </Row>
 
                 </div>
-
+                
                 {/* 
                 <div className="ProductsContainer">
                     <h2>Full stack product portfolio with cutting-edge technologies</h2>
