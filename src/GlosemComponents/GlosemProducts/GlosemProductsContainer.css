@@ -140,6 +140,9 @@
 .ProductInsideImageContainer img{
   width: 100%;
 }
+#ProductApplicationCard .CardImageContainer{
+  padding: 0px;
+}
 .ProductsApplicationCard .CardImageContainer{
   padding: 30px;
 }

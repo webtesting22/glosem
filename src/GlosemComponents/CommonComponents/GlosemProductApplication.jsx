@@ -136,7 +136,7 @@ const GlosemProductApplication = () => {
                         </span>
                     </div>
                 </div>
-                <div className="ProductsApplicationCard">
+                <div className="ProductsApplicationCard" id="ProductApplicationCard">
                     <Row>
                         {ProductApplicationData.map((item, index) => (
                             <Col lg={8} data-aos="fade-up" // Set the AOS animation type

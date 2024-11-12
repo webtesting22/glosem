@@ -218,7 +218,7 @@ const GlosemAbout = () => {
 
     const AdviserData = [
         {
-            title: "Advisor: Semiconductor Technology Executive",
+            title: " Semiconductor Technology Executive",
             tagline: "Experience : 27+years in Semiconductor Technology",
             secondTagline: "",
             points: [
@@ -232,7 +232,7 @@ const GlosemAbout = () => {
             ]
         },
         {
-            title: "Advisor: Semiconductor Packaging Expert",
+            title: " Semiconductor Packaging Expert",
             tagline: "Experience : 10+years in Semiconductor Technology",
             points: [
                 "Advanced Packaging Solutions (SiP, IoT, RF 5G)",
@@ -244,7 +244,7 @@ const GlosemAbout = () => {
             ]
         },
         {
-            title: "Advisor: Semiconductor Technology Executive",
+            title: " Semiconductor Technology Executive",
             tagline: "Experience : 20+ years in Semiconductor Technology & Business Leadership",
             points: [
                 "Ex- Partner at White Field Capital",
@@ -382,13 +382,13 @@ const GlosemAbout = () => {
                         ))}
                     </Row>
                 </div>
-                {/* <div className="AdviserSectionContainer">
+                <div className="AdviserSectionContainer">
                     <Row>
                         {AdviserData.map((item, index) => (
-                            <Col lg={8}>
+                            <Col lg={8} key={index}>
                                 <div className="AdviserCard">
                                     <div>
-                                        <h2>{item.title}</h2>
+                                        <h2 style={{fontWeight:"600",color:"#001e60"}}>Adviser: <br /><span style={{fontWeight:"400",color:"#001e60"}}>{item.title}</span></h2>
                                         <p>{item.tagline}</p>
                                         <ul>
                                             {item.points.map((point, i) => (
@@ -401,7 +401,7 @@ const GlosemAbout = () => {
                         ))}
                     </Row>
 
-                </div> */}
+                </div>
 
                 {/* 
                 <div className="ProductsContainer">
