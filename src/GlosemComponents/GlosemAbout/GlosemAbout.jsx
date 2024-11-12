@@ -181,8 +181,7 @@ const GlosemAbout = () => {
                 "OSAT Assembly Line Setup & Qualification",
                 " ⁠Process expertise in SMT, Flip Chip, Molding, EMI Shielding, BGA, Wafer B/G & Dicing",
                 "Global Supply Chain Optimization",
-                "Package Characterization, Reliability",
-                "Testing & Failure Analysis"
+                "Package Characterization, Reliability Testing & Failure Analysis",
             ]
         },
         {
