@@ -192,7 +192,7 @@ const GlosemAbout = () => {
                 "Ex- Partner at White Field Capital",
                 "Prior experience in semiconductor packaging and consumer products",
                 "Sourcing and development of supply chains in China and India",
-                "A warded 9 US patents focused on semiconductor packaging including modules and EMI shielding"
+                "Awarded 9 US patents focused on semiconductor packaging including modules and EMI shielding"
             ]
         }
     ]
