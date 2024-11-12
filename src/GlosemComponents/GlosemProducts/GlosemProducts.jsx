@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Row, Col, Button, Modal } from "antd";
+import { Row, Col, Button, Modal,Image } from "antd";
 import "./GlosemProductsContainer.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
@@ -9,10 +9,91 @@ import 'swiper/css/effect-fade';
 import BackFCBGA from "./BackFCBGA.png"
 import Lideed from "./Lideed.jpeg"
 import BackFCFBGA_MUF from "./BackFCFBGA_MUF (Molded Underfill).png"
+import Img1 from "/images/Product Images/Chip Mockups - Copy-04.png";
+import Img4 from "/images/Product Images/Chip Mockups - Copy-01.png";
+
 const GlosemProducts = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [modalContent, setModalContent] = useState({ title: '', description: '', backImage: '' });
+    const [scrollProgress, setScrollProgress] = useState(0);
 
+    const handleScroll = () => {
+        const scrollTop = window.pageYOffset; // How far the page is scrolled
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
+        const startScroll = scrollHeight * 0.5; // Start calculating after 50% of total height
+
+        if (scrollTop > startScroll) {
+            const adjustedScroll = scrollTop - startScroll;
+            const adjustedHeight = scrollHeight - startScroll;
+            const scrollPercentage = (adjustedScroll / adjustedHeight) * 100;
+            setScrollProgress(scrollPercentage);
+        } else {
+            setScrollProgress(0); // Keep progress at 0 before 50% scroll
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll); // Cleanup the event listener
+    }, []);
+
+    const GlosemProductsDataAbout = [
+        {
+            imagePath: Img1,
+            title: "Packaging capabilities",
+            children: (
+                <ul>
+                    <li><b>Advanced SMT Capabilities:</b> Leading-edge surface mount technology (SMT) for assembling advanced packages with the highest component density.</li>
+                    {/* <li><b>Multichip Module (MCM) Assembly:</b> Expertise in MCM assembly for complex applications, enabling the integration of multiple chips onto a single substrate.</li> */}
+                    <li><b>Molding Encapsulation:</b> State of the art molding encapsulation techniques for achieving small form factor packages.</li>
+                    <li><b>EMI Shielding Solutions:</b> Offers metal frame and PVD sputter based; based on end customer requirements can provide perfect solution.</li>
+                    <li><b>Bare Die and Wafer-Level Packaging Assembly Capabilities</b>
+                        {/* Proficiency in assembling bare die and wafer-level packages using advanced technologies like flip chip. */}
+                    </li>
+                    <li><b>Wafer Backgrinding and Dicing Capabilities</b>
+                        {/* Precision wafer backgrinding and dicing capabilities to create the smallest form factor packages. */}
+                    </li>
+                </ul>
+            ),
+        },
+        {
+            imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
+            // title: "Packaging Molding & BGA, Flip chip CSP",
+            title: "SiP, fcCSP, fcBGA",
+            children: (
+                <ul>
+                    {/* <li><b>Molding Encapsulation:</b> State-of-the-art molding encapsulation techniques for achieving the smallest form factor packages while meeting stringent reliability standards.</li> */}
+                    <li><b>Industry-Leading Materials and Equipment:</b> Utilization of mold machines and materials sourced from top suppliers in the industry.</li>
+                    {/* <li><b>Ball Grid Array (BGA):</b> Advanced BGA technology to enable the highest density of input/output connections within the smallest package size.</li> */}
+                    <li>Provide assembly solutions for System in Package(SiP), fcCSP, fcBGA based on customer needs. Customize layer count, package size either with BGA (Ball Grid Array) or LGA (Land Grid Array) connections.</li>
+                    <li>Provide EMI shielded packages for communication based products which can reduce interference and technology to provide smaller form factor packages.</li>
+                </ul>
+            ),
+        },
+        // {
+        //     imagePath: Img3,
+        //     title: "Packaging EMI Shielding",
+        //     children: (
+        //         <ul>
+        //             <li><b>EMI Shielding Importance:</b> As devices become more compact and integrated, EMI shielding is crucial to prevent interference that can degrade performance, especially in applications like IoT, 5G, RF, Wi-Fi, Bluetooth, and automotive SiP.</li>
+        //             <li><b>Glosem's EMI Shielding Solutions:</b> Glosem offers two primary EMI shielding technologies: Metal Frame and PVD Sputter.</li>
+        //             <li><b>Metal Frame:</b> Provides lower cost, reworkability, thermal performance, and flexible sizing options.</li>
+        //             <li><b>PVD Sputter:</b> Offers the smallest size, high reliability, and customizable shielding design.</li>
+        //         </ul>
+        //     ),
+        // },
+        {
+            imagePath: Img4,
+            // title: "Services Package, REL & FA",
+            title: "Package Reliability And Failure Analysis Services",
+            children: (
+                <ul>
+                    <li><b>Reliability Testing:</b> JEDEC-compliant testing, Moisture, thermal, and humidity testing, Drop test.</li>
+                    <li><b>Failure Analysis:</b> Mechanical and electrical testing, X-ray, SAT, SEM, Electrical characterization.</li>
+                </ul>
+            ),
+        },
+    ]
     const GlosemProductsData = [
         {
             // imagePath: "/images/FCBGA.webp",
@@ -501,6 +582,44 @@ const GlosemProducts = () => {
                         ))}
                     </Row>
                 </div>
+                <div className="ProductsContainer">
+                    <h2>Full stack product portfolio with cutting-edge technologies</h2>
+                    <br /><br />
+
+                    <Row>
+                        <Col lg={4}>
+                            <div className="stickyContainer" data-aos="fade-up" data-aos-duration="1000">
+
+                                <div className="LinksShow">
+                                    <div className="ProgressBar" style={{ height: `${scrollProgress}%`, width: '2px', backgroundColor: '#001e60' }}>
+
+                                    </div>
+                                    {GlosemProductsDataAbout.map((item, index) => (
+                                        <div key={index}>
+                                            <h4 style={{ fontWeight: "400", cursor: "pointer" }}
+                                                onClick={() => scrollToSection(`section-${index}`)}
+                                            >{item.title}</h4>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={20}>
+                            {GlosemProductsDataAbout.map((item, index) => (
+                                <div id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index*100} >
+                                    <div>
+                                        <h2>{item.title}</h2>
+                                        <br />
+                                        <p>{item.children}</p>
+                                    </div>
+                                    <div className="ImageHover">
+                                        <Image src={item.imagePath} alt="" />
+                                    </div>
+                                </div>
+                            ))}
+                        </Col>
+                    </Row>
+                </div> 
                 {/* Modal for showing product details */}
                 <Modal
                     title={modalContent.title}

@@ -26,64 +26,6 @@ import Founder2 from "./image (13) 2.svg"
 // import "../GlosemProducts/GlosemProductsContainer.css";
 
 
-
-const GlosemProductsData = [
-    {
-        imagePath: Img1,
-        title: "Packaging capabilities",
-        children: (
-            <ul>
-                <li><b>Advanced SMT Capabilities:</b> Leading-edge surface mount technology (SMT) for assembling advanced packages with the highest component density.</li>
-                {/* <li><b>Multichip Module (MCM) Assembly:</b> Expertise in MCM assembly for complex applications, enabling the integration of multiple chips onto a single substrate.</li> */}
-                <li><b>Molding Encapsulation:</b> State of the art molding encapsulation techniques for achieving small form factor packages.</li>
-                <li><b>EMI Shielding Solutions:</b> Offers metal frame and PVD sputter based; based on end customer requirements can provide perfect solution.</li>
-                <li><b>Bare Die and Wafer-Level Packaging Assembly Capabilities</b>
-                    {/* Proficiency in assembling bare die and wafer-level packages using advanced technologies like flip chip. */}
-                </li>
-                <li><b>Wafer Backgrinding and Dicing Capabilities</b>
-                    {/* Precision wafer backgrinding and dicing capabilities to create the smallest form factor packages. */}
-                </li>
-            </ul>
-        ),
-    },
-    {
-        imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
-        // title: "Packaging Molding & BGA, Flip chip CSP",
-        title: "SiP, fcCSP, fcBGA",
-        children: (
-            <ul>
-                {/* <li><b>Molding Encapsulation:</b> State-of-the-art molding encapsulation techniques for achieving the smallest form factor packages while meeting stringent reliability standards.</li> */}
-                <li><b>Industry-Leading Materials and Equipment:</b> Utilization of mold machines and materials sourced from top suppliers in the industry.</li>
-                {/* <li><b>Ball Grid Array (BGA):</b> Advanced BGA technology to enable the highest density of input/output connections within the smallest package size.</li> */}
-                <li>Provide assembly solutions for System in Package(SiP), fcCSP, fcBGA based on customer needs. Customize layer count, package size either with BGA (Ball Grid Array) or LGA (Land Grid Array) connections.</li>
-                <li>Provide EMI shielded packages for communication based products which can reduce interference and technology to provide smaller form factor packages.</li>
-            </ul>
-        ),
-    },
-    // {
-    //     imagePath: Img3,
-    //     title: "Packaging EMI Shielding",
-    //     children: (
-    //         <ul>
-    //             <li><b>EMI Shielding Importance:</b> As devices become more compact and integrated, EMI shielding is crucial to prevent interference that can degrade performance, especially in applications like IoT, 5G, RF, Wi-Fi, Bluetooth, and automotive SiP.</li>
-    //             <li><b>Glosem's EMI Shielding Solutions:</b> Glosem offers two primary EMI shielding technologies: Metal Frame and PVD Sputter.</li>
-    //             <li><b>Metal Frame:</b> Provides lower cost, reworkability, thermal performance, and flexible sizing options.</li>
-    //             <li><b>PVD Sputter:</b> Offers the smallest size, high reliability, and customizable shielding design.</li>
-    //         </ul>
-    //     ),
-    // },
-    {
-        imagePath: Img4,
-        // title: "Services Package, REL & FA",
-        title: "Package Reliability And Failure Analysis Services",
-        children: (
-            <ul>
-                <li><b>Reliability Testing:</b> JEDEC-compliant testing, Moisture, thermal, and humidity testing, Drop test.</li>
-                <li><b>Failure Analysis:</b> Mechanical and electrical testing, X-ray, SAT, SEM, Electrical characterization.</li>
-            </ul>
-        ),
-    },
-]
 const AboutImagesData = [
     {
         title: "SIP (with 2-pc lid)",
@@ -223,7 +165,7 @@ const GlosemAbout = () => {
             secondTagline: "",
             points: [
 
-                "Strategy Development & TechnologyDeployment",
+                "Strategy Development & Technology Deployment",
                 "Program Management & Roadmaps Alignment",
                 "Leading Cross-Functional Teams",
                 "High Volume Manufacturing & NPI",
@@ -366,9 +308,10 @@ const GlosemAbout = () => {
                     <hr />
                 </div>
                 <div className="FoundersCards">
+
                     <Row>
                         {FounderDetails.map((item, index) => (
-                            <Col lg={12} key={index}>
+                            <Col lg={12} md={24} key={index} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index*200}>
                                 <div className="FounderCards">
                                     <img src={backFadeImage} alt="" className="BackOverlayimage" />
                                     <div style={{ position: "sticky" }}>
@@ -383,12 +326,16 @@ const GlosemAbout = () => {
                     </Row>
                 </div>
                 <div className="AdviserSectionContainer">
+                    <h2 className="advisorHeading">Highly Experienced Advisory Board</h2>
+
                     <Row>
+
                         {AdviserData.map((item, index) => (
-                            <Col lg={8} key={index}>
+                            <Col lg={8} md={24} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index*200} key={index}>
+
                                 <div className="AdviserCard">
                                     <div>
-                                        <h2 style={{fontWeight:"600",color:"#001e60"}}>Adviser: <br /><span style={{fontWeight:"400",color:"#001e60"}}>{item.title}</span></h2>
+                                        <h2 style={{ fontWeight: "600", color: "#001e60" }}>Advisor: <br /><span style={{ fontWeight: "400", color: "#001e60" }}>{item.title}</span></h2>
                                         <p>{item.tagline}</p>
                                         <ul>
                                             {item.points.map((point, i) => (

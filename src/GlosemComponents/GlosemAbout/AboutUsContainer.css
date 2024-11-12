@@ -408,21 +408,6 @@ li {
 
 }
 
-.ParallaxImage:nth-child(2) img {
-  /* margin-top: 20rem; */
-}
-
-.ParallaxImage:nth-child(3) img {
-  /* margin-top: 40rem; */
-}
-
-.ParallaxImage:nth-child(4) img {
-  /* margin-top: 60rem; */
-}
-
-.ParallaxImage:last-child {
-  /* margin-top: 20rem; */
-}
 
 .leftSideImageContainer {
   width: 100%;
@@ -457,11 +442,11 @@ li {
 
 .FounderCards {
   padding: 20px;
-  height: 650px;
+  height: 600px;
   border: 1px dashed #001e6035;
   margin: 10px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
 }
 
@@ -519,6 +504,10 @@ li {
   /* background-color: red; */
   border-left: 1px dashed #001e6035;
   border-right: 1px dashed #001e6035;
+}
+.advisorHeading{
+  padding-left: 20px;
+  font-weight: 400;
 }
 @media (max-width: 769px) {
   .AdviserSectionContainer{
