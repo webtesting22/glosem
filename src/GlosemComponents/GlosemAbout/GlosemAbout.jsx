@@ -124,7 +124,7 @@ const GlosemAbout = () => {
                     real estate and technology industries. With over 30 years of experience at Jaydeep
                     Buildcon, he has established himself as a visionary leader and innovator in the real estate
                     sector. Mr. Patel's expertise in developing innovative products and solutions has shaped
-                    the future of the real estate industry
+                    the future of the real estate industry.
                 </p>
                 <br />
                 <p>Recognizing the immense potential of emerging technologies, Mr. Patel has recently
@@ -132,7 +132,7 @@ const GlosemAbout = () => {
                     technology have enabled him to successfully explore the realm of loT products and
                     develop practical applications. Mr. Patel's dedication to continuous learning, coupled
                     with his meticulous attention to detail, has solidified his reputation as a respected
-                    industry leader</p>
+                    industry leader.</p>
             </>
         },
         {
@@ -146,7 +146,7 @@ const GlosemAbout = () => {
                     A trained pharmacist from the Massachusetts College of Pharmacy, Tejas is skilled in
                     operations, Accounting, Finance, and HR. He has expanded his family office's investment
                     portfolio to include over 30 companies, including early investments in three unicorns and
-                    partnerships with major VC and PE firms,.
+                    partnerships with major VC and PE firms.
                 </p>
                 <br />
                 <p>His recent focus is on India's rapidly growing semiconductor industry, where he is
