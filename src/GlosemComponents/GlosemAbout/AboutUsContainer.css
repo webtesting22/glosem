@@ -118,7 +118,10 @@
   color: white !important;
 }
 
-.ProductsContainer .ant-collapse-item-active .ant-collapse-expand-icon .anticon {
+.ProductsContainer
+  .ant-collapse-item-active
+  .ant-collapse-expand-icon
+  .anticon {
   background-color: transparent !important;
   color: white !important;
 }
@@ -405,9 +408,7 @@ li {
 
 .CombineImageContainer {
   display: flex;
-
 }
-
 
 .leftSideImageContainer {
   width: 100%;
@@ -415,7 +416,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .rightSideImageContainer {
@@ -452,7 +452,6 @@ li {
 
 .FounderCards p {
   text-align: justify;
-
 }
 
 .FounderCards .Role {
@@ -483,12 +482,12 @@ li {
   top: 0px;
   right: 0px;
 }
-.AdviserSectionContainer{
+.AdviserSectionContainer {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.AdviserSectionContainer .AdviserCard{
+.AdviserSectionContainer .AdviserCard {
   padding: 20px;
 }
 .AdviserSectionContainer .AdviserCard ul {
@@ -497,24 +496,25 @@ li {
   padding-top: 20px;
 }
 
-.AdviserSectionContainer .AdviserCard h2{
+.AdviserSectionContainer .AdviserCard h2 {
   padding-bottom: 20px;
 }
-.AdviserSectionContainer .ant-row .ant-col:nth-child(2) .AdviserCard{
+.AdviserSectionContainer .ant-row .ant-col:nth-child(2) .AdviserCard {
   /* background-color: red; */
   border-left: 1px dashed #001e6035;
   border-right: 1px dashed #001e6035;
 }
-.advisorHeading{
-  padding-left: 20px;
+.advisorHeading {
+  padding-left: 3%;
   font-weight: 400;
+  padding-bottom: 1rem;
 }
 @media (max-width: 769px) {
-  .AdviserSectionContainer{
+  .AdviserSectionContainer {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  .AdviserSectionContainer .ant-row .ant-col:nth-child(2) .AdviserCard{
+  .AdviserSectionContainer .ant-row .ant-col:nth-child(2) .AdviserCard {
     /* background-color: red; */
     border-top: 1px dashed #001e6035;
     border-bottom: 1px dashed #001e6035;
@@ -531,7 +531,7 @@ li {
     position: relative;
     margin-bottom: 10px;
   }
-  
+
   .aboutswiper {
     display: block;
     padding-top: 3rem;
@@ -565,6 +565,12 @@ li {
   }
 
   .CombineImageContainer {
+    display: none;
+  }
+  .ProductsContainer h2 {
+    padding-left: 3%;
+  }
+  .stickyContainer{
     display: none;
   }
 }

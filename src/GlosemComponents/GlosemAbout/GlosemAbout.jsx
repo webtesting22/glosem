@@ -161,7 +161,7 @@ const GlosemAbout = () => {
     const AdviserData = [
         {
             title: " Semiconductor Technology Executive",
-            tagline: "Experience : 27+years in Semiconductor Technology",
+            tagline: "Experience : 27+ years in Semiconductor Technology",
             secondTagline: "",
             points: [
 
@@ -175,7 +175,7 @@ const GlosemAbout = () => {
         },
         {
             title: " Semiconductor Packaging Expert",
-            tagline: "Experience : 10+years in Semiconductor Technology",
+            tagline: "Experience : 10+ years in Semiconductor Technology",
             points: [
                 "Advanced Packaging Solutions (SiP, IoT, RF 5G)",
                 "OSAT Assembly Line Setup & Qualification",
@@ -191,7 +191,7 @@ const GlosemAbout = () => {
             points: [
                 "Ex- Partner at White Field Capital",
                 "Prior experience in semiconductor packaging and consumer products",
-                "Sourcing and development of supply chains in China and India.",
+                "Sourcing and development of supply chains in China and India",
                 "A warded 9 US patents focused on semiconductor packaging including modules and EMI shielding"
             ]
         }
