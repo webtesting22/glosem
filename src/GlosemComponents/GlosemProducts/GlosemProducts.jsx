@@ -7,7 +7,7 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 // import backFadeImage from "./backFadeImage.png"
 import BackFCBGA from "./BackFCBGA.png"
-import Lideed from "./Lideed.jpeg"
+import Lideed from "./Chip Design.png"
 import BackFCFBGA_MUF from "./BackFCFBGA_MUF (Molded Underfill).png"
 import Img1 from "/images/Product Images/Chip Mockups - Copy-04.png";
 import Img4 from "/images/Product Images/Chip Mockups - Copy-01.png";
