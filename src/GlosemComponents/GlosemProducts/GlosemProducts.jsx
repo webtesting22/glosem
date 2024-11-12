@@ -445,6 +445,18 @@ const GlosemProducts = () => {
     const handleCancel = () => {
         setIsModalVisible(false);
     };
+    const scrollToSection = (id, offset = 100) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = sectionPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
