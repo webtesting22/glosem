@@ -505,7 +505,7 @@ li {
   border-right: 1px dashed #001e6035;
 }
 .advisorHeading {
-  padding-left: 3%;
+  /* padding-left: 3%; */
   font-weight: 400;
   padding-bottom: 1rem;
 }
@@ -572,5 +572,8 @@ li {
   }
   .stickyContainer{
     display: none;
+  }
+  .advisorHeading {
+    padding-left: 3%;
   }
 }
