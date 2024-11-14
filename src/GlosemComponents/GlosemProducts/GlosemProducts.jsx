@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Row, Col, Button, Modal,Image } from "antd";
+import { Row, Col, Button, Modal, Image } from "antd";
 import "./GlosemProductsContainer.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
@@ -39,7 +39,8 @@ const GlosemProducts = () => {
 
     const GlosemProductsDataAbout = [
         {
-            imagePath: Img1,
+            // imagePath: Img1,
+            imagePath:'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-04-DiJlpi9B.png',
             title: "Packaging capabilities",
             children: (
                 <ul>
@@ -57,7 +58,8 @@ const GlosemProducts = () => {
             ),
         },
         {
-            imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
+            // imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
+            imagePath:"https://webtesting-upload.vercel.app/assets/SIP%20FCCSP%20MUF-new-B5fhhbLG.png",
             // title: "Packaging Molding & BGA, Flip chip CSP",
             title: "SiP, fcCSP, fcBGA",
             children: (
@@ -83,7 +85,8 @@ const GlosemProducts = () => {
         //     ),
         // },
         {
-            imagePath: Img4,
+            // imagePath: Img4,
+            imagePath:'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-01-v4se9ONf.png',
             // title: "Services Package, REL & FA",
             title: "Package Reliability And Failure Analysis Services",
             children: (
@@ -96,9 +99,9 @@ const GlosemProducts = () => {
     ]
     const GlosemProductsData = [
         {
-            // imagePath: "/images/FCBGA.webp",
-            // imagePath: "/images/Product Images/Bare-Die-FcBGA.png",
-            imagePath:"/images/Product Images/BARE DIE FCBGA-new.png",
+
+            // imagePath:"/images/Product Images/BARE DIE FCBGA-new.png",
+            imagePath: "https://webtesting-upload.vercel.app/assets/BARE%20DIE%20FCBGA-new-CwsPUUVL.png",
             backImage: BackFCBGA,
             title: "FCBGA (Flip chip Ball Grid Array)",
             description: (
@@ -155,8 +158,9 @@ const GlosemProducts = () => {
             )
         },
         {
-            // imagePath: "/images/cuPillar.webp",
-            imagePath: Lideed,
+
+            // imagePath: Lideed,
+            imagePath: "https://webtesting-upload.vercel.app/assets/Chip%20Design-CU7O-mT9.png",
             backImage: BackFCBGA,
             // title: "Fine Pitch Cu pillar FC",
             title: "Lidded FCBGA (Lidded Flip chip Ball Grid Array)",
@@ -221,10 +225,8 @@ const GlosemProducts = () => {
             )
         },
         {
-            // imagePath: "/images/FCFBGA_MUF.webp",
-            imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
-
-            // title: "FCFBGA_MUF (Molded Underfill)",
+            // imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
+            imagePath: "https://webtesting-upload.vercel.app/assets/SIP%20FCCSP%20MUF-new-B5fhhbLG.png",
             title: "SiP (System in Package)",
             backImage: BackFCFBGA_MUF,
             description: (
@@ -321,8 +323,8 @@ const GlosemProducts = () => {
         //     )
         // },
         {
-            // imagePath: "/images/FCFBGA_eMUF.webp",
-            imagePath: "/images/Product Images/FCCSP-new.png",
+            // imagePath: "/images/Product Images/FCCSP-new.png",
+            imagePath: "https://webtesting-upload.vercel.app/assets/FCCSP-new-BUKtdonx.png",
             title: "FC CSP (Flip Chip Chip Scale Package)",
             backImage: BackFCFBGA_MUF,
             description: (
@@ -563,8 +565,9 @@ const GlosemProducts = () => {
                 <div className="ProductsApplicationCard">
                     <Row>
                         {GlosemProductsData.map((item, index) => (
-                            <Col lg={12} md={12} data-aos="fade-up" // Set the AOS animation type
-                                data-aos-delay={index * 200} style={{ margin: "20px 0px" }}>
+                            <Col lg={12} md={12}
+                                data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 200}
+                                style={{ margin: "20px 0px" }}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img
@@ -600,7 +603,9 @@ const GlosemProducts = () => {
 
                     <Row>
                         <Col lg={4}>
-                            <div className="stickyContainer" data-aos="fade-up" data-aos-duration="1000">
+                            <div className="stickyContainer"
+                            //data-aos="fade-up" data-aos-duration="1000"
+                            >
 
                                 <div className="LinksShow">
                                     <div className="ProgressBar" style={{ height: `${scrollProgress}%`, width: '2px', backgroundColor: '#001e60' }}>
@@ -618,7 +623,7 @@ const GlosemProducts = () => {
                         </Col>
                         <Col lg={20}>
                             {GlosemProductsDataAbout.map((item, index) => (
-                                <div id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index*100} >
+                                <div id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100} >
                                     <div>
                                         <h2>{item.title}</h2>
                                         <br />
@@ -631,7 +636,7 @@ const GlosemProducts = () => {
                             ))}
                         </Col>
                     </Row>
-                </div> 
+                </div>
                 {/* Modal for showing product details */}
                 <Modal
                     title={modalContent.title}
@@ -648,7 +653,7 @@ const GlosemProducts = () => {
                     </div>
                 </Modal>
             </div>
-            
+
         </>
     );
 };

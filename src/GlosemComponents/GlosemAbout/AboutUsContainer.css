@@ -253,6 +253,7 @@ li {
   }
 
   .RightSideCondition {
+    
     padding: 1rem 0rem !important;
     /* padding: 1rem 1rem !important; */
     flex-direction: column;

@@ -156,7 +156,7 @@
   width: 100%;
   display: flex;
   border-bottom: 1px solid rgb(161, 161, 161);
-  transition: 0.5s;
+  transition: 0.5s !important;
 }
 
 .RightSideCondition:hover {
