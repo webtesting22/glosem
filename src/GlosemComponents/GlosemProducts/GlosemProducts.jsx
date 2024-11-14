@@ -566,7 +566,7 @@ const GlosemProducts = () => {
                     <Row>
                         {GlosemProductsData.map((item, index) => (
                             <Col lg={12} md={12}
-                                data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}
+                                data-aos="fade-up" data-aos-duration="400" data-aos-delay={index * 100}
                                 style={{ margin: "20px 0px" }}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
@@ -623,7 +623,7 @@ const GlosemProducts = () => {
                         </Col>
                         <Col lg={20}>
                             {GlosemProductsDataAbout.map((item, index) => (
-                                <div id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100} >
+                                <div id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="400" data-aos-delay={index * 100} >
                                     <div>
                                         <h2>{item.title}</h2>
                                         <br />
