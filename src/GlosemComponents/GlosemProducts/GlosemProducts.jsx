@@ -40,7 +40,7 @@ const GlosemProducts = () => {
     const GlosemProductsDataAbout = [
         {
             // imagePath: Img1,
-            imagePath:'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-04-DiJlpi9B.png',
+            imagePath: 'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-04-DiJlpi9B.png',
             title: "Packaging capabilities",
             children: (
                 <ul>
@@ -59,7 +59,7 @@ const GlosemProducts = () => {
         },
         {
             // imagePath: "/images/Product Images/SIP FCCSP MUF-new.png",
-            imagePath:"https://webtesting-upload.vercel.app/assets/SIP%20FCCSP%20MUF-new-B5fhhbLG.png",
+            imagePath: "https://webtesting-upload.vercel.app/assets/SIP%20FCCSP%20MUF-new-B5fhhbLG.png",
             // title: "Packaging Molding & BGA, Flip chip CSP",
             title: "SiP, fcCSP, fcBGA",
             children: (
@@ -86,7 +86,7 @@ const GlosemProducts = () => {
         // },
         {
             // imagePath: Img4,
-            imagePath:'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-01-v4se9ONf.png',
+            imagePath: 'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-01-v4se9ONf.png',
             // title: "Services Package, REL & FA",
             title: "Package Reliability And Failure Analysis Services",
             children: (
@@ -566,7 +566,7 @@ const GlosemProducts = () => {
                     <Row>
                         {GlosemProductsData.map((item, index) => (
                             <Col lg={12} md={12}
-                                data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 200}
+                                data-aos="fade-up" data-aos-duration="500" data-aos-delay={index * 100}
                                 style={{ margin: "20px 0px" }}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
