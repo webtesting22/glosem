@@ -524,7 +524,8 @@ li {
   }
   .FounderCards {
     padding: 20px;
-    height: 650px;
+    /* height: 650px; */
+    height: 100%;
     border: 1px dashed #001e6035;
     margin: 0px;
     display: flex;
