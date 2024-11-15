@@ -57,6 +57,7 @@ const GlosemHome = () => {
                     <video
                         src="https://webtesting-upload.vercel.app/assets/GlosemBackImage-CJQo_7U3.mp4"
                         ref={videoRefPc}
+                        alt="Glosem Technologies"
                         loop={true} // Set loop to true for continuous playback
                         autoPlay
                         muted

@@ -314,7 +314,7 @@ const GlosemAbout = () => {
                                 <div className="FounderCards">
                                     <img src={backFadeImage} alt="" className="BackOverlayimage" />
                                     <div style={{ position: "sticky" }}>
-                                        <img src={item.founderImage} alt="" />
+                                        <img src={item.founderImage} alt="Founder Image" />
                                         <h2>{item.foundername}</h2>
                                         <p className="Role">{item.role}</p>
                                         <div>{item.description}</div>

@@ -66,7 +66,7 @@ const GlosemNavigation = () => {
                         <Link to="/">
                             <img
                                 src={isHomePage ? (isScrolled ? "/images/logo.png" : "/images/glosem.png") : "/images/logo.png"}
-                                alt="Logo"
+                                alt="Glosem Technologies"
                             />
                         </Link>
                     </div>

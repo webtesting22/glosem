@@ -21,7 +21,7 @@ const GlosemFooter = () => {
                     <Col lg={6} md={24} xs={0}>
                         <Link to="/">
                             <div className="footerLogoContainer">
-                                <img src="/images/logo.png" />
+                                <img src="/images/logo.png" alt="Glosem Technologies"/>
                             </div>
                         </Link>
                     </Col>
