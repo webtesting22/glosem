@@ -44,9 +44,9 @@ const GlosemFooter = () => {
                             <div>
                                 <h2>Social Links</h2>
                                 <div style={{ display: "flex" }}>
-                                    <Link><FaInstagram /></Link>
-                                    <Link><CiFacebook /></Link>
-                                    <Link><FaXTwitter /></Link>
+                                    <Link aria-label="View Our Instagram"><FaInstagram /></Link>
+                                    <Link aria-label="View Our Facebook"><CiFacebook /></Link>
+                                    <Link aria-label="View Our X profile (formerly Twitter)"><FaXTwitter /></Link>
                                 </div>
                             </div>
                         </div>
