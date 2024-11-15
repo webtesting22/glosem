@@ -60,7 +60,7 @@ const GlosemFactors = () => {
 
                                                         <div style={{ display: "flex" }}>
                                                             <div className="IconContainer">
-                                                                <img src={item.iconPath} />
+                                                                <img src={item.iconPath} alt={item.title} />
                                                             </div>
                                                             <h3>{item.title}</h3>
                                                         </div>
