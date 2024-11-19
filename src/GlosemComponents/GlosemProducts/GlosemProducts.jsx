@@ -489,7 +489,7 @@ const GlosemProducts = () => {
                 >
                     {CarousalImages.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <img src={item.img} alt="Glosem Technologies" className="CarousalImages" />
+                            <img src={item.img} alt="Advanced flip chip technology solutions by Glosem Technologies" className="CarousalImages" />
                         </SwiperSlide>
                     ))}
                 </Swiper>

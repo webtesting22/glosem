@@ -143,7 +143,7 @@ const GlosemProductApplication = () => {
                                 data-aos-delay={index * 200}>
                                 <div key={index} className="MainCardContainer">
                                     <div className="CardImageContainer">
-                                        <img src={item.imagePath} alt="Glosem Technologies" />
+                                        <img src={item.imagePath} alt={item.title} />
                                     </div>
                                     <div className="BottomCardContainer">
                                         <h2>{item.title}</h2>
