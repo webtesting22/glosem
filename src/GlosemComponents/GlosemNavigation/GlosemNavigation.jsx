@@ -58,7 +58,7 @@ const GlosemNavigation = () => {
         <>
             <div className={`GlosemNavigationContainer ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="LogoContainer">
-                    <Link to="/"><img src="/images/logo.png" /></Link>
+                    <Link to="/" aria-label="Glosem Technologies Homepage"><img src="/images/logo.png" alt="glosem technologies logo"/></Link>
                 </div>
                 <div className="NavigationChild">
                     <div className="FirstIcon"></div>

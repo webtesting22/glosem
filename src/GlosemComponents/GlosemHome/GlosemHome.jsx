@@ -94,8 +94,7 @@ const GlosemHome = () => {
 
                 <div className="GlosemHomeContainer">
 
-                    <div className="HomeAnimatedContainer mobile" data-aos="fade-up"
-                        data-aos-duration="2000">
+                    <div className="HomeAnimatedContainer mobile" >
                         {/* <div className="OverlayBack">
 
                             </div> */}
