@@ -17,19 +17,13 @@
   position: fixed;
   top: 20%;
   left: 0;
-  /* width: 100%; */
-  /* Ensure it takes full width */
   transition: transform 0.1s;
-  /* Smooth transition for transform */
 }
 
 .ScrollContainerContent img {
   width: 200px;
-  /* Adjust as needed */
   height: 300px;
-  /* Adjust as needed */
   margin: 10px;
-  /* Space between images */
 }
 
 .ContainerContent {
@@ -90,27 +84,6 @@
   display: none;
 }
 
-/* @media (max-width: 1024px) {
-  
-  .ScrollContainerContent {
-    top: 20%;
-    flex-direction: row; 
-  }
-  
-  .ScrollContainerContent img {
-    width: 150px;
-    height: 200px;
-  }
-
-  .ContainerContent {
-    height: 28vh;
-    width: 500px;
-  }
-
-  .EvenContainer, .OddContainer {
-    padding: 20px;
-  }
-} */
 .KeystagesContainer img {
   width: 100%;
 }
