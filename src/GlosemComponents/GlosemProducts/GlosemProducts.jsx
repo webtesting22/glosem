@@ -43,6 +43,7 @@ const GlosemProducts = () => {
             imagePath: 'https://webtesting-upload.vercel.app/assets/Chip%20Mockups%20-%20Copy-04-DiJlpi9B.png',
             title: "Packaging capabilities",
             children: (
+
                 <ul>
                     <li><b>Advanced SMT Capabilities:</b> Leading-edge surface mount technology (SMT) for assembling advanced packages with the highest component density.</li>
                     {/* <li><b>Multichip Module (MCM) Assembly:</b> Expertise in MCM assembly for complex applications, enabling the integration of multiple chips onto a single substrate.</li> */}
@@ -567,8 +568,8 @@ const GlosemProducts = () => {
                         {GlosemProductsData.map((item, index) => (
                             <Col lg={12} md={12}
                                 data-aos="fade-up" data-aos-duration="400" data-aos-delay={index * 100}
-                                style={{ margin: "20px 0px" }}>
-                                <div key={index} className="MainCardContainer">
+                                style={{ margin: "20px 0px" }} key={index}>
+                                <div className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img
                                             src={item.imagePath}
@@ -623,11 +624,13 @@ const GlosemProducts = () => {
                         </Col>
                         <Col lg={20}>
                             {GlosemProductsDataAbout.map((item, index) => (
-                                <div id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="400" data-aos-delay={index * 100} >
+                                <div key={index} id={`section-${index}`} className="RightSideCondition" data-aos="fade-up" data-aos-duration="400" data-aos-delay={index * 100} >
                                     <div>
                                         <h2>{item.title}</h2>
                                         <br />
-                                        <p>{item.children}</p>
+                                        <div className="text">
+                                            {item.children}
+                                        </div>
                                     </div>
                                     <div className="ImageHover">
                                         <Image src={item.imagePath} alt={item.title} />
@@ -640,7 +643,7 @@ const GlosemProducts = () => {
                 {/* Modal for showing product details */}
                 <Modal
                     title={modalContent.title}
-                    visible={isModalVisible}
+                    open={isModalVisible}
                     onCancel={handleCancel}
                     width={1000}
                     footer={null}

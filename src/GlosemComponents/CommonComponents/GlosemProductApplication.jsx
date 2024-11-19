@@ -140,8 +140,8 @@ const GlosemProductApplication = () => {
                     <Row>
                         {ProductApplicationData.map((item, index) => (
                             <Col lg={8} data-aos="fade-up" // Set the AOS animation type
-                                data-aos-delay={index * 200}>
-                                <div key={index} className="MainCardContainer">
+                                data-aos-delay={index * 200} key={index}>
+                                <div  className="MainCardContainer">
                                     <div className="CardImageContainer">
                                         <img src={item.imagePath} alt={item.title} />
                                     </div>

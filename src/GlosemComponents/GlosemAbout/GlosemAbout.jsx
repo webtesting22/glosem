@@ -5,25 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Collapse, Row, Col, Image } from 'antd';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-// import Img1 from './smt.webp';
-import Img1 from "/images/Product Images/Chip Mockups - Copy-04.png";
-import Img2 from "/images/Product Images/Sip-FcCSP--MUF.png";
-// import Img2 from './molding.webp';
-import Img3 from './packaging.webp';
-// import Img4 from './rel.webp';
-import Img4 from "/images/Product Images/Chip Mockups - Copy-01.png";
 import 'swiper/css';
-import Craousal2 from "./Craousal2.jpeg"
-import Craousal3 from "./Craousal3.jpeg"
 import backFadeImage from "./backFadeImage.png"
-// import Test2 from "./Test2.jpeg"
 import Test1 from "/images/Product Images/Chip Mockups - Copy-01.png";
 import Test2 from "/images/Product Images/Chip Mockups - Copy-02.png";
 import Test3 from "/images/Product Images/Chip Mockups - Copy-03.png";
 import Test4 from "/images/Product Images/Chip Mockups - Copy-04.png";
 import Founder1 from "./image (13) 1.svg"
 import Founder2 from "./image (13) 2.svg"
-// import "../GlosemProducts/GlosemProductsContainer.css";
 
 
 const AboutImagesData = [
@@ -349,45 +338,7 @@ const GlosemAbout = () => {
 
                 </div>
                 
-                {/* 
-                <div className="ProductsContainer">
-                    <h2>Full stack product portfolio with cutting-edge technologies</h2>
-                    <br /><br />
-
-                    <Row>
-                        <Col lg={4}>
-                            <div className="stickyContainer">
-
-                                <div className="LinksShow">
-                                    <div className="ProgressBar" style={{ height: `${scrollProgress}%`, width: '2px', backgroundColor: '#001e60' }}>
-
-                                    </div>
-                                    {GlosemProductsData.map((item, index) => (
-                                        <div key={index}>
-                                            <h4 style={{ fontWeight: "400", cursor: "pointer" }}
-                                                onClick={() => scrollToSection(`section-${index}`)}
-                                            >{item.title}</h4>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={20}>
-                            {GlosemProductsData.map((item, index) => (
-                                <div id={`section-${index}`} className="RightSideCondition" >
-                                    <div>
-                                        <h2>{item.title}</h2>
-                                        <br />
-                                        <p>{item.children}</p>
-                                    </div>
-                                    <div className="ImageHover">
-                                        <Image src={item.imagePath} alt="" />
-                                    </div>
-                                </div>
-                            ))}
-                        </Col>
-                    </Row>
-                </div> */}
+                
             </div>
         </>
     );

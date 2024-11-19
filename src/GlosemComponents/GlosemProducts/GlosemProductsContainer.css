@@ -175,6 +175,10 @@
 .RightSideCondition:hover p ul b {
   color: white;
 }
+.RightSideCondition:hover .text ul li,
+.RightSideCondition:hover .text ul li b{
+  color: white;
+}
 
 .stickyContainer {
   position: sticky;
