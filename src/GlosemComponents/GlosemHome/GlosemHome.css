@@ -6,7 +6,6 @@
 
 .HomeAnimatedContainer {
     background-image: url("https://webtesting-upload.vercel.app/assets/GlosemHomeBack-C7AqG7q7.jpg");
-    
     background-size: cover;
     height: 50vh;
     background-position: center;
@@ -44,9 +43,10 @@
     font-weight: 400;
     font-size: 3rem;
 }
-.Mainheading p{
+
+.Mainheading p {
     color: white;
-    text-transform:uppercase;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
@@ -68,13 +68,16 @@
     background-color: #0000007f;
     border-radius: 20px;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
-@media (max-width:769px){
-    .HomeAnimatedContainer{
-        background-attachment:unset;
+
+@media (max-width:769px) {
+    .HomeAnimatedContainer {
+        background-attachment: unset;
     }
+
     #GlosemHome video {
         position: absolute;
         right: 0px;
@@ -82,29 +85,34 @@
         height: 100%;
         /* z-index: 4; */
         display: none;
-    
+
     }
+
     .HeightContainer {
         height: 100%;
         display: flex;
         align-items: center;
-    
+
     }
-    .mobile{
+
+    .mobile {
         display: block;
     }
-    .pc{
+
+    .pc {
         display: none;
     }
+
     .Mainheading h1 {
         color: black;
         margin-top: 10px;
     }
+
     #GlosemHome {
         padding-bottom: 3rem;
         padding-top: 5rem;
     }
-    
+
 }
 
 /* GlosemHome.css */
