@@ -69,13 +69,13 @@
     border-radius: 20px;
 }
 
-.mobile {
+.Mobile {
     display: none;
 }
 
 @media (max-width:769px) {
     .HomeAnimatedContainer {
-        background-attachment: unset;
+        background-attachment: scroll;
     }
 
     #GlosemHome video {
@@ -94,13 +94,12 @@
         align-items: center;
 
     }
-
-    .mobile {
-        display: block;
-    }
-
     .pc {
         display: none;
+    }
+
+    .Mobile {
+        display: block;
     }
 
     .Mainheading h1 {

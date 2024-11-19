@@ -94,10 +94,8 @@ const GlosemHome = () => {
 
                 <div className="GlosemHomeContainer">
 
-                    <div className="HomeAnimatedContainer mobile">
-
+                    <div className="HomeAnimatedContainer Mobile">
                     </div>
-
                     <GlosemFactors />
                     <div className="HomeAnimatedContainer pc" >
                         <div className="OverlayBack">
