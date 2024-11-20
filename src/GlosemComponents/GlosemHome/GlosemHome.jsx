@@ -6,6 +6,7 @@ import GlosemFactors from "../CommonComponents/GlosemFactors/GlosemFactors";
 import GlosemProductApplication from "../CommonComponents/GlosemProductApplication";
 const GlosemHome = () => {
     const videoRefPc = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
     const [isFading, setIsFading] = useState(false);
     const handleTimeUpdate = (videoRef) => {
@@ -36,6 +37,12 @@ const GlosemHome = () => {
             setIsLoaded(true);
         }, 3000);
     }, []);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setIsVisible(true); // Trigger the fade-in effect after the component loads
+        }, 100); // Add a slight delay if desired
+        return () => clearTimeout(timer); // Cleanup on unmount
+      }, []);
     return (
         <>
             {/* {!isLoaded && (
@@ -75,8 +82,7 @@ const GlosemHome = () => {
                                 <Col lg={12} md={24}>
                                     <div className="Mainheading">
                                         <p>/ Innovating Your Future with Global Expertise</p>
-                                        <h1 data-aos="fade-up"
-                                            data-aos-duration="1000" className="mainheading">
+                                        <h1 className={`mainheading ${isVisible ? "visible" : ""}`} >
                                             {/* We have global expertise to grow your organization */}
                                             Leveraging Global Expertise to Elevate Your Semiconductor Solutions and Drive Innovation
                                         </h1>

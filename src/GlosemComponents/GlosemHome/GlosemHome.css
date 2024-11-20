@@ -72,6 +72,22 @@
 .Mobile {
     display: none;
 }
+.mainheading {
+    opacity: 0; /* Initial state (invisible) */
+    transform: translateY(40px); /* Slight upward motion for effect */
+    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px); /* Start slightly below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+    }
+  }
 
 @media (max-width:769px) {
     .HomeAnimatedContainer {
