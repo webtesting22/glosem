@@ -142,9 +142,11 @@
 }
 
 .typed-word {
-  color: #001e60;
+  color: #001e60; /* High-contrast dark blue */
   min-width: 130px;
   text-align: left;
+  display: inline-block;
+  transition: opacity 1s ease-in-out; /* Smooth word change transition */
 }
 
 @keyframes blink {
@@ -153,19 +155,22 @@
   }
 }
 
-.typed-word {
-  display: inline-block;
-  transition: opacity 1s ease-in-out;
-  /* Smooth transition for word changes */
-}
-
 .fade-in {
-  opacity: 1;
+  opacity: 1; /* Fully visible */
 }
 
 .fade-out {
-  opacity: 0;
+  opacity: 0; /* Fully invisible */
 }
+
+.typing-container {
+  background-color: #FFFFFF; /* Ensure sufficient contrast with text */
+}
+
+.typing-container-mobile {
+  background-color: #FFFFFF; /* Same for mobile */
+}
+
 
 #ProductApplicationCardsContainer {
   padding-top: 5rem;
